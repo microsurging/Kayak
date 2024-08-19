@@ -1,0 +1,431 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\git.kayak\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|e:\\git.kayak\\kayak.services\\kayak.services.server\\kayaksetting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|solutionrelative:kayak.services\\kayak.services.server\\kayaksetting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|e:\\git.kayak\\kayak.services\\kayak.services.server\\log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|solutionrelative:kayak.services\\kayak.services.server\\log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|e:\\git.kayak\\kayak.services\\kayak.services.server\\eventbussettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|solutionrelative:kayak.services\\kayak.services.server\\eventbussettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|e:\\git.kayak\\kayak.services\\kayak.services.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|solutionrelative:kayak.services\\kayak.services.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|e:\\git.kayak\\kayak.services\\kayak.services.server\\surgingserviceengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|solutionrelative:kayak.services\\kayak.services.server\\surgingserviceengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1B822E-E008-477C-A48A-B50600CB9318}|surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj|e:\\git.kayak\\surging\\surging.core\\surging.core.proxygenerator\\implementation\\serviceproxybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE1B822E-E008-477C-A48A-B50600CB9318}|surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj|solutionrelative:surging\\surging.core\\surging.core.proxygenerator\\implementation\\serviceproxybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E62CC696-4AAD-4E96-9F87-2F0FDFC6886C}|Kayak.Core\\Kayak.Core.Common\\Kayak.Core.Common.csproj|e:\\git.kayak\\kayak.core\\kayak.core.common\\intercepte\\interceptemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E62CC696-4AAD-4E96-9F87-2F0FDFC6886C}|Kayak.Core\\Kayak.Core.Common\\Kayak.Core.Common.csproj|solutionrelative:kayak.core\\kayak.core.common\\intercepte\\interceptemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E62CC696-4AAD-4E96-9F87-2F0FDFC6886C}|Kayak.Core\\Kayak.Core.Common\\Kayak.Core.Common.csproj|e:\\git.kayak\\kayak.core\\kayak.core.common\\intercepte\\interceptoroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E62CC696-4AAD-4E96-9F87-2F0FDFC6886C}|Kayak.Core\\Kayak.Core.Common\\Kayak.Core.Common.csproj|solutionrelative:kayak.core\\kayak.core.common\\intercepte\\interceptoroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E62CC696-4AAD-4E96-9F87-2F0FDFC6886C}|Kayak.Core\\Kayak.Core.Common\\Kayak.Core.Common.csproj|e:\\git.kayak\\kayak.core\\kayak.core.common\\intercepte\\ioperatelogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E62CC696-4AAD-4E96-9F87-2F0FDFC6886C}|Kayak.Core\\Kayak.Core.Common\\Kayak.Core.Common.csproj|solutionrelative:kayak.core\\kayak.core.common\\intercepte\\ioperatelogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E62CC696-4AAD-4E96-9F87-2F0FDFC6886C}|Kayak.Core\\Kayak.Core.Common\\Kayak.Core.Common.csproj|e:\\git.kayak\\kayak.core\\kayak.core.common\\sysdictionarycodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E62CC696-4AAD-4E96-9F87-2F0FDFC6886C}|Kayak.Core\\Kayak.Core.Common\\Kayak.Core.Common.csproj|solutionrelative:kayak.core\\kayak.core.common\\sysdictionarycodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E62CC696-4AAD-4E96-9F87-2F0FDFC6886C}|Kayak.Core\\Kayak.Core.Common\\Kayak.Core.Common.csproj|e:\\git.kayak\\kayak.core\\kayak.core.common\\commonmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E62CC696-4AAD-4E96-9F87-2F0FDFC6886C}|Kayak.Core\\Kayak.Core.Common\\Kayak.Core.Common.csproj|solutionrelative:kayak.core\\kayak.core.common\\commonmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|e:\\git.kayak\\kayak.services\\kayak.services.server\\surgingsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|solutionrelative:kayak.services\\kayak.services.server\\surgingsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D63B0E88-FE3B-4567-AC97-1AFB466F9185}|surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj|e:\\git.kayak\\surging\\surging.core\\surging.core.cplatform\\containerbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D63B0E88-FE3B-4567-AC97-1AFB466F9185}|surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj|solutionrelative:surging\\surging.core\\surging.core.cplatform\\containerbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D63B0E88-FE3B-4567-AC97-1AFB466F9185}|surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj|e:\\git.kayak\\surging\\surging.core\\surging.core.cplatform\\transport\\implementation\\payloadcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D63B0E88-FE3B-4567-AC97-1AFB466F9185}|surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj|solutionrelative:surging\\surging.core\\surging.core.cplatform\\transport\\implementation\\payloadcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CB6CFF4-2C1E-4909-96DA-46C9C865AC96}|Kayak.Modules\\Kayak.Modules.System\\Kayak.Modules.System.csproj|e:\\git.kayak\\kayak.modules\\kayak.modules.system\\domians\\sysuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CB6CFF4-2C1E-4909-96DA-46C9C865AC96}|Kayak.Modules\\Kayak.Modules.System\\Kayak.Modules.System.csproj|solutionrelative:kayak.modules\\kayak.modules.system\\domians\\sysuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7961A-FC5B-4A12-9C31-FC8B4F6A51DD}|surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj|e:\\git.kayak\\surging\\surging.core\\surging.core.dotnetty\\dotnettyservermessagelistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE7961A-FC5B-4A12-9C31-FC8B4F6A51DD}|surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj|solutionrelative:surging\\surging.core\\surging.core.dotnetty\\dotnettyservermessagelistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE7961A-FC5B-4A12-9C31-FC8B4F6A51DD}|surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj|e:\\git.kayak\\surging\\surging.core\\surging.core.dotnetty\\dotnettytransportclientfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE7961A-FC5B-4A12-9C31-FC8B4F6A51DD}|surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj|solutionrelative:surging\\surging.core\\surging.core.dotnetty\\dotnettytransportclientfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{505B713B-B0E7-4D94-B361-47805D1C1F49}|surging\\Surging.Core\\Surging.Core.Zookeeper\\Surging.Core.Zookeeper.csproj|e:\\git.kayak\\surging\\surging.core\\surging.core.zookeeper\\zookeeperserviceroutemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{505B713B-B0E7-4D94-B361-47805D1C1F49}|surging\\Surging.Core\\Surging.Core.Zookeeper\\Surging.Core.Zookeeper.csproj|solutionrelative:surging\\surging.core\\surging.core.zookeeper\\zookeeperserviceroutemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D53C15-7F33-47FA-BFDD-EE87A429A381}|surging\\Surging.Core\\Surging.Core.Consul\\Surging.Core.Consul.csproj|e:\\git.kayak\\surging\\surging.core\\surging.core.consul\\consulserviceroutemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D53C15-7F33-47FA-BFDD-EE87A429A381}|surging\\Surging.Core\\Surging.Core.Consul\\Surging.Core.Consul.csproj|solutionrelative:surging\\surging.core\\surging.core.consul\\consulserviceroutemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D63B0E88-FE3B-4567-AC97-1AFB466F9185}|surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj|e:\\git.kayak\\surging\\surging.core\\surging.core.cplatform\\routing\\implementation\\sharedfileserviceroutemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D63B0E88-FE3B-4567-AC97-1AFB466F9185}|surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj|solutionrelative:surging\\surging.core\\surging.core.cplatform\\routing\\implementation\\sharedfileserviceroutemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D63B0E88-FE3B-4567-AC97-1AFB466F9185}|surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj|e:\\git.kayak\\surging\\surging.core\\surging.core.cplatform\\routing\\implementation\\serviceroutemanagerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D63B0E88-FE3B-4567-AC97-1AFB466F9185}|surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj|solutionrelative:surging\\surging.core\\surging.core.cplatform\\routing\\implementation\\serviceroutemanagerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|e:\\git.kayak\\kayak.services\\kayak.services.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A77D9CEB-884F-429E-9FCE-35C3B6F7C231}|Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj|solutionrelative:kayak.services\\kayak.services.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D63B0E88-FE3B-4567-AC97-1AFB466F9185}|surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj|e:\\git.kayak\\surging\\surging.core\\surging.core.cplatform\\routing\\iserviceroutemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D63B0E88-FE3B-4567-AC97-1AFB466F9185}|surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj|solutionrelative:surging\\surging.core\\surging.core.cplatform\\routing\\iserviceroutemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B1F3DF8-30B1-4F41-A842-35757158AC83}|Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.ServiceManage\\Kayak.Modules.Aggregation.ServiceManage.csproj|e:\\git.kayak\\kayak.modules\\kayak.modules.aggregation\\kayak.modules.aggregation.servicemanage\\domains\\servicerouteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B1F3DF8-30B1-4F41-A842-35757158AC83}|Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.ServiceManage\\Kayak.Modules.Aggregation.ServiceManage.csproj|solutionrelative:kayak.modules\\kayak.modules.aggregation\\kayak.modules.aggregation.servicemanage\\domains\\servicerouteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1B822E-E008-477C-A48A-B50600CB9318}|surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj|e:\\git.kayak\\surging\\surging.core\\surging.core.proxygenerator\\interceptors\\implementation\\metadatas\\servicecacheintercept.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE1B822E-E008-477C-A48A-B50600CB9318}|surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj|solutionrelative:surging\\surging.core\\surging.core.proxygenerator\\interceptors\\implementation\\metadatas\\servicecacheintercept.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "eventBusSettings.json",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\eventBusSettings.json",
+              "RelativeDocumentMoniker": "Kayak.Services\\Kayak.Services.Server\\eventBusSettings.json",
+              "ToolTip": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\eventBusSettings.json",
+              "RelativeToolTip": "Kayak.Services\\Kayak.Services.Server\\eventBusSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-19T00:34:56.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "kayakSetting.json",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\kayakSetting.json",
+              "RelativeDocumentMoniker": "Kayak.Services\\Kayak.Services.Server\\kayakSetting.json",
+              "ToolTip": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\kayakSetting.json",
+              "RelativeToolTip": "Kayak.Services\\Kayak.Services.Server\\kayakSetting.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-19T00:34:42.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "log4net.config",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\log4net.config",
+              "RelativeDocumentMoniker": "Kayak.Services\\Kayak.Services.Server\\log4net.config",
+              "ToolTip": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\log4net.config",
+              "RelativeToolTip": "Kayak.Services\\Kayak.Services.Server\\log4net.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-19T00:34:39.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IntercepteModule.cs",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Core\\Kayak.Core.Common\\Intercepte\\IntercepteModule.cs",
+              "RelativeDocumentMoniker": "Kayak.Core\\Kayak.Core.Common\\Intercepte\\IntercepteModule.cs",
+              "ToolTip": "E:\\git.kayak\\Kayak.Core\\Kayak.Core.Common\\Intercepte\\IntercepteModule.cs",
+              "RelativeToolTip": "Kayak.Core\\Kayak.Core.Common\\Intercepte\\IntercepteModule.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAywBoAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T23:00:42.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SysDictionaryCodes.cs",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Core\\Kayak.Core.Common\\SysDictionaryCodes.cs",
+              "RelativeDocumentMoniker": "Kayak.Core\\Kayak.Core.Common\\SysDictionaryCodes.cs",
+              "ToolTip": "E:\\git.kayak\\Kayak.Core\\Kayak.Core.Common\\SysDictionaryCodes.cs",
+              "RelativeToolTip": "Kayak.Core\\Kayak.Core.Common\\SysDictionaryCodes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T23:00:35.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CommonModule.cs",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Core\\Kayak.Core.Common\\CommonModule.cs",
+              "RelativeDocumentMoniker": "Kayak.Core\\Kayak.Core.Common\\CommonModule.cs",
+              "ToolTip": "E:\\git.kayak\\Kayak.Core\\Kayak.Core.Common\\CommonModule.cs",
+              "RelativeToolTip": "Kayak.Core\\Kayak.Core.Common\\CommonModule.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T23:00:32.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServiceProxyBase.cs",
+              "DocumentMoniker": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Implementation\\ServiceProxyBase.cs",
+              "RelativeDocumentMoniker": "surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Implementation\\ServiceProxyBase.cs",
+              "ToolTip": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Implementation\\ServiceProxyBase.cs",
+              "RelativeToolTip": "surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Implementation\\ServiceProxyBase.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAUwFoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:18:40.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SurgingServiceEngine.cs",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\SurgingServiceEngine.cs",
+              "RelativeDocumentMoniker": "Kayak.Services\\Kayak.Services.Server\\SurgingServiceEngine.cs",
+              "ToolTip": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\SurgingServiceEngine.cs",
+              "RelativeToolTip": "Kayak.Services\\Kayak.Services.Server\\SurgingServiceEngine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:51:04.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\Startup.cs",
+              "RelativeDocumentMoniker": "Kayak.Services\\Kayak.Services.Server\\Startup.cs",
+              "ToolTip": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\Startup.cs",
+              "RelativeToolTip": "Kayak.Services\\Kayak.Services.Server\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T23:00:18.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IOperateLogService.cs",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Core\\Kayak.Core.Common\\Intercepte\\IOperateLogService.cs",
+              "RelativeDocumentMoniker": "Kayak.Core\\Kayak.Core.Common\\Intercepte\\IOperateLogService.cs",
+              "ToolTip": "E:\\git.kayak\\Kayak.Core\\Kayak.Core.Common\\Intercepte\\IOperateLogService.cs",
+              "RelativeToolTip": "Kayak.Core\\Kayak.Core.Common\\Intercepte\\IOperateLogService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T23:00:40.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InterceptorOptions.cs",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Core\\Kayak.Core.Common\\Intercepte\\InterceptorOptions.cs",
+              "RelativeDocumentMoniker": "Kayak.Core\\Kayak.Core.Common\\Intercepte\\InterceptorOptions.cs",
+              "ToolTip": "E:\\git.kayak\\Kayak.Core\\Kayak.Core.Common\\Intercepte\\InterceptorOptions.cs",
+              "RelativeToolTip": "Kayak.Core\\Kayak.Core.Common\\Intercepte\\InterceptorOptions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T23:00:41.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ContainerBuilderExtensions.cs",
+              "DocumentMoniker": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\ContainerBuilderExtensions.cs",
+              "RelativeDocumentMoniker": "surging\\Surging.Core\\Surging.Core.CPlatform\\ContainerBuilderExtensions.cs",
+              "ToolTip": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\ContainerBuilderExtensions.cs",
+              "RelativeToolTip": "surging\\Surging.Core\\Surging.Core.CPlatform\\ContainerBuilderExtensions.cs",
+              "ViewState": "AQIAAJ0BAAAAAAAAAIAwwKwBAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:51:15.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PayloadContext.cs",
+              "DocumentMoniker": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Transport\\Implementation\\PayloadContext.cs",
+              "RelativeDocumentMoniker": "surging\\Surging.Core\\Surging.Core.CPlatform\\Transport\\Implementation\\PayloadContext.cs",
+              "ToolTip": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Transport\\Implementation\\PayloadContext.cs",
+              "RelativeToolTip": "surging\\Surging.Core\\Surging.Core.CPlatform\\Transport\\Implementation\\PayloadContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:37:07.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SysUserService.cs",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Modules\\Kayak.Modules.System\\Domians\\SysUserService.cs",
+              "RelativeDocumentMoniker": "Kayak.Modules\\Kayak.Modules.System\\Domians\\SysUserService.cs",
+              "ToolTip": "E:\\git.kayak\\Kayak.Modules\\Kayak.Modules.System\\Domians\\SysUserService.cs",
+              "RelativeToolTip": "Kayak.Modules\\Kayak.Modules.System\\Domians\\SysUserService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAlwBAAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:34:28.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "surgingSettings.json",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\surgingSettings.json",
+              "RelativeDocumentMoniker": "Kayak.Services\\Kayak.Services.Server\\surgingSettings.json",
+              "ToolTip": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\surgingSettings.json",
+              "RelativeToolTip": "Kayak.Services\\Kayak.Services.Server\\surgingSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-18T22:34:02.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DotNettyServerMessageListener.cs",
+              "DocumentMoniker": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DotNetty\\DotNettyServerMessageListener.cs",
+              "RelativeDocumentMoniker": "surging\\Surging.Core\\Surging.Core.DotNetty\\DotNettyServerMessageListener.cs",
+              "ToolTip": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DotNetty\\DotNettyServerMessageListener.cs",
+              "RelativeToolTip": "surging\\Surging.Core\\Surging.Core.DotNetty\\DotNettyServerMessageListener.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:33:21.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DotNettyTransportClientFactory.cs",
+              "DocumentMoniker": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DotNetty\\DotNettyTransportClientFactory.cs",
+              "RelativeDocumentMoniker": "surging\\Surging.Core\\Surging.Core.DotNetty\\DotNettyTransportClientFactory.cs",
+              "ToolTip": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DotNetty\\DotNettyTransportClientFactory.cs",
+              "RelativeToolTip": "surging\\Surging.Core\\Surging.Core.DotNetty\\DotNettyTransportClientFactory.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:29:26.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ZooKeeperServiceRouteManager.cs",
+              "DocumentMoniker": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Zookeeper\\ZooKeeperServiceRouteManager.cs",
+              "RelativeDocumentMoniker": "surging\\Surging.Core\\Surging.Core.Zookeeper\\ZooKeeperServiceRouteManager.cs",
+              "ToolTip": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Zookeeper\\ZooKeeperServiceRouteManager.cs",
+              "RelativeToolTip": "surging\\Surging.Core\\Surging.Core.Zookeeper\\ZooKeeperServiceRouteManager.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAApwDgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:28:03.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ConsulServiceRouteManager.cs",
+              "DocumentMoniker": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Consul\\ConsulServiceRouteManager.cs",
+              "RelativeDocumentMoniker": "surging\\Surging.Core\\Surging.Core.Consul\\ConsulServiceRouteManager.cs",
+              "ToolTip": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Consul\\ConsulServiceRouteManager.cs",
+              "RelativeToolTip": "surging\\Surging.Core\\Surging.Core.Consul\\ConsulServiceRouteManager.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAtwIMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:27:08.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SharedFileServiceRouteManager.cs",
+              "DocumentMoniker": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\Implementation\\SharedFileServiceRouteManager.cs",
+              "RelativeDocumentMoniker": "surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\Implementation\\SharedFileServiceRouteManager.cs",
+              "ToolTip": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\Implementation\\SharedFileServiceRouteManager.cs",
+              "RelativeToolTip": "surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\Implementation\\SharedFileServiceRouteManager.cs",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAEwK0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:26:23.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ServiceRouteManagerBase.cs",
+              "DocumentMoniker": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\Implementation\\ServiceRouteManagerBase.cs",
+              "RelativeDocumentMoniker": "surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\Implementation\\ServiceRouteManagerBase.cs",
+              "ToolTip": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\Implementation\\ServiceRouteManagerBase.cs",
+              "RelativeToolTip": "surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\Implementation\\ServiceRouteManagerBase.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAADgvywAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:26:02.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\Program.cs",
+              "RelativeDocumentMoniker": "Kayak.Services\\Kayak.Services.Server\\Program.cs",
+              "ToolTip": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\Program.cs",
+              "RelativeToolTip": "Kayak.Services\\Kayak.Services.Server\\Program.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAlwDkAAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:24:45.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IServiceRouteManager.cs",
+              "DocumentMoniker": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\IServiceRouteManager.cs",
+              "RelativeDocumentMoniker": "surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\IServiceRouteManager.cs",
+              "ToolTip": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\IServiceRouteManager.cs",
+              "RelativeToolTip": "surging\\Surging.Core\\Surging.Core.CPlatform\\Routing\\IServiceRouteManager.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAQwDgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:24:07.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ServiceRouteService.cs",
+              "DocumentMoniker": "E:\\git.kayak\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.ServiceManage\\Domains\\ServiceRouteService.cs",
+              "RelativeDocumentMoniker": "Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.ServiceManage\\Domains\\ServiceRouteService.cs",
+              "ToolTip": "E:\\git.kayak\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.ServiceManage\\Domains\\ServiceRouteService.cs",
+              "RelativeToolTip": "Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.ServiceManage\\Domains\\ServiceRouteService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAvwCoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:23:35.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ServiceCacheIntercept.cs",
+              "DocumentMoniker": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Interceptors\\Implementation\\Metadatas\\ServiceCacheIntercept.cs",
+              "RelativeDocumentMoniker": "surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Interceptors\\Implementation\\Metadatas\\ServiceCacheIntercept.cs",
+              "ToolTip": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Interceptors\\Implementation\\Metadatas\\ServiceCacheIntercept.cs",
+              "RelativeToolTip": "surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Interceptors\\Implementation\\Metadatas\\ServiceCacheIntercept.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAvwFUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T22:21:28.999Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

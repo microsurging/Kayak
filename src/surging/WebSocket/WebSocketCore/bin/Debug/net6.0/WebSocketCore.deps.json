@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WebSocketCore/1.9.2": {
+        "runtime": {
+          "WebSocketCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebSocketCore/1.9.2": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,5 @@
+generated/JVMMetricsService.cs \
+generated/JVMMetricsServiceGrpc.cs: protocol/language-agent/Downstream.proto\
+ protocol/common/common.proto\
+ protocol/common/JVM.proto\
+ protocol/language-agent/JVMMetricsService.proto

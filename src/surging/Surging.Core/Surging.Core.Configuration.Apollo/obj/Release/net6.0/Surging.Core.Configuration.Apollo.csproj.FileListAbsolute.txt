@@ -1,0 +1,17 @@
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\bin\Release\net6.0\Surging.Core.Configuration.Apollo.deps.json
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\bin\Release\net6.0\Surging.Core.Configuration.Apollo.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\bin\Release\net6.0\Surging.Core.Configuration.Apollo.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\bin\Release\net6.0\Surging.Core.CPlatform.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\bin\Release\net6.0\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\bin\Release\net6.0\Surging.Core.CPlatform.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\bin\Release\net6.0\Surging.Core.ServiceHosting.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\obj\Release\net6.0\Surging.Core.Configuration.Apollo.csproj.AssemblyReference.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\obj\Release\net6.0\Surging.Core.Configuration.Apollo.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\obj\Release\net6.0\Surging.Core.Configuration.Apollo.AssemblyInfoInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\obj\Release\net6.0\Surging.Core.Configuration.Apollo.AssemblyInfo.cs
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\obj\Release\net6.0\Surging.Core.Configuration.Apollo.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\obj\Release\net6.0\Surging..3B5D784A.Up2Date
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\obj\Release\net6.0\Surging.Core.Configuration.Apollo.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\obj\Release\net6.0\refint\Surging.Core.Configuration.Apollo.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\obj\Release\net6.0\Surging.Core.Configuration.Apollo.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Configuration.Apollo\obj\Release\net6.0\ref\Surging.Core.Configuration.Apollo.dll

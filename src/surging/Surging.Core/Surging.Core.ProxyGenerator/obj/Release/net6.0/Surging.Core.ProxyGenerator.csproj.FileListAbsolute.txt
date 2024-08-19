@@ -1,0 +1,17 @@
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\bin\Release\net6.0\Surging.Core.ProxyGenerator.deps.json
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\bin\Release\net6.0\Surging.Core.ProxyGenerator.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\bin\Release\net6.0\Surging.Core.ProxyGenerator.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\bin\Release\net6.0\Surging.Core.CPlatform.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\bin\Release\net6.0\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\bin\Release\net6.0\Surging.Core.CPlatform.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\bin\Release\net6.0\Surging.Core.ServiceHosting.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\obj\Release\net6.0\Surging.Core.ProxyGenerator.csproj.AssemblyReference.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\obj\Release\net6.0\Surging.Core.ProxyGenerator.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\obj\Release\net6.0\Surging.Core.ProxyGenerator.AssemblyInfoInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\obj\Release\net6.0\Surging.Core.ProxyGenerator.AssemblyInfo.cs
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\obj\Release\net6.0\Surging.Core.ProxyGenerator.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\obj\Release\net6.0\Surging..CF3500B4.Up2Date
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\obj\Release\net6.0\Surging.Core.ProxyGenerator.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\obj\Release\net6.0\refint\Surging.Core.ProxyGenerator.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\obj\Release\net6.0\Surging.Core.ProxyGenerator.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.ProxyGenerator\obj\Release\net6.0\ref\Surging.Core.ProxyGenerator.dll

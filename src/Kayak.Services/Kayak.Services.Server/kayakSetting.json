@@ -1,0 +1,13 @@
+{
+  "DataAccess": [
+    {
+      "Name": "DeviceData",
+      "DatabaseType": "sqlite",
+      "Connstring": "Data Source=KayakData.db;Pooling=True;"
+    }
+  ],
+  "Interceptor": {
+    "DisableCache": false,
+    "DisableOperateLog": false
+  }
+}

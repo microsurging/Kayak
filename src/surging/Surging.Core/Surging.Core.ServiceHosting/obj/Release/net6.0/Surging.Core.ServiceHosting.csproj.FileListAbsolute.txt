@@ -1,0 +1,12 @@
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\bin\Release\net6.0\Surging.Core.ServiceHosting.deps.json
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\bin\Release\net6.0\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\bin\Release\net6.0\Surging.Core.ServiceHosting.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\obj\Release\net6.0\Surging.Core.ServiceHosting.csproj.AssemblyReference.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\obj\Release\net6.0\Surging.Core.ServiceHosting.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\obj\Release\net6.0\Surging.Core.ServiceHosting.AssemblyInfoInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\obj\Release\net6.0\Surging.Core.ServiceHosting.AssemblyInfo.cs
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\obj\Release\net6.0\Surging.Core.ServiceHosting.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\obj\Release\net6.0\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\obj\Release\net6.0\refint\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\obj\Release\net6.0\Surging.Core.ServiceHosting.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.ServiceHosting\obj\Release\net6.0\ref\Surging.Core.ServiceHosting.dll

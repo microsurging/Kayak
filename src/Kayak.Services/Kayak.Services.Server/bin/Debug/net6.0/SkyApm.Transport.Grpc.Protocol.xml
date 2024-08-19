@@ -1,0 +1,1207 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SkyApm.Transport.Grpc.Protocol</name>
+    </assembly>
+    <members>
+        <member name="T:SkyWalking.NetworkProtocol.V3.BrowserPerfReflection">
+            <summary>Holder for reflection information generated from browser/BrowserPerf.proto</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserPerfReflection.Descriptor">
+            <summary>File descriptor for browser/BrowserPerf.proto</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserPerfData.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserPerfData.ServiceVersionFieldNumber">
+            <summary>Field number for the "serviceVersion" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserPerfData.ServiceVersion">
+            <summary>
+            Service version in browser is the Instance concept in the backend.
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserPerfData.TimeFieldNumber">
+            <summary>Field number for the "time" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserPerfData.Time">
+            <summary>
+            Perf data time
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserPerfData.PagePathFieldNumber">
+            <summary>Field number for the "pagePath" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserPerfData.PagePath">
+            <summary>
+            Page path in browser is the endpoint concept in the backend
+            Page path in the browser, mostly it is URI, without parameter
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserPerfData.RedirectTimeFieldNumber">
+            <summary>Field number for the "redirectTime" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserPerfData.RedirectTime">
+            <summary>
+            Unit of all time related field should be `ms`.
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserPerfData.DnsTimeFieldNumber">
+            <summary>Field number for the "dnsTime" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserPerfData.ReqTimeFieldNumber">
+            <summary>Field number for the "reqTime" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserPerfData.DomAnalysisTimeFieldNumber">
+            <summary>Field number for the "domAnalysisTime" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserPerfData.DomAnalysisTime">
+            <summary>
+            analysis dom tree time
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserPerfData.DomReadyTimeFieldNumber">
+            <summary>Field number for the "domReadyTime" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserPerfData.BlankTimeFieldNumber">
+            <summary>Field number for the "blankTime" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserPerfData.BlankTime">
+            <summary>
+            page blank time
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.UniqueIdFieldNumber">
+            <summary>Field number for the "uniqueId" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.UniqueId">
+            <summary>
+            UUID
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.ServiceVersionFieldNumber">
+            <summary>Field number for the "serviceVersion" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.ServiceVersion">
+            <summary>
+            Service version in browser is the Instance concept in the backend.
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.TimeFieldNumber">
+            <summary>Field number for the "time" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.Time">
+            <summary>
+            Error log time
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.PagePathFieldNumber">
+            <summary>Field number for the "pagePath" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.PagePath">
+            <summary>
+            Page path in browser is the endpoint concept in the backend
+            Page path in the browser, mostly it is URI, without parameter
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.CategoryFieldNumber">
+            <summary>Field number for the "category" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.GradeFieldNumber">
+            <summary>Field number for the "grade" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.MessageFieldNumber">
+            <summary>Field number for the "message" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.LineFieldNumber">
+            <summary>Field number for the "line" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.ColFieldNumber">
+            <summary>Field number for the "col" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.StackFieldNumber">
+            <summary>Field number for the "stack" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.ErrorUrlFieldNumber">
+            <summary>Field number for the "errorUrl" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.FirstReportedErrorFieldNumber">
+            <summary>Field number for the "firstReportedError" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserErrorLog.FirstReportedError">
+            <summary>
+            Then the PV with error is only calculated when firstReportedError is true.
+            </summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.BrowserPerfService">
+            <summary>
+            Collect performance raw data from browser.
+            </summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.BrowserPerfService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceBase">
+            <summary>Base class for server-side implementations of BrowserPerfService</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceBase.collectPerfData(SkyWalking.NetworkProtocol.V3.BrowserPerfData,Grpc.Core.ServerCallContext)">
+            <summary>
+            report once per page
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceBase.collectErrorLogs(Grpc.Core.IAsyncStreamReader{SkyWalking.NetworkProtocol.V3.BrowserErrorLog},Grpc.Core.ServerCallContext)">
+            <summary>
+            report one or more error logs for pages, could report multiple times.
+            </summary>
+            <param name="requestStream">Used for reading requests from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient">
+            <summary>Client for BrowserPerfService</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for BrowserPerfService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for BrowserPerfService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient.collectPerfData(SkyWalking.NetworkProtocol.V3.BrowserPerfData,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            report once per page
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient.collectPerfData(SkyWalking.NetworkProtocol.V3.BrowserPerfData,Grpc.Core.CallOptions)">
+            <summary>
+            report once per page
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient.collectPerfDataAsync(SkyWalking.NetworkProtocol.V3.BrowserPerfData,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            report once per page
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient.collectPerfDataAsync(SkyWalking.NetworkProtocol.V3.BrowserPerfData,Grpc.Core.CallOptions)">
+            <summary>
+            report once per page
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient.collectErrorLogs(Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            report one or more error logs for pages, could report multiple times.
+            </summary>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient.collectErrorLogs(Grpc.Core.CallOptions)">
+            <summary>
+            report one or more error logs for pages, could report multiple times.
+            </summary>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BindService(SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.BrowserPerfService.BindService(Grpc.Core.ServiceBinderBase,SkyWalking.NetworkProtocol.V3.BrowserPerfService.BrowserPerfServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.CommonReflection">
+            <summary>Holder for reflection information generated from common/Common.proto</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.CommonReflection.Descriptor">
+            <summary>File descriptor for common/Common.proto</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.DetectPoint">
+            <summary>
+            In most cases, detect point should be `server` or `client`.
+            Even in service mesh, this means `server`/`client` side sidecar
+            `proxy` is reserved only.
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.KeyStringValuePair.KeyFieldNumber">
+            <summary>Field number for the "key" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.KeyStringValuePair.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.CPU.UsagePercentFieldNumber">
+            <summary>Field number for the "usagePercent" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Commands.Commands_FieldNumber">
+            <summary>Field number for the "commands" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Command.Command_FieldNumber">
+            <summary>Field number for the "command" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Command.ArgsFieldNumber">
+            <summary>Field number for the "args" field.</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.CLRMetricReflection">
+            <summary>Holder for reflection information generated from language-agent/CLRMetric.proto</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.CLRMetricReflection.Descriptor">
+            <summary>File descriptor for language-agent/CLRMetric.proto</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.CLRMetricCollection.MetricsFieldNumber">
+            <summary>Field number for the "metrics" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.CLRMetricCollection.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.CLRMetricCollection.ServiceInstanceFieldNumber">
+            <summary>Field number for the "serviceInstance" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.CLRMetric.TimeFieldNumber">
+            <summary>Field number for the "time" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.CLRMetric.CpuFieldNumber">
+            <summary>Field number for the "cpu" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.CLRMetric.GcFieldNumber">
+            <summary>Field number for the "gc" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.CLRMetric.ThreadFieldNumber">
+            <summary>Field number for the "thread" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ClrGC.Gen0CollectCountFieldNumber">
+            <summary>Field number for the "Gen0CollectCount" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ClrGC.Gen1CollectCountFieldNumber">
+            <summary>Field number for the "Gen1CollectCount" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ClrGC.Gen2CollectCountFieldNumber">
+            <summary>Field number for the "Gen2CollectCount" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ClrGC.HeapMemoryFieldNumber">
+            <summary>Field number for the "HeapMemory" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ClrThread.AvailableCompletionPortThreadsFieldNumber">
+            <summary>Field number for the "AvailableCompletionPortThreads" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ClrThread.AvailableWorkerThreadsFieldNumber">
+            <summary>Field number for the "AvailableWorkerThreads" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ClrThread.MaxCompletionPortThreadsFieldNumber">
+            <summary>Field number for the "MaxCompletionPortThreads" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ClrThread.MaxWorkerThreadsFieldNumber">
+            <summary>Field number for the "MaxWorkerThreads" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.CLRMetricReportService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.CLRMetricReportService.CLRMetricReportServiceBase">
+            <summary>Base class for server-side implementations of CLRMetricReportService</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.CLRMetricReportService.CLRMetricReportServiceClient">
+            <summary>Client for CLRMetricReportService</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.CLRMetricReportService.CLRMetricReportServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for CLRMetricReportService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.CLRMetricReportService.CLRMetricReportServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for CLRMetricReportService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.CLRMetricReportService.CLRMetricReportServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.CLRMetricReportService.CLRMetricReportServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.CLRMetricReportService.CLRMetricReportServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.CLRMetricReportService.BindService(SkyWalking.NetworkProtocol.V3.CLRMetricReportService.CLRMetricReportServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.CLRMetricReportService.BindService(Grpc.Core.ServiceBinderBase,SkyWalking.NetworkProtocol.V3.CLRMetricReportService.CLRMetricReportServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.JVMMetricReflection">
+            <summary>Holder for reflection information generated from language-agent/JVMMetric.proto</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.JVMMetricReflection.Descriptor">
+            <summary>File descriptor for language-agent/JVMMetric.proto</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.JVMMetricCollection.MetricsFieldNumber">
+            <summary>Field number for the "metrics" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.JVMMetricCollection.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.JVMMetricCollection.ServiceInstanceFieldNumber">
+            <summary>Field number for the "serviceInstance" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.JVMMetric.TimeFieldNumber">
+            <summary>Field number for the "time" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.JVMMetric.CpuFieldNumber">
+            <summary>Field number for the "cpu" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.JVMMetric.MemoryFieldNumber">
+            <summary>Field number for the "memory" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.JVMMetric.MemoryPoolFieldNumber">
+            <summary>Field number for the "memoryPool" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.JVMMetric.GcFieldNumber">
+            <summary>Field number for the "gc" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.JVMMetric.ThreadFieldNumber">
+            <summary>Field number for the "thread" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Memory.IsHeapFieldNumber">
+            <summary>Field number for the "isHeap" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Memory.InitFieldNumber">
+            <summary>Field number for the "init" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Memory.MaxFieldNumber">
+            <summary>Field number for the "max" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Memory.UsedFieldNumber">
+            <summary>Field number for the "used" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Memory.CommittedFieldNumber">
+            <summary>Field number for the "committed" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.MemoryPool.TypeFieldNumber">
+            <summary>Field number for the "type" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.MemoryPool.InitFieldNumber">
+            <summary>Field number for the "init" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.MemoryPool.MaxFieldNumber">
+            <summary>Field number for the "max" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.MemoryPool.UsedFieldNumber">
+            <summary>Field number for the "used" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.MemoryPool.CommittedFieldNumber">
+            <summary>Field number for the "committed" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.GC.PhraseFieldNumber">
+            <summary>Field number for the "phrase" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.GC.CountFieldNumber">
+            <summary>Field number for the "count" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.GC.TimeFieldNumber">
+            <summary>Field number for the "time" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Thread.LiveCountFieldNumber">
+            <summary>Field number for the "liveCount" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Thread.DaemonCountFieldNumber">
+            <summary>Field number for the "daemonCount" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Thread.PeakCountFieldNumber">
+            <summary>Field number for the "peakCount" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.JVMMetricReportService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.JVMMetricReportService.JVMMetricReportServiceBase">
+            <summary>Base class for server-side implementations of JVMMetricReportService</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.JVMMetricReportService.JVMMetricReportServiceClient">
+            <summary>Client for JVMMetricReportService</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.JVMMetricReportService.JVMMetricReportServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for JVMMetricReportService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.JVMMetricReportService.JVMMetricReportServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for JVMMetricReportService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.JVMMetricReportService.JVMMetricReportServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.JVMMetricReportService.JVMMetricReportServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.JVMMetricReportService.JVMMetricReportServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.JVMMetricReportService.BindService(SkyWalking.NetworkProtocol.V3.JVMMetricReportService.JVMMetricReportServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.JVMMetricReportService.BindService(Grpc.Core.ServiceBinderBase,SkyWalking.NetworkProtocol.V3.JVMMetricReportService.JVMMetricReportServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.TracingReflection">
+            <summary>Holder for reflection information generated from language-agent/Tracing.proto</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.TracingReflection.Descriptor">
+            <summary>File descriptor for language-agent/Tracing.proto</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentObject.TraceIdFieldNumber">
+            <summary>Field number for the "traceId" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentObject.TraceSegmentIdFieldNumber">
+            <summary>Field number for the "traceSegmentId" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentObject.SpansFieldNumber">
+            <summary>Field number for the "spans" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentObject.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentObject.ServiceInstanceFieldNumber">
+            <summary>Field number for the "serviceInstance" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentObject.IsSizeLimitedFieldNumber">
+            <summary>Field number for the "isSizeLimited" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentReference.RefTypeFieldNumber">
+            <summary>Field number for the "refType" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentReference.TraceIdFieldNumber">
+            <summary>Field number for the "traceId" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentReference.ParentTraceSegmentIdFieldNumber">
+            <summary>Field number for the "parentTraceSegmentId" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentReference.ParentSpanIdFieldNumber">
+            <summary>Field number for the "parentSpanId" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentReference.ParentServiceFieldNumber">
+            <summary>Field number for the "parentService" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentReference.ParentServiceInstanceFieldNumber">
+            <summary>Field number for the "parentServiceInstance" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentReference.ParentEndpointFieldNumber">
+            <summary>Field number for the "parentEndpoint" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SegmentReference.NetworkAddressUsedAtPeerFieldNumber">
+            <summary>Field number for the "networkAddressUsedAtPeer" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.SpanIdFieldNumber">
+            <summary>Field number for the "spanId" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.ParentSpanIdFieldNumber">
+            <summary>Field number for the "parentSpanId" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.StartTimeFieldNumber">
+            <summary>Field number for the "startTime" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.EndTimeFieldNumber">
+            <summary>Field number for the "endTime" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.RefsFieldNumber">
+            <summary>Field number for the "refs" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.OperationNameFieldNumber">
+            <summary>Field number for the "operationName" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.PeerFieldNumber">
+            <summary>Field number for the "peer" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.SpanTypeFieldNumber">
+            <summary>Field number for the "spanType" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.SpanLayerFieldNumber">
+            <summary>Field number for the "spanLayer" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.ComponentIdFieldNumber">
+            <summary>Field number for the "componentId" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.IsErrorFieldNumber">
+            <summary>Field number for the "isError" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.TagsFieldNumber">
+            <summary>Field number for the "tags" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.LogsFieldNumber">
+            <summary>Field number for the "logs" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.SpanObject.SkipAnalysisFieldNumber">
+            <summary>Field number for the "skipAnalysis" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Log.TimeFieldNumber">
+            <summary>Field number for the "time" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.Log.DataFieldNumber">
+            <summary>Field number for the "data" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ID.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.TraceSegmentReportServiceBase">
+            <summary>Base class for server-side implementations of TraceSegmentReportService</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.TraceSegmentReportServiceClient">
+            <summary>Client for TraceSegmentReportService</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.TraceSegmentReportServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for TraceSegmentReportService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.TraceSegmentReportServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for TraceSegmentReportService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.TraceSegmentReportServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.TraceSegmentReportServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.TraceSegmentReportServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.BindService(SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.TraceSegmentReportServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.BindService(Grpc.Core.ServiceBinderBase,SkyWalking.NetworkProtocol.V3.TraceSegmentReportService.TraceSegmentReportServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.ManagementReflection">
+            <summary>Holder for reflection information generated from management/Management.proto</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ManagementReflection.Descriptor">
+            <summary>File descriptor for management/Management.proto</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.InstanceProperties.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.InstanceProperties.ServiceInstanceFieldNumber">
+            <summary>Field number for the "serviceInstance" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.InstanceProperties.PropertiesFieldNumber">
+            <summary>Field number for the "properties" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.InstancePingPkg.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.InstancePingPkg.ServiceInstanceFieldNumber">
+            <summary>Field number for the "serviceInstance" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ManagementService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.ManagementService.ManagementServiceBase">
+            <summary>Base class for server-side implementations of ManagementService</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.ManagementService.ManagementServiceClient">
+            <summary>Client for ManagementService</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ManagementService.ManagementServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for ManagementService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ManagementService.ManagementServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for ManagementService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ManagementService.ManagementServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ManagementService.ManagementServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ManagementService.ManagementServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ManagementService.BindService(SkyWalking.NetworkProtocol.V3.ManagementService.ManagementServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ManagementService.BindService(Grpc.Core.ServiceBinderBase,SkyWalking.NetworkProtocol.V3.ManagementService.ManagementServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.ProfileReflection">
+            <summary>Holder for reflection information generated from profile/Profile.proto</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ProfileReflection.Descriptor">
+            <summary>File descriptor for profile/Profile.proto</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ProfileTaskCommandQuery.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ProfileTaskCommandQuery.Service">
+            <summary>
+            current sniffer information
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ProfileTaskCommandQuery.ServiceInstanceFieldNumber">
+            <summary>Field number for the "serviceInstance" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ProfileTaskCommandQuery.LastCommandTimeFieldNumber">
+            <summary>Field number for the "lastCommandTime" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ProfileTaskCommandQuery.LastCommandTime">
+            <summary>
+            last command timestamp
+            </summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.ThreadSnapshot">
+            <summary>
+            dumped thread snapshot
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ThreadSnapshot.TaskIdFieldNumber">
+            <summary>Field number for the "taskId" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ThreadSnapshot.TaskId">
+            <summary>
+            profile task id
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ThreadSnapshot.TraceSegmentIdFieldNumber">
+            <summary>Field number for the "traceSegmentId" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ThreadSnapshot.TraceSegmentId">
+            <summary>
+            dumped segment id
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ThreadSnapshot.TimeFieldNumber">
+            <summary>Field number for the "time" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ThreadSnapshot.Time">
+            <summary>
+            dump timestamp
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ThreadSnapshot.SequenceFieldNumber">
+            <summary>Field number for the "sequence" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ThreadSnapshot.Sequence">
+            <summary>
+            snapshot dump sequence, start with zero
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ThreadSnapshot.StackFieldNumber">
+            <summary>Field number for the "stack" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ThreadSnapshot.Stack">
+            <summary>
+            snapshot stack
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ThreadStack.CodeSignaturesFieldNumber">
+            <summary>Field number for the "codeSignatures" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ThreadStack.CodeSignatures">
+            <summary>
+            stack code signature list
+            </summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.ProfileTaskFinishReport">
+            <summary>
+            profile task finished report
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ProfileTaskFinishReport.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ProfileTaskFinishReport.Service">
+            <summary>
+            current sniffer information
+            </summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ProfileTaskFinishReport.ServiceInstanceFieldNumber">
+            <summary>Field number for the "serviceInstance" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ProfileTaskFinishReport.TaskIdFieldNumber">
+            <summary>Field number for the "taskId" field.</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ProfileTaskFinishReport.TaskId">
+            <summary>
+            profile task
+            </summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ProfileTask.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskBase">
+            <summary>Base class for server-side implementations of ProfileTask</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskBase.getProfileTaskCommands(SkyWalking.NetworkProtocol.V3.ProfileTaskCommandQuery,Grpc.Core.ServerCallContext)">
+            <summary>
+            query all sniffer need to execute profile task commands
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskBase.collectSnapshot(Grpc.Core.IAsyncStreamReader{SkyWalking.NetworkProtocol.V3.ThreadSnapshot},Grpc.Core.ServerCallContext)">
+            <summary>
+            collect dumped thread snapshot
+            </summary>
+            <param name="requestStream">Used for reading requests from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskBase.reportTaskFinish(SkyWalking.NetworkProtocol.V3.ProfileTaskFinishReport,Grpc.Core.ServerCallContext)">
+            <summary>
+            report profiling task finished
+            </summary>
+            <param name="request">The request received from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient">
+            <summary>Client for ProfileTask</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for ProfileTask</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for ProfileTask that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.getProfileTaskCommands(SkyWalking.NetworkProtocol.V3.ProfileTaskCommandQuery,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            query all sniffer need to execute profile task commands
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.getProfileTaskCommands(SkyWalking.NetworkProtocol.V3.ProfileTaskCommandQuery,Grpc.Core.CallOptions)">
+            <summary>
+            query all sniffer need to execute profile task commands
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.getProfileTaskCommandsAsync(SkyWalking.NetworkProtocol.V3.ProfileTaskCommandQuery,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            query all sniffer need to execute profile task commands
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.getProfileTaskCommandsAsync(SkyWalking.NetworkProtocol.V3.ProfileTaskCommandQuery,Grpc.Core.CallOptions)">
+            <summary>
+            query all sniffer need to execute profile task commands
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.collectSnapshot(Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            collect dumped thread snapshot
+            </summary>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.collectSnapshot(Grpc.Core.CallOptions)">
+            <summary>
+            collect dumped thread snapshot
+            </summary>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.reportTaskFinish(SkyWalking.NetworkProtocol.V3.ProfileTaskFinishReport,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            report profiling task finished
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.reportTaskFinish(SkyWalking.NetworkProtocol.V3.ProfileTaskFinishReport,Grpc.Core.CallOptions)">
+            <summary>
+            report profiling task finished
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The response received from the server.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.reportTaskFinishAsync(SkyWalking.NetworkProtocol.V3.ProfileTaskFinishReport,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            report profiling task finished
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.reportTaskFinishAsync(SkyWalking.NetworkProtocol.V3.ProfileTaskFinishReport,Grpc.Core.CallOptions)">
+            <summary>
+            report profiling task finished
+            </summary>
+            <param name="request">The request to send to the server.</param>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.BindService(SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ProfileTask.BindService(Grpc.Core.ServiceBinderBase,SkyWalking.NetworkProtocol.V3.ProfileTask.ProfileTaskBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.ServiceMeshMetricServiceBase">
+            <summary>Base class for server-side implementations of ServiceMeshMetricService</summary>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.ServiceMeshMetricServiceClient">
+            <summary>Client for ServiceMeshMetricService</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.ServiceMeshMetricServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for ServiceMeshMetricService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.ServiceMeshMetricServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for ServiceMeshMetricService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.ServiceMeshMetricServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.ServiceMeshMetricServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.ServiceMeshMetricServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.BindService(SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.ServiceMeshMetricServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.BindService(Grpc.Core.ServiceBinderBase,SkyWalking.NetworkProtocol.V3.ServiceMeshMetricService.ServiceMeshMetricServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="T:SkyWalking.NetworkProtocol.V3.ServiceMeshReflection">
+            <summary>Holder for reflection information generated from service-mesh-probe/service-mesh.proto</summary>
+        </member>
+        <member name="P:SkyWalking.NetworkProtocol.V3.ServiceMeshReflection.Descriptor">
+            <summary>File descriptor for service-mesh-probe/service-mesh.proto</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.StartTimeFieldNumber">
+            <summary>Field number for the "startTime" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.EndTimeFieldNumber">
+            <summary>Field number for the "endTime" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.SourceServiceNameFieldNumber">
+            <summary>Field number for the "sourceServiceName" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.SourceServiceInstanceFieldNumber">
+            <summary>Field number for the "sourceServiceInstance" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.DestServiceNameFieldNumber">
+            <summary>Field number for the "destServiceName" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.DestServiceInstanceFieldNumber">
+            <summary>Field number for the "destServiceInstance" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.EndpointFieldNumber">
+            <summary>Field number for the "endpoint" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.LatencyFieldNumber">
+            <summary>Field number for the "latency" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.ResponseCodeFieldNumber">
+            <summary>Field number for the "responseCode" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.StatusFieldNumber">
+            <summary>Field number for the "status" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.ProtocolFieldNumber">
+            <summary>Field number for the "protocol" field.</summary>
+        </member>
+        <member name="F:SkyWalking.NetworkProtocol.V3.ServiceMeshMetric.DetectPointFieldNumber">
+            <summary>Field number for the "detectPoint" field.</summary>
+        </member>
+        <member name="T:MeterReflection">
+            <summary>Holder for reflection information generated from language-agent/Meter.proto</summary>
+        </member>
+        <member name="P:MeterReflection.Descriptor">
+            <summary>File descriptor for language-agent/Meter.proto</summary>
+        </member>
+        <member name="T:Label">
+            <summary>
+            Label of the meter
+            </summary>
+        </member>
+        <member name="F:Label.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="F:Label.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="T:MeterBucketValue">
+            <summary>
+            The histogram element definition. It includes the bucket lower boundary and the count in the bucket.
+            </summary>
+        </member>
+        <member name="F:MeterBucketValue.BucketFieldNumber">
+            <summary>Field number for the "bucket" field.</summary>
+        </member>
+        <member name="P:MeterBucketValue.Bucket">
+            <summary>
+            The value represents the min value of the bucket,
+            the  upper boundary is determined by next MeterBucketValue$bucket,
+            if it doesn't exist, the upper boundary is positive infinity.
+            Also, could use Int32.MIN_VALUE to represent negative infinity.
+            </summary>
+        </member>
+        <member name="F:MeterBucketValue.CountFieldNumber">
+            <summary>Field number for the "count" field.</summary>
+        </member>
+        <member name="T:MeterSingleValue">
+            <summary>
+            Meter single value
+            </summary>
+        </member>
+        <member name="F:MeterSingleValue.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="P:MeterSingleValue.Name">
+            <summary>
+            Meter name
+            </summary>
+        </member>
+        <member name="F:MeterSingleValue.LabelsFieldNumber">
+            <summary>Field number for the "labels" field.</summary>
+        </member>
+        <member name="P:MeterSingleValue.Labels">
+            <summary>
+            Labels
+            </summary>
+        </member>
+        <member name="F:MeterSingleValue.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="P:MeterSingleValue.Value">
+            <summary>
+            Single value
+            </summary>
+        </member>
+        <member name="T:MeterHistogram">
+            <summary>
+            Histogram
+            </summary>
+        </member>
+        <member name="F:MeterHistogram.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="P:MeterHistogram.Name">
+            <summary>
+            Meter name
+            </summary>
+        </member>
+        <member name="F:MeterHistogram.LabelsFieldNumber">
+            <summary>Field number for the "labels" field.</summary>
+        </member>
+        <member name="P:MeterHistogram.Labels">
+            <summary>
+            Labels
+            </summary>
+        </member>
+        <member name="F:MeterHistogram.ValuesFieldNumber">
+            <summary>Field number for the "values" field.</summary>
+        </member>
+        <member name="P:MeterHistogram.Values">
+            <summary>
+            Customize the buckets
+            </summary>
+        </member>
+        <member name="T:MeterData">
+            <summary>
+            Single meter data, if the same metrics have a different label, they will separate.
+            </summary>
+        </member>
+        <member name="F:MeterData.SingleValueFieldNumber">
+            <summary>Field number for the "singleValue" field.</summary>
+        </member>
+        <member name="F:MeterData.HistogramFieldNumber">
+            <summary>Field number for the "histogram" field.</summary>
+        </member>
+        <member name="F:MeterData.ServiceFieldNumber">
+            <summary>Field number for the "service" field.</summary>
+        </member>
+        <member name="P:MeterData.Service">
+            <summary>
+            Service name, be set value in the first element in the stream-call.
+            </summary>
+        </member>
+        <member name="F:MeterData.ServiceInstanceFieldNumber">
+            <summary>Field number for the "serviceInstance" field.</summary>
+        </member>
+        <member name="P:MeterData.ServiceInstance">
+            <summary>
+            Service instance name, be set value in the first element in the stream-call.
+            </summary>
+        </member>
+        <member name="F:MeterData.TimestampFieldNumber">
+            <summary>Field number for the "timestamp" field.</summary>
+        </member>
+        <member name="P:MeterData.Timestamp">
+            <summary>
+            Meter data report time, be set value in the first element in the stream-call.
+            </summary>
+        </member>
+        <member name="T:MeterData.MetricOneofCase">
+            <summary>Enum of possible cases for the "metric" oneof.</summary>
+        </member>
+        <member name="F:MeterDataCollection.MeterDataFieldNumber">
+            <summary>Field number for the "meterData" field.</summary>
+        </member>
+        <member name="P:MeterReportService.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:MeterReportService.MeterReportServiceBase">
+            <summary>Base class for server-side implementations of MeterReportService</summary>
+        </member>
+        <member name="M:MeterReportService.MeterReportServiceBase.collect(Grpc.Core.IAsyncStreamReader{MeterData},Grpc.Core.ServerCallContext)">
+            <summary>
+            Meter data is reported in a certain period. The agent/SDK should report all collected metrics in this period through one stream.
+            </summary>
+            <param name="requestStream">Used for reading requests from the client.</param>
+            <param name="context">The context of the server-side call handler being invoked.</param>
+            <returns>The response to send back to the client (wrapped by a task).</returns>
+        </member>
+        <member name="T:MeterReportService.MeterReportServiceClient">
+            <summary>Client for MeterReportService</summary>
+        </member>
+        <member name="M:MeterReportService.MeterReportServiceClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for MeterReportService</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:MeterReportService.MeterReportServiceClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for MeterReportService that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:MeterReportService.MeterReportServiceClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:MeterReportService.MeterReportServiceClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:MeterReportService.MeterReportServiceClient.collect(Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)">
+            <summary>
+            Meter data is reported in a certain period. The agent/SDK should report all collected metrics in this period through one stream.
+            </summary>
+            <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+            <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+            <param name="cancellationToken">An optional token for canceling the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:MeterReportService.MeterReportServiceClient.collect(Grpc.Core.CallOptions)">
+            <summary>
+            Meter data is reported in a certain period. The agent/SDK should report all collected metrics in this period through one stream.
+            </summary>
+            <param name="options">The options for the call.</param>
+            <returns>The call object.</returns>
+        </member>
+        <member name="M:MeterReportService.MeterReportServiceClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:MeterReportService.BindService(MeterReportService.MeterReportServiceBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:MeterReportService.BindService(Grpc.Core.ServiceBinderBase,MeterReportService.MeterReportServiceBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+    </members>
+</doc>

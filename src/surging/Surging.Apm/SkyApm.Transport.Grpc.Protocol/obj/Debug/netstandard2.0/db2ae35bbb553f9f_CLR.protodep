@@ -1,0 +1,2 @@
+generated/CLR.cs: protocol/common/common.proto\
+ protocol/common/CLR.proto

@@ -1,0 +1,190 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "SkyApm.Transport.Grpc.Protocol/1.0.0": {
+        "dependencies": {
+          "Google.Protobuf": "3.10.1",
+          "Grpc": "2.24.0",
+          "Grpc.Tools": "2.24.0",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "SkyApm.Transport.Grpc.Protocol.dll": {}
+        }
+      },
+      "Google.Protobuf/3.10.1": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.10.1.0",
+            "fileVersion": "3.10.1.0"
+          }
+        }
+      },
+      "Grpc/2.24.0": {
+        "dependencies": {
+          "Grpc.Core": "2.24.0"
+        }
+      },
+      "Grpc.Core/2.24.0": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.24.0",
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.24.0.0"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.24.0": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Core.Api.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.24.0.0"
+          }
+        }
+      },
+      "Grpc.Tools/2.24.0": {},
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
+      "System.Memory/4.5.3": {
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "assemblyVersion": "4.0.1.1",
+            "fileVersion": "4.6.27617.2"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.3.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.4.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SkyApm.Transport.Grpc.Protocol/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Protobuf/3.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SAmoXQYigTD/SY3bItKVCccGiOjMNjn31Hug2R17QMbhQHGy5/9XncEqbEmNYK8MjEMk6RZfuTtL1HyjEAJH4g==",
+      "path": "google.protobuf/3.10.1",
+      "hashPath": "google.protobuf.3.10.1.nupkg.sha512"
+    },
+    "Grpc/2.24.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fNuzL91uTvZgo/9fh+np4A/I3IV2fEbnGOC7kFygQYn5hA5nW9pO0+U/vf/5h+Yo1DxdU7schqgWlsqKbo0IJg==",
+      "path": "grpc/2.24.0",
+      "hashPath": "grpc.2.24.0.nupkg.sha512"
+    },
+    "Grpc.Core/2.24.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BY81HFrX1dIHRzRXx1L2wIgqrL+47lEdTKf3RJQU1JVBXVScOT1V1VdpTSJCEs2/Sa0ii2QD3gr0j+uDp8CMBg==",
+      "path": "grpc.core/2.24.0",
+      "hashPath": "grpc.core.2.24.0.nupkg.sha512"
+    },
+    "Grpc.Core.Api/2.24.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ngf/VbnX8+yD+BtQUVPjMqid64qqrQDij3DclmLCRfDBMD/X2fOHC9N+E6ckfjyfm8cG1iU+s4oHdjO08yjoeQ==",
+      "path": "grpc.core.api/2.24.0",
+      "hashPath": "grpc.core.api.2.24.0.nupkg.sha512"
+    },
+    "Grpc.Tools/2.24.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X9xfXTr0kZ2Vsw9iy8hH61xd0hD756/VEgw+9MJ8r3/nQLWy77nGscQyDYdreyvU2BmWr7MGzBGbl2xY4PxKlg==",
+      "path": "grpc.tools/2.24.0",
+      "hashPath": "grpc.tools.2.24.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "System.Buffers/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "path": "system.buffers/4.4.0",
+      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
+      "path": "system.numerics.vectors/4.4.0",
+      "hashPath": "system.numerics.vectors.4.4.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    }
+  }
+}

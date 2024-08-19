@@ -1,0 +1,2 @@
+generated/JVM.cs: protocol/common/common.proto\
+ protocol/common/JVM.proto

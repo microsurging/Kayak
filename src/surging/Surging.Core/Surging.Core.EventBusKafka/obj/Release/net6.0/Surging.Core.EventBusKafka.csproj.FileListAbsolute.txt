@@ -1,0 +1,17 @@
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\bin\Release\net6.0\Surging.Core.EventBusKafka.deps.json
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\bin\Release\net6.0\Surging.Core.EventBusKafka.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\bin\Release\net6.0\Surging.Core.EventBusKafka.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\bin\Release\net6.0\Surging.Core.CPlatform.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\bin\Release\net6.0\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\bin\Release\net6.0\Surging.Core.CPlatform.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\bin\Release\net6.0\Surging.Core.ServiceHosting.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\obj\Release\net6.0\Surging.Core.EventBusKafka.csproj.AssemblyReference.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\obj\Release\net6.0\Surging.Core.EventBusKafka.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\obj\Release\net6.0\Surging.Core.EventBusKafka.AssemblyInfoInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\obj\Release\net6.0\Surging.Core.EventBusKafka.AssemblyInfo.cs
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\obj\Release\net6.0\Surging.Core.EventBusKafka.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\obj\Release\net6.0\Surging..3FE5851E.Up2Date
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\obj\Release\net6.0\Surging.Core.EventBusKafka.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\obj\Release\net6.0\refint\Surging.Core.EventBusKafka.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\obj\Release\net6.0\Surging.Core.EventBusKafka.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.EventBusKafka\obj\Release\net6.0\ref\Surging.Core.EventBusKafka.dll

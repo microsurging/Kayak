@@ -1,0 +1,450 @@
+2024-08-11 02:34:47.833 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.InstrumentStartup : Initializing ...
+2024-08-11 02:34:47.843 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.RegisterService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.RegisterService].
+2024-08-11 02:34:47.843 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.PingService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.PingService].
+2024-08-11 02:34:47.843 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.CLRStatsService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.CLRStatsService].
+2024-08-11 02:34:47.843 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.SegmentReportService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.SegmentReportService].
+2024-08-11 02:34:47.843 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService : Loaded instrument service [Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService].
+2024-08-11 02:34:47.843 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [Surging.Apm.Skywalking_V3.Sampling.SimpleCountSamplingInterceptor].
+2024-08-11 02:34:47.843 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService : Loaded instrument service [Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService].
+2024-08-11 02:34:47.843 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2024-08-11 02:34:48.132 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-11 02:34:48.135 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-11 02:34:48.135 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-11 02:34:49.408 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-11 02:34:49.408 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-11 02:34:49.408 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-11 02:34:49.418 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-11 02:34:49.418 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-11 02:34:49.418 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-11 02:34:57.897 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:34:57.899 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:35:07.911 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:35:07.911 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:35:17.924 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:35:17.924 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:35:27.932 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:35:27.932 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:35:37.938 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:35:37.938 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:35:47.945 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:35:47.945 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:35:57.950 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:35:57.951 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:36:07.967 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:36:07.967 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:36:17.984 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:36:17.984 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:36:27.990 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:36:27.991 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:36:38.007 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:36:38.007 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:36:48.013 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:36:48.013 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:36:58.030 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:36:58.030 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:37:08.042 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:37:08.042 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:37:18.054 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:37:18.054 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:37:28.061 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:37:28.061 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:37:38.079 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:37:38.079 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:37:48.087 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:37:48.087 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:37:58.099 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:37:58.099 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:38:08.110 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:38:08.111 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:38:18.125 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:38:18.125 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:38:28.141 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:38:28.141 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:38:38.156 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:38:38.156 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:38:48.171 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:38:48.171 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:38:58.175 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:38:58.176 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:39:08.184 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:39:08.185 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:39:18.197 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:39:18.198 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:39:28.217 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:39:28.217 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:39:38.224 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:39:38.224 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:39:48.228 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:39:48.228 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:39:58.232 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:39:58.232 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:40:08.243 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:40:08.243 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:40:18.245 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:40:18.245 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:40:28.248 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:40:28.248 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:40:38.254 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:40:38.254 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:40:48.259 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:40:48.259 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:40:58.262 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:40:58.262 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:41:08.269 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:41:08.269 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:41:18.272 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:41:18.273 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:41:28.278 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:41:28.278 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:41:38.280 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:41:38.280 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:41:48.290 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:41:48.290 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:41:58.302 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:41:58.302 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:42:08.316 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:42:08.316 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:42:18.318 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:42:18.318 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:42:28.326 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:42:28.326 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:42:38.334 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:42:38.335 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:42:48.341 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:42:48.342 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:42:58.358 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:42:58.358 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:43:08.365 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:43:08.365 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:43:18.381 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:43:18.381 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:43:28.388 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:43:28.389 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:43:38.392 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:43:38.392 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:43:48.407 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:43:48.407 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:43:58.421 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:43:58.421 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:44:08.437 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:44:08.437 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:44:18.454 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:44:18.454 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:44:28.457 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:44:28.458 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:44:38.474 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:44:38.474 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:44:48.482 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:44:48.482 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:44:58.490 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:44:58.491 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:45:08.507 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:45:08.507 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:45:18.521 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:45:18.522 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:45:28.530 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:45:28.530 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:45:38.532 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:45:38.533 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:45:48.541 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:45:48.541 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:45:58.548 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:45:58.549 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:46:08.565 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:46:08.565 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:46:18.576 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:46:18.576 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:46:28.583 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:46:28.583 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:46:38.596 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:46:38.596 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-11 02:46:48.599 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-11 02:46:48.600 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].

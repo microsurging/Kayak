@@ -1,0 +1,188 @@
+{
+  "Surging": {
+    "Ip": "${Surging_Server_IP}|127.0.0.1",
+    "WatchInterval": 30,
+    "Port": "${Surging_Server_Port}|99",
+    "MappingIp": "${Mapping_ip}",
+    "MappingPort": "${Mapping_Port}",
+    "Token": "true",
+    "WanIp": "${WanIp}|192.168.249.103",
+    "DockerDeployMode": "${DockerDeployMode}|Standard",
+    "Libuv": true,
+    "SoBacklog": 100,
+    "Weight": 20,
+    "EnableObjectConvert": false,
+    "MaxConcurrentRequests": 20,
+    "DisconnTimeInterval": 30,
+    "ExecutionTimeoutInMilliseconds": 1000,
+    "Protocol": "${Protocol}|None", //Http、Tcp、None
+    "RootPath": "${RootPath}|D:\\userapp",
+    "WebRootPath": "${WebRootPath}|D:\\UserApp\\wwwroot",
+    "IsModulePerLifetimeScope": false,
+    "ReloadOnChange": false,
+    "Ports": {
+      "HttpPort": "${HttpPort}|289",
+      "WSPort": "${WSPort}|962",
+      "MQTTPort": "${MQTTPort}|972",
+      "GrpcPort": "${GrpcPort}|952"
+    },
+    "RequestCacheEnabled": false,
+    "Packages": [
+      {
+        "TypeName": "EnginePartModule",
+        "Using": "${UseEngineParts}|ServiceProxyModule;DotNettyModule;SerilogModule;NLogModule;MessagePackModule;TcpProtocolModule;ConsulModule;WSProtocolModule;MqttProtocolModule;EventBusRabbitMQModule;CachingModule;KestrelHttpModule;SwaggerModule;ApiGeteWayModule;SkywalkingModule;KestrelNLogModule;ServiceHostModule;GrpcModule;ApolloModule;"
+      }
+    ]
+  }, //如果引用多个同类型的组件，需要配置Packages，如果是自定义按需引用，无需配置Packages
+  "Consul": {
+    "ConnectionString": "${Register_Conn}|127.0.0.1:8500", // "127.0.0.1:8500,127.0.0.1:9500",
+    "SessionTimeout": "${Register_SessionTimeout}|50",
+    "RoutePath": "${Register_RoutePath}",
+    "ReloadOnChange": true,
+    "EnableChildrenMonitor": false
+  },
+  "Stage": {
+    "EnableHttps": true, // 不设置ports，默认httpsPort:443
+    "CertificateFileName": "${CertificateFileName}|",
+    "CertificateLocation": "${CertificateLocation}|pfxs",
+    "CertificatePassword": "${CertificatePassword}|",
+    "IsCamelCaseResolver": "${IsCamelCaseResolver}|true",
+    "Protocols": "Http1AndHttp2",
+    "ApiGetWay": {
+      "AccessTokenExpireTimeSpan": "30",
+      "AuthorizationRoutePath": "api/user/authentication",
+      "AuthorizationServiceKey": "User",
+      "TokenEndpointPath": "api/oauth2/token",
+      "CacheMode": "MemoryCache" //MemoryCache or  gateway.Redis save token
+    },
+    "AccessPolicy": {
+      "Origins": [ "http://127.0.0.1:1927", "http://localhost:927" ],
+      "AllowAnyHeader": true,
+      "AllowAnyMethod": true
+    },
+    "AccessSetting": [
+      {
+        "BlackList": "${blacklist}|127.0.0.1",
+        "Enable": false
+      },
+      {
+        "WhiteList": "${whitelist}|192.168.10.50,192.168.43.0/24,127.0.0.1",
+        "BlackList": "${blacklist}|192.168.2.50,192.168.1.0/16",
+        "RoutePath": "api/user/exists",
+        "Enable": true
+      }
+    ],
+    "HttpsPort": "${StageHttpsPorts}|449,446",
+    "HttpPorts": "${StageHttpPorts}|285,282,283"
+  },
+  "Dns": {
+    "RootDnsAddress": "192.168.1.1",
+    "QueryTimeout": 1000
+  },
+  "Swagger": {
+    "Info": {
+      "Version": "${SwaggerVersion}|V1", // "127.0.0.1:8500",
+      "Title": "${SwaggerTitle}|Surging Demo",
+      "Description": "${SwaggerDes}|surging demo",
+      "Contact": {
+        "Name": "API Support",
+        "Url": "https://github.com/dotnetcore/surging",
+        "Email": "fanliang1@hotmail.com"
+      },
+      "License": {
+        "Name": "MIT",
+        "Url": "https://github.com/dotnetcore/surging/blob/master/LICENSE"
+      }
+    },
+    "Options": {
+      "IgnoreFullyQualified": false,
+      "MapRoutePaths": [
+        {
+          "SourceRoutePath": "api/user/authentication",
+          "TargetRoutePath": "api/oauth2/token"
+        }
+      ]
+      // "IngressName": "Notice"
+    }
+  },
+  "EventBus_Kafka": {
+    "Servers": "${EventBusConnection}|localhost:9092",
+    "MaxQueueBuffering": "${MaxQueueBuffering}|10",
+    "MaxSocketBlocking": "${MaxSocketBlocking}|10",
+    "EnableAutoCommit": "${EnableAutoCommit}|false",
+    "LogConnectionClose": "${LogConnectionClose}|false",
+    "OffsetReset": "${OffsetReset}|earliest",
+    "GroupID": "${EventBusGroupID}|surgingdemo"
+  },
+  "WebSocket": {
+    "WaitTime": 2,
+    "KeepClean": false,
+    "Behavior": {
+      "IgnoreExtensions": true,
+      "EmitOnPing": false
+    }
+  },
+  "EventBus": {
+    "EventBusConnection": "${EventBusConnection}|localhost",
+    "EventBusUserName": "${EventBusUserName}|guest",
+    "EventBusPassword": "${EventBusPassword}|guest",
+    "VirtualHost": "${VirtualHost}|/",
+    "MessageTTL": "${MessageTTL}|30000",
+    "RetryCount": "${RetryCount}|1",
+    "FailCount": "${FailCount}|3",
+    "prefetchCount": "${PrefetchCount}|0",
+    "BrokerName": "${BrokerName}|surging_demo",
+    "Port": "${EventBusPort}|5672"
+  },
+  "Zookeeper": {
+    "ConnectionString": "${Zookeeper_ConnectionString}|127.0.0.1:2181", // "127.0.0.1:2181,127.0.0.1:2281",
+    "SessionTimeout": 50,
+    "ReloadOnChange": true
+  },
+  "RabbitMQ": {
+    "EventBus": {
+      "ConnectionName": "",
+      "ClientName": "",
+      "ExchangeName": ""
+    }
+
+  },
+  "Logging": {
+    "Debug": {
+      "LogLevel": {
+        "Default": "Information"
+      }
+    },
+    "Console": {
+      "IncludeScopes": true,
+      "LogLevel": {
+        "Default": "${LogLevel}|Debug"
+      }
+    },
+    "LogLevel": {
+      "Default": "${LogLevel}|Debug"
+    }
+  },
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.RollingFile" ],
+    "LevelSwitches": { "$controlSwitch": "Verbose" },
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning",
+        "System": "Warning"
+      }
+    },
+    "WriteTo:RollingFile": {
+      "Name": "RollingFile",
+      "Args": {
+        "formatter": "Serilog.Formatting.Elasticsearch.ElasticsearchJsonFormatter, Serilog.Formatting.Elasticsearch",
+        "pathFormat": "Logs\\log-{Date}.log"
+      }
+    },
+    "Enrich": [ "FromLogContext", "WithMachineName", "WithThreadId" ],
+    "Properties": {
+      "Application": "Sample"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\bin\Release\net6.0\Surging.Core.Serilog.deps.json
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\bin\Release\net6.0\Surging.Core.Serilog.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\bin\Release\net6.0\Surging.Core.Serilog.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\bin\Release\net6.0\Surging.Core.CPlatform.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\bin\Release\net6.0\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\bin\Release\net6.0\Surging.Core.CPlatform.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\bin\Release\net6.0\Surging.Core.ServiceHosting.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\obj\Release\net6.0\Surging.Core.Serilog.csproj.AssemblyReference.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\obj\Release\net6.0\Surging.Core.Serilog.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\obj\Release\net6.0\Surging.Core.Serilog.AssemblyInfoInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\obj\Release\net6.0\Surging.Core.Serilog.AssemblyInfo.cs
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\obj\Release\net6.0\Surging.Core.Serilog.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\obj\Release\net6.0\Surging..1AE9D82D.Up2Date
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\obj\Release\net6.0\Surging.Core.Serilog.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\obj\Release\net6.0\refint\Surging.Core.Serilog.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\obj\Release\net6.0\Surging.Core.Serilog.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Serilog\obj\Release\net6.0\ref\Surging.Core.Serilog.dll

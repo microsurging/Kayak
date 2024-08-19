@@ -1,0 +1,17 @@
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\bin\Release\net6.0\Surging.Core.Log4net.deps.json
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\bin\Release\net6.0\Surging.Core.Log4net.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\bin\Release\net6.0\Surging.Core.Log4net.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\bin\Release\net6.0\Surging.Core.CPlatform.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\bin\Release\net6.0\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\bin\Release\net6.0\Surging.Core.CPlatform.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\bin\Release\net6.0\Surging.Core.ServiceHosting.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\obj\Release\net6.0\Surging.Core.Log4net.csproj.AssemblyReference.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\obj\Release\net6.0\Surging.Core.Log4net.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\obj\Release\net6.0\Surging.Core.Log4net.AssemblyInfoInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\obj\Release\net6.0\Surging.Core.Log4net.AssemblyInfo.cs
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\obj\Release\net6.0\Surging.Core.Log4net.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\obj\Release\net6.0\Surging..5D6DC9B1.Up2Date
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\obj\Release\net6.0\Surging.Core.Log4net.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\obj\Release\net6.0\refint\Surging.Core.Log4net.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\obj\Release\net6.0\Surging.Core.Log4net.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Log4net\obj\Release\net6.0\ref\Surging.Core.Log4net.dll

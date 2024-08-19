@@ -1,0 +1,4 @@
+generated/JVMMetric.cs \
+generated/JVMMetricGrpc.cs: protocol/common/common.proto\
+ protocol/common/JVM.proto\
+ protocol/language-agent-v2/JVMMetric.proto

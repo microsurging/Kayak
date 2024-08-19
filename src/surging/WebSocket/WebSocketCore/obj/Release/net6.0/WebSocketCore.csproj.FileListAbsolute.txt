@@ -1,0 +1,11 @@
+E:\git.kayak\surging\WebSocket\WebSocketCore\bin\Release\net6.0\WebSocketCore.deps.json
+E:\git.kayak\surging\WebSocket\WebSocketCore\bin\Release\net6.0\WebSocketCore.dll
+E:\git.kayak\surging\WebSocket\WebSocketCore\bin\Release\net6.0\WebSocketCore.pdb
+E:\git.kayak\surging\WebSocket\WebSocketCore\obj\Release\net6.0\WebSocketCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\WebSocket\WebSocketCore\obj\Release\net6.0\WebSocketCore.AssemblyInfoInputs.cache
+E:\git.kayak\surging\WebSocket\WebSocketCore\obj\Release\net6.0\WebSocketCore.AssemblyInfo.cs
+E:\git.kayak\surging\WebSocket\WebSocketCore\obj\Release\net6.0\WebSocketCore.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\WebSocket\WebSocketCore\obj\Release\net6.0\WebSocketCore.dll
+E:\git.kayak\surging\WebSocket\WebSocketCore\obj\Release\net6.0\refint\WebSocketCore.dll
+E:\git.kayak\surging\WebSocket\WebSocketCore\obj\Release\net6.0\WebSocketCore.pdb
+E:\git.kayak\surging\WebSocket\WebSocketCore\obj\Release\net6.0\ref\WebSocketCore.dll

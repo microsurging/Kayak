@@ -1,0 +1,102 @@
+2024-08-14 02:01:19.404 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.InstrumentStartup : Initializing ...
+2024-08-14 02:01:19.415 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.RegisterService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.RegisterService].
+2024-08-14 02:01:19.415 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.PingService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.PingService].
+2024-08-14 02:01:19.415 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.CLRStatsService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.CLRStatsService].
+2024-08-14 02:01:19.415 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.SegmentReportService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.SegmentReportService].
+2024-08-14 02:01:19.415 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService : Loaded instrument service [Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService].
+2024-08-14 02:01:19.415 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [Surging.Apm.Skywalking_V3.Sampling.SimpleCountSamplingInterceptor].
+2024-08-14 02:01:19.415 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService : Loaded instrument service [Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService].
+2024-08-14 02:01:19.416 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2024-08-14 02:01:19.744 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 02:01:19.746 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 02:01:19.746 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 02:01:21.145 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 02:01:21.145 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 02:01:21.145 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 02:01:21.156 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 02:01:21.156 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 02:01:21.156 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 05:34:46.889 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.InstrumentStartup : Initializing ...
+2024-08-14 05:34:46.899 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.RegisterService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.RegisterService].
+2024-08-14 05:34:46.899 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.PingService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.PingService].
+2024-08-14 05:34:46.899 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.CLRStatsService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.CLRStatsService].
+2024-08-14 05:34:46.899 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.SegmentReportService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.SegmentReportService].
+2024-08-14 05:34:46.899 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService : Loaded instrument service [Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService].
+2024-08-14 05:34:46.899 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [Surging.Apm.Skywalking_V3.Sampling.SimpleCountSamplingInterceptor].
+2024-08-14 05:34:46.899 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService : Loaded instrument service [Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService].
+2024-08-14 05:34:46.899 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2024-08-14 05:34:47.282 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 05:34:47.284 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 05:34:47.284 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 05:34:48.607 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 05:34:48.607 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 05:34:48.607 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 05:34:48.617 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 05:34:48.617 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 05:34:48.617 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 05:34:56.934 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-14 05:34:56.937 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-14 05:35:06.954 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-14 05:35:06.954 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-14 05:35:16.969 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-14 05:35:16.969 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-14 05:35:26.975 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-14 05:35:26.975 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-14 05:35:36.989 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-14 05:35:36.990 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-14 05:35:47.004 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-14 05:35:47.004 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-14 21:10:03.916 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.InstrumentStartup : Initializing ...
+2024-08-14 21:10:03.927 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.RegisterService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.RegisterService].
+2024-08-14 21:10:03.927 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.PingService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.PingService].
+2024-08-14 21:10:03.927 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.CLRStatsService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.CLRStatsService].
+2024-08-14 21:10:03.928 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Service.SegmentReportService : Loaded instrument service [Surging.Apm.Skywalking_V3.Service.SegmentReportService].
+2024-08-14 21:10:03.928 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService : Loaded instrument service [Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService].
+2024-08-14 21:10:03.928 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [Surging.Apm.Skywalking_V3.Sampling.SimpleCountSamplingInterceptor].
+2024-08-14 21:10:03.928 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService : Loaded instrument service [Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectService].
+2024-08-14 21:10:03.928 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2024-08-14 21:10:04.256 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 21:10:04.256 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 21:10:04.256 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 21:10:05.438 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 21:10:05.438 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 21:10:05.438 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 21:10:05.449 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 21:10:05.449 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 21:10:05.449 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [SurgingDiagnosticListener].
+2024-08-14 21:10:13.967 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-14 21:10:13.968 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].
+2024-08-14 21:10:23.978 +08:00 [My_Service] [Error] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager.ConnectAsync() in E:\kayak\src\surging\Surging.Apm\SkyApm_V3\Surging.Apm.Skywalking_V3\Transport\Grpc\ConnectionManager.cs:line 69
+2024-08-14 21:10:23.978 +08:00 [My_Service] [Information] Surging.Apm.Skywalking_V3.Transport.Grpc.ConnectionManager : Shutdown connection[localhost:11800].

@@ -1,0 +1,3 @@
+generated/Service-meshGrpc.cs \
+generated/ServiceMesh.cs: protocol/common/common.proto\
+ protocol/service-mesh-probe/service-mesh.proto

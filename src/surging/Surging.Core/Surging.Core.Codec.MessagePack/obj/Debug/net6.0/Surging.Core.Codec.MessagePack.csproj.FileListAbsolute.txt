@@ -1,0 +1,17 @@
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\bin\Debug\net6.0\Surging.Core.Codec.MessagePack.deps.json
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\bin\Debug\net6.0\Surging.Core.Codec.MessagePack.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\bin\Debug\net6.0\Surging.Core.Codec.MessagePack.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\bin\Debug\net6.0\Surging.Core.CPlatform.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\bin\Debug\net6.0\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\bin\Debug\net6.0\Surging.Core.CPlatform.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\bin\Debug\net6.0\Surging.Core.ServiceHosting.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\obj\Debug\net6.0\Surging.Core.Codec.MessagePack.csproj.AssemblyReference.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\obj\Debug\net6.0\Surging.Core.Codec.MessagePack.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\obj\Debug\net6.0\Surging.Core.Codec.MessagePack.AssemblyInfoInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\obj\Debug\net6.0\Surging.Core.Codec.MessagePack.AssemblyInfo.cs
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\obj\Debug\net6.0\Surging.Core.Codec.MessagePack.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\obj\Debug\net6.0\Surging..EA866762.Up2Date
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\obj\Debug\net6.0\Surging.Core.Codec.MessagePack.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\obj\Debug\net6.0\refint\Surging.Core.Codec.MessagePack.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\obj\Debug\net6.0\Surging.Core.Codec.MessagePack.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Codec.MessagePack\obj\Debug\net6.0\ref\Surging.Core.Codec.MessagePack.dll

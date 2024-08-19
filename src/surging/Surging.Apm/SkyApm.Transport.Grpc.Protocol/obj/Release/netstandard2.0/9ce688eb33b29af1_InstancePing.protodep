@@ -1,0 +1,3 @@
+generated/InstancePing.cs \
+generated/InstancePingGrpc.cs: protocol/common/common.proto\
+ protocol/register/InstancePing.proto

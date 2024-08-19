@@ -1,0 +1,17 @@
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\bin\Release\net6.0\Surging.Core.Thrift.deps.json
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\bin\Release\net6.0\Surging.Core.Thrift.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\bin\Release\net6.0\Surging.Core.Thrift.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\bin\Release\net6.0\Surging.Core.CPlatform.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\bin\Release\net6.0\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\bin\Release\net6.0\Surging.Core.CPlatform.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\bin\Release\net6.0\Surging.Core.ServiceHosting.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\obj\Release\net6.0\Surging.Core.Thrift.csproj.AssemblyReference.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\obj\Release\net6.0\Surging.Core.Thrift.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\obj\Release\net6.0\Surging.Core.Thrift.AssemblyInfoInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\obj\Release\net6.0\Surging.Core.Thrift.AssemblyInfo.cs
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\obj\Release\net6.0\Surging.Core.Thrift.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\obj\Release\net6.0\Surging..0BAFDBB2.Up2Date
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\obj\Release\net6.0\Surging.Core.Thrift.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\obj\Release\net6.0\refint\Surging.Core.Thrift.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\obj\Release\net6.0\Surging.Core.Thrift.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Thrift\obj\Release\net6.0\ref\Surging.Core.Thrift.dll

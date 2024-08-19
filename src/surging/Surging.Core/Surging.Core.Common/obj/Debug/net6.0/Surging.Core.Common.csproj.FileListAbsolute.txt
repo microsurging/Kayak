@@ -1,0 +1,17 @@
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\bin\Debug\net6.0\Surging.Core.Common.deps.json
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\bin\Debug\net6.0\Surging.Core.Common.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\bin\Debug\net6.0\Surging.Core.Common.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\bin\Debug\net6.0\Surging.Core.CPlatform.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\bin\Debug\net6.0\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\bin\Debug\net6.0\Surging.Core.CPlatform.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\bin\Debug\net6.0\Surging.Core.ServiceHosting.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\obj\Debug\net6.0\Surging.Core.Common.csproj.AssemblyReference.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\obj\Debug\net6.0\Surging.Core.Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\obj\Debug\net6.0\Surging.Core.Common.AssemblyInfoInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\obj\Debug\net6.0\Surging.Core.Common.AssemblyInfo.cs
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\obj\Debug\net6.0\Surging.Core.Common.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\obj\Debug\net6.0\Surging..69B3B07E.Up2Date
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\obj\Debug\net6.0\Surging.Core.Common.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\obj\Debug\net6.0\refint\Surging.Core.Common.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\obj\Debug\net6.0\Surging.Core.Common.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Common\obj\Debug\net6.0\ref\Surging.Core.Common.dll

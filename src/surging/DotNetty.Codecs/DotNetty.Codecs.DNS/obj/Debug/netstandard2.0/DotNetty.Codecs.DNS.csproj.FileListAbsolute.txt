@@ -1,0 +1,8 @@
+E:\git.kayak\surging\DotNetty.Codecs\DotNetty.Codecs.DNS\bin\Debug\netstandard2.0\DotNetty.Codecs.DNS.deps.json
+E:\git.kayak\surging\DotNetty.Codecs\DotNetty.Codecs.DNS\bin\Debug\netstandard2.0\DotNetty.Codecs.DNS.dll
+E:\git.kayak\surging\DotNetty.Codecs\DotNetty.Codecs.DNS\bin\Debug\netstandard2.0\DotNetty.Codecs.DNS.pdb
+E:\git.kayak\surging\DotNetty.Codecs\DotNetty.Codecs.DNS\obj\Debug\netstandard2.0\DotNetty.Codecs.DNS.csproj.AssemblyReference.cache
+E:\git.kayak\surging\DotNetty.Codecs\DotNetty.Codecs.DNS\obj\Debug\netstandard2.0\DotNetty.Codecs.DNS.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\DotNetty.Codecs\DotNetty.Codecs.DNS\obj\Debug\netstandard2.0\DotNetty.Codecs.DNS.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\DotNetty.Codecs\DotNetty.Codecs.DNS\obj\Debug\netstandard2.0\DotNetty.Codecs.DNS.dll
+E:\git.kayak\surging\DotNetty.Codecs\DotNetty.Codecs.DNS\obj\Debug\netstandard2.0\DotNetty.Codecs.DNS.pdb

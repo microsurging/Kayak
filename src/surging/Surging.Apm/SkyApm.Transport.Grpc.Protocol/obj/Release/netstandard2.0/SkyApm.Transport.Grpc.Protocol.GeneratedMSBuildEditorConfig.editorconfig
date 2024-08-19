@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = SkyApm.Transport.Grpc.Protocol
+build_property.ProjectDir = E:\git.kayak\surging\Surging.Apm\SkyApm.Transport.Grpc.Protocol\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

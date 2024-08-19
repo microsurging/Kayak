@@ -1,0 +1,4 @@
+generated/DiscoveryService.cs \
+generated/DiscoveryServiceGrpc.cs: protocol/language-agent/Downstream.proto\
+ protocol/common/trace-common.proto\
+ protocol/language-agent/DiscoveryService.proto

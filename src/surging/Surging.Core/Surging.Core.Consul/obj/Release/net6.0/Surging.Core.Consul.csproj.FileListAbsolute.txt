@@ -1,0 +1,17 @@
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\bin\Release\net6.0\Surging.Core.Consul.deps.json
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\bin\Release\net6.0\Surging.Core.Consul.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\bin\Release\net6.0\Surging.Core.Consul.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\bin\Release\net6.0\Surging.Core.CPlatform.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\bin\Release\net6.0\Surging.Core.ServiceHosting.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\bin\Release\net6.0\Surging.Core.CPlatform.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\bin\Release\net6.0\Surging.Core.ServiceHosting.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\obj\Release\net6.0\Surging.Core.Consul.csproj.AssemblyReference.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\obj\Release\net6.0\Surging.Core.Consul.GeneratedMSBuildEditorConfig.editorconfig
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\obj\Release\net6.0\Surging.Core.Consul.AssemblyInfoInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\obj\Release\net6.0\Surging.Core.Consul.AssemblyInfo.cs
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\obj\Release\net6.0\Surging.Core.Consul.csproj.CoreCompileInputs.cache
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\obj\Release\net6.0\Surging..D4046B8E.Up2Date
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\obj\Release\net6.0\Surging.Core.Consul.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\obj\Release\net6.0\refint\Surging.Core.Consul.dll
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\obj\Release\net6.0\Surging.Core.Consul.pdb
+E:\git.kayak\surging\Surging.Core\Surging.Core.Consul\obj\Release\net6.0\ref\Surging.Core.Consul.dll
