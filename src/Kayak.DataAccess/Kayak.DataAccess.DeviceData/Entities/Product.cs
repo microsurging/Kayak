@@ -17,7 +17,7 @@ namespace Kayak.DataAccess.DeviceData.Entities
 
         public int OrganizationId { get; set; }
 
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; }
 
         public int Protocol { get; set; }
 
@@ -28,7 +28,7 @@ namespace Kayak.DataAccess.DeviceData.Entities
         /// </summary>
         [Description("状态")]
         [Column("State")]
-        public int Status { get; set; } = 1;
+        public int Status { get; set; } = 0;
 
 
     }

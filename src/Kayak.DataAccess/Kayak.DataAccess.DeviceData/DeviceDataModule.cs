@@ -25,7 +25,7 @@ namespace Kayak.DataAccess.DeviceData
             if (section.Exists())
                 option = section.Get<List<DeviceDataOption>>();
             AppConfig.DeviceDataOptions = option.Where(p => p.Name == "DeviceData").FirstOrDefault();
-            builder.Register(p => new SqliteContext(AppConfig.DeviceDataOptions?.Connstring)).Named<DataContext>("sqlite").InstancePerLifetimeScope();
+            builder.Register(p => new SqliteContext(AppConfig.DeviceDataOptions?.Connstring)).Named<DataContext>("sqlite");
             //builder.AddClientIntercepted(typeof(LogProviderInterceptor));
         }
     }

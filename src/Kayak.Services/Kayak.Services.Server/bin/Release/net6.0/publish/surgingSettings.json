@@ -14,12 +14,12 @@
     "EnableObjectConvert": true,
     "MaxConcurrentRequests": 20,
     "DisconnTimeInterval": 30,
-    "ExecutionTimeoutInMilliseconds": 1000,
+    "ExecutionTimeoutInMilliseconds": 10000,
     "Protocol": "${Protocol}|None", //Http、Tcp、None
-    "RootPath": "${RootPath}|",
+    "RootPath": "${RootPath}|D:\\UserApp",
     "WebRootPath": "${WebRootPath}|D:\\UserApp\\wwwroot",
     "IsModulePerLifetimeScope": false,
-    "ReloadOnChange": false,
+    "ReloadOnChange": true,
     "Ports": {
       "HttpPort": "${HttpPort}|28",
       "WSPort": "${WSPort}|96",
@@ -30,7 +30,7 @@
     "Packages": [
       {
         "TypeName": "EnginePartModule",
-        "Using": "${UseEngineParts}|ServiceProxyModule;ProtokollwandlerModule;DotNettyModule;WebServiceModule;SerilogModule;NLogModule;ConsulModule;TcpProtocolModule;MessagePackModule;WSProtocolModule;MqttProtocolModule;EventBusRabbitMQModule;CachingModule;KestrelHttpModule;SwaggerModule;ApiGeteWayModule;SkywalkingModule;KestrelNLogModule;GrpcModule;ApolloModule;LiveStreamModule;"
+        "Using": "${UseEngineParts}|ServiceProxyModule;ProtokollwandlerModule;DotNettyModule;WebServiceModule;SerilogModule;NLogModule;ConsulModule;TcpProtocolModule;MessagePackModule;WSProtocolModule;MqttProtocolModule;EventBusRabbitMQModule;CachingModule;KestrelHttpModule;SwaggerModule;ApiGeteWayModule;SkywalkingModule;KestrelNLogModule;GrpcModule;ApolloModule;LiveStreamModule;UdpProtocolModule;DeviceGatewayModule;CoapProtocolModule;"
       }
     ]
   }, //如果引用多个同类型的组件，需要配置Packages，如果是自定义按需引用，无需配置Packages
@@ -162,6 +162,9 @@
     "ConnectionString": "${Zookeeper_ConnectionString}|127.0.0.1:2181", // "127.0.0.1:2181,127.0.0.1:2281",
     "SessionTimeout": 50,
     "ReloadOnChange": true
+  },
+  "Coap": {
+     "Port": 67
   },
   "RabbitMQ": {
     "EventBus": {

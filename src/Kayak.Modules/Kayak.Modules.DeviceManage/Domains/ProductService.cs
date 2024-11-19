@@ -27,7 +27,7 @@ namespace Kayak.Modules.DeviceManage.Domains
         public async Task<ApiResult<bool>> Add(ProductModel model)
         { 
             var result = await _repository.Add(model);
-            return ApiResult<bool>.Succeed(result); ;
+            return ApiResult<bool>.Succeed(result); 
         }
 
         public async Task<ApiResult<bool>> DeleteById(List<int> ids)
@@ -60,9 +60,14 @@ namespace Kayak.Modules.DeviceManage.Domains
             return ApiResult<List<ProductModel>>.Succeed(result);
         }
 
-        public async Task<ApiResult<bool>> Modify(ProductModel model)
+        public async Task<ApiResult<ProductStatisticsModel>> GetProductStatistics()
         {
+            var result = await _repository.GetProductStatistics();
+            return ApiResult<ProductStatisticsModel>.Succeed(result);
+        }
 
+        public async Task<ApiResult<bool>> Modify(ProductModel model)
+        { 
             var result = await _repository.Modify(model);
             return ApiResult<bool>.Succeed(result);
         }

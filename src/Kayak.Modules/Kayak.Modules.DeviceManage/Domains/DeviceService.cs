@@ -82,5 +82,17 @@ namespace Kayak.Modules.DeviceManage.Domains
             var result = await _repository.ChangeEnable(ids);
             return ApiResult<bool>.Succeed(result);
         }
+
+        public async Task<ApiResult<List<DeviceStatistics>>> GetDeviceCountByProductCodes(List<string> productCodes)
+        {
+            var result = await _repository.GetDeviceCountByProductCodes(productCodes);
+            return ApiResult<List<DeviceStatistics>>.Succeed(result);
+        }
+
+        public async Task<ApiResult<DeviceTotalStatisticsModel>> GetDeviceTotalStatistics()
+        {
+            var result = await _repository.GetDeviceTotalStatistics();
+            return ApiResult<DeviceTotalStatisticsModel>.Succeed(result);
+        }
     }
 }

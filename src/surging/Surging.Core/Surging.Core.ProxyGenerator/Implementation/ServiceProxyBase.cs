@@ -66,12 +66,12 @@ namespace Surging.Core.ProxyGenerator.Implementation
             var vt = _commandProvider.GetCommand(serviceId); 
             var command = vt.IsCompletedSuccessfully ? vt.Result : await vt;
             RemoteInvokeResultMessage message = null;
-            var decodeJOject = typeof(T) == UtilityType.ObjectType;
+            var decodeJOject = typeof(T) == UtilityType.ObjectType|| typeof(T) == UtilityType.JObjectType;
             IInvocation invocation = null;
             var serviceRoute =await _serviceRouteProvider.Locate(serviceId);
             var enableStageCache = serviceRoute.ServiceDescriptor.GetCacheIntercept("Cache")?.EnableStageCache;
-            if ((serviceRoute == null || !serviceRoute.ServiceDescriptor.ExistIntercept()) 
-                || (enableStageCache == false && decodeJOject))
+            if ((serviceRoute ==null || !serviceRoute.ServiceDescriptor.ExistIntercept()) ||
+              (enableStageCache == false && decodeJOject))
             {
                 message = await _breakeRemoteInvokeService.InvokeAsync(parameters, serviceId, _serviceKey, decodeJOject);
                 if (message == null)

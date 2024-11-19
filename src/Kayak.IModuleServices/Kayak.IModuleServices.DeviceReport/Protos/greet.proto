@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+ 
+package Greet;
+ 
+service Greeter {
+  // Sends a greeting
+  rpc ChangeDeviceStage (DeviceRequest) returns (DeviceReply) {}
+}
+ 
+message DeviceRequest {
+  string deviceId = 1;
+}
+ 
+message  DeviceReply {
+ bool message = 1;
+}

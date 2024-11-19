@@ -16,21 +16,31 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Kayak.DataAccess\Kayak.DataAccess.DeviceData\Kayak.DataAccess.DeviceData.csproj" />
+    <ProjectReference Include="..\..\Kayak.Core\Kayak.Core.Codecs\Kayak.Core.Codecs.csproj" />
+    <ProjectReference Include="..\..\Kayak.Core\Kayak.Core.Http\Kayak.Core.Http.csproj" />
+    <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.Aggregation\Kayak.IModuleServices.Aggregation.DeviceAccess\Kayak.IModuleServices.Aggregation.DeviceAccess.csproj" />
     <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.Aggregation\Kayak.IModuleServices.Aggregation.DeviceManage\Kayak.IModuleServices.Aggregation.DeviceManage.csproj" />
     <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.Aggregation\Kayak.IModuleServices.Aggregation.ServiceManage\Kayak.IModuleServices.Aggregation.ServiceManage.csproj" />
+    <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.Aggregation\Kayak.IModuleServices.Aggregation.System\Kayak.IModuleServices.Aggregation.System.csproj" />
     <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.DeviceAccess\Kayak.IModuleServices.DeviceAccess.csproj" />
     <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.DeviceManage\Kayak.IModuleServices.DeviceManage.csproj" />
+    <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.DeviceReport\Kayak.IModuleServices.DeviceReport.csproj" />
     <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.ServiceManage\Kayak.IModuleServices.ServiceManage.csproj" />
     <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.System\Kayak.IModuleServices.System.csproj" />
+    <ProjectReference Include="..\..\Kayak.Modules\Kayak.Modules.Aggregation\Kayak.Modules.Aggregation.DeviceAccess\Kayak.Modules.Aggregation.DeviceAccess.csproj" />
     <ProjectReference Include="..\..\Kayak.Modules\Kayak.Modules.Aggregation\Kayak.Modules.Aggregation.DeviceManage\Kayak.Modules.Aggregation.DeviceManage.csproj" />
     <ProjectReference Include="..\..\Kayak.Modules\Kayak.Modules.Aggregation\Kayak.Modules.Aggregation.ServiceManage\Kayak.Modules.Aggregation.ServiceManage.csproj" />
+    <ProjectReference Include="..\..\Kayak.Modules\Kayak.Modules.Aggregation\Kayak.Modules.Aggregation.System\Kayak.Modules.Aggregation.System.csproj" />
+    <ProjectReference Include="..\..\Kayak.Modules\Kayak.Modules.DeviceReport\Kayak.Modules.DeviceReport.csproj" />
+    <ProjectReference Include="..\..\surging\Surging.Apm\SkyApm\SkyApm.Transport.Grpc.Protocol\SkyApm.Transport.Grpc.Protocol.csproj" />
+    <ProjectReference Include="..\..\surging\Surging.Apm\SkyApm\Surging.Apm.Skywalking\Surging.Apm.Skywalking.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Caching\Surging.Core.Caching.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Codec.MessagePack\Surging.Core.Codec.MessagePack.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Codec.ProtoBuffer\Surging.Core.Codec.ProtoBuffer.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Configuration.Apollo\Surging.Core.Configuration.Apollo.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Consul\Surging.Core.Consul.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.CPlatform\Surging.Core.CPlatform.csproj" />
+    <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.DeviceGateway\Surging.Core.DeviceGateway.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.DNS\Surging.Core.DNS.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.DotNettyWSServer\Surging.Core.DotNettyWSServer.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.DotNetty\Surging.Core.DotNetty.csproj" />
@@ -42,6 +52,7 @@
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.KestrelHttpServer\Surging.Core.KestrelHttpServer.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Log4net\Surging.Core.Log4net.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.NLog\Surging.Core.Nlog.csproj" />
+    <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Protocol.Coap\Surging.Core.Protocol.Coap.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Protocol.Http\Surging.Core.Protocol.Http.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Protocol.Mqtt\Surging.Core.Protocol.Mqtt.csproj" />
     <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Protocol.Tcp\Surging.Core.Protocol.Tcp.csproj" />
@@ -83,6 +94,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="skyapm.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="surgingSettings.json">

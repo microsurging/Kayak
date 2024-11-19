@@ -1092,6 +1092,14 @@
           "System.Threading": "4.3.0"
         }
       },
+      "System.Reactive/5.0.0": {
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.1"
+          }
+        }
+      },
       "System.Reflection/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1551,6 +1559,7 @@
       "surging/1.0.0": {
         "dependencies": {
           "Autofac": "4.9.4",
+          "DotNetty.Buffers": "0.6.0",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "2.9.0",
           "Microsoft.Extensions.Configuration": "2.2.0",
           "Microsoft.Extensions.Configuration.Binder": "2.2.4",
@@ -1561,7 +1570,8 @@
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
           "Newtonsoft.Json": "11.0.2",
-          "Surging.Core.ServiceHosting": "1.1.0"
+          "Surging.Core.ServiceHosting": "1.1.0",
+          "System.Reactive": "5.0.0"
         },
         "runtime": {
           "Surging.Core.CPlatform.dll": {}
@@ -2207,6 +2217,13 @@
       "sha512": "sha512-bdX+80eKv9bN6K4N+d77OankKHGn6CH711a6fcOpMQu2Fckp/Ft4L/kW9WznHpyR0NRAvJutzOMHNNlBGvxQzQ==",
       "path": "system.objectmodel/4.3.0",
       "hashPath": "system.objectmodel.4.3.0.nupkg.sha512"
+    },
+    "System.Reactive/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+      "path": "system.reactive/5.0.0",
+      "hashPath": "system.reactive.5.0.0.nupkg.sha512"
     },
     "System.Reflection/4.3.0": {
       "type": "package",

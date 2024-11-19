@@ -26,7 +26,7 @@ namespace Kayak.DataAccess.DeviceData.Entities
         public string Code { get; set; }
 
         /// <summary>
-        /// 编码
+        /// 数值
         /// </summary>
         [Description("数值")]
         [Column("Value")]

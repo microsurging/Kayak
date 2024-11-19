@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gv9Szt4B96x+aSfopuR5lOqxGVDBT4dZ/9fdW42pLn0La9t15KDeSZnTFBXEiZFsZtR1sXnV+dpm3cYDJ8ntKg==",
+  "dgSpecHash": "drUX/RtQbO0V7SKW7l3dCeCR1kENEelgLXlc/bgzBm31G5YH+tX86jESApgljVcCsE9ejT1Wta9E3J+W/xZpSA==",
   "success": true,
-  "projectFilePath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DNS\\Surging.Core.DNS.csproj",
+  "projectFilePath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DNS\\Surging.Core.DNS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fanli\\.nuget\\packages\\arsoft.tools.net.core\\2.3.0\\arsoft.tools.net.core.2.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\autofac\\4.9.4\\autofac.4.9.4.nupkg.sha512",
@@ -88,6 +88,7 @@
     "C:\\Users\\fanli\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\fanli\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",

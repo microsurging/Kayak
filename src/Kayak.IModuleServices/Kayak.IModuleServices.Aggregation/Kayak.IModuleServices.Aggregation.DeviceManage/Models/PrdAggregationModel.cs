@@ -11,6 +11,8 @@ namespace Kayak.IModuleServices.Aggregation.DeviceManage.Models
     public class PrdAggregationModel: ProductModel
     { 
         public ProductCategoryModel Category { get; set; }
+
+        public  int DeviceCount { get; set; }
           
         public PrdDictionary PrdProtocol { get; set; }
          

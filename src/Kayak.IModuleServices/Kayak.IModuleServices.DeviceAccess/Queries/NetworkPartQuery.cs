@@ -11,7 +11,9 @@ namespace Kayak.IModuleServices.DeviceAccess.Queries
     {
         public string Name { get; set; }
 
-        public string ComponentType { get; set; }
+        public int? Status { get; set; }
+
+        public string? ComponentTypeCode { get; set; }
     }
 
 }

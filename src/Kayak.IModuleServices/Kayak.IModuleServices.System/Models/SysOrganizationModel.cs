@@ -26,9 +26,9 @@ namespace Kayak.IModuleServices.System.Models
 
         public string Contacter { get; set; }
 
-        public DateTime? CreateDate { get; set; }= DateTime.Now;
+        public DateTimeOffset? CreateDate { get; set; }= DateTimeOffset.Now;
 
-        public DateTime? UpdateDate { get; set; } = DateTime.Now;
+        public DateTimeOffset? UpdateDate { get; set; } = DateTimeOffset.Now;
 
         public int SysOrgType { get; set; }
 

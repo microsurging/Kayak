@@ -25,8 +25,8 @@ namespace Kayak.IModuleServices.DeviceManage.Models
         public string Remark { get; set; }
 
 
-        public DateTime? UpdateDate { get; set; }
+        public DateTimeOffset? UpdateDate { get; set; }= DateTimeOffset.Now;
 
-        public DateTime? CreateDate { get; set; }
+        public DateTimeOffset? CreateDate { get; set; }=DateTimeOffset.Now;
     }
 }

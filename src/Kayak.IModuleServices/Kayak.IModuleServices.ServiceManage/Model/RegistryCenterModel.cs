@@ -21,6 +21,6 @@ namespace Kayak.IModuleServices.ServiceManage.Model
 
         public string Remark { get; set; }
 
-        public DateTime? CreateDate { get; set; }
+        public DateTimeOffset? CreateDate { get; set; }
     }
 }

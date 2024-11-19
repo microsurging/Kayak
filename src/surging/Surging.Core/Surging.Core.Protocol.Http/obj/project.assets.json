@@ -1735,6 +1735,22 @@
           "lib/netstandard1.3/System.ObjectModel.dll": {}
         }
       },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net5.0/_._": {}
+        }
+      },
       "System.Reflection/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2620,6 +2636,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Autofac": "4.9.4",
+          "DotNetty.Buffers": "0.6.0",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "2.9.0",
           "Microsoft.Extensions.Configuration": "2.2.0",
           "Microsoft.Extensions.Configuration.Binder": "2.2.4",
@@ -2630,7 +2647,8 @@
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
           "Newtonsoft.Json": "11.0.2",
-          "Surging.Core.ServiceHosting": "1.1.0"
+          "Surging.Core.ServiceHosting": "1.1.0",
+          "System.Reactive": "5.0.0"
         },
         "compile": {
           "bin/placeholder/surging.dll": {}
@@ -5368,6 +5386,35 @@
         "system.objectmodel.nuspec"
       ]
     },
+    "System.Reactive/5.0.0": {
+      "sha512": "erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+      "type": "package",
+      "path": "system.reactive/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net5.0/_._",
+        "build/netcoreapp3.1/System.Reactive.dll",
+        "build/netcoreapp3.1/System.Reactive.targets",
+        "build/netcoreapp3.1/System.Reactive.xml",
+        "buildTransitive/net5.0/_._",
+        "buildTransitive/netcoreapp3.1/System.Reactive.targets",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net5.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net5.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net5.0/System.Reactive.dll",
+        "lib/net5.0/System.Reactive.xml",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "system.reactive.5.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
     "System.Reflection/4.3.0": {
       "sha512": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
       "type": "package",
@@ -7617,11 +7664,11 @@
   "project": {
     "version": "1.1.0",
     "restore": {
-      "projectUniqueName": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Http\\Surging.Core.Protocol.Http.csproj",
+      "projectUniqueName": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Http\\Surging.Core.Protocol.Http.csproj",
       "projectName": "Surging.Core.Protocol.Http",
-      "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Http\\Surging.Core.Protocol.Http.csproj",
+      "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Http\\Surging.Core.Protocol.Http.csproj",
       "packagesPath": "C:\\Users\\fanli\\.nuget\\packages\\",
-      "outputPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Http\\obj\\",
+      "outputPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Http\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7643,14 +7690,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj"
             }
           }
         }

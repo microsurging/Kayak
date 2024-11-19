@@ -36,6 +36,19 @@
           "lib/netstandard2.0/ARSoft.Tools.Net.Core.dll": {}
         }
       },
+      "AspectCore.Extensions.Reflection/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Threading.Tasks.Extensions": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AspectCore.Extensions.Reflection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Extensions.Reflection.dll": {}
+        }
+      },
       "Autofac/4.9.4": {
         "type": "package",
         "compile": {
@@ -376,10 +389,11 @@
           }
         }
       },
-      "Google.Protobuf/3.10.1": {
+      "Google.Protobuf/3.15.0": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.2"
+          "System.Memory": "4.5.3",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
           "lib/netstandard2.0/Google.Protobuf.dll": {
@@ -390,6 +404,12 @@
           "lib/netstandard2.0/Google.Protobuf.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "Grpc/2.24.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Core": "2.24.0"
         }
       },
       "Grpc.Core/2.24.0": {
@@ -632,22 +652,55 @@
           "lib/netstandard1.3/log4net.dll": {}
         }
       },
-      "MessagePack/1.7.3.4": {
+      "MessagePack/2.2.85": {
         "type": "package",
         "dependencies": {
-          "System.Reflection.Emit": "4.3.0",
-          "System.Reflection.Emit.Lightweight": "4.3.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.Threading.Tasks.Extensions": "4.3.0",
-          "System.ValueTuple": "4.3.0"
+          "MessagePack.Annotations": "2.2.85",
+          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "System.Collections.Immutable": "1.5.0",
+          "System.Memory": "4.5.3",
+          "System.Reflection.Emit": "4.6.0",
+          "System.Reflection.Emit.Lightweight": "4.6.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "System.Threading.Tasks.Extensions": "4.5.3"
         },
         "compile": {
-          "lib/netstandard2.0/MessagePack.dll": {
+          "lib/netcoreapp2.1/MessagePack.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/MessagePack.dll": {
+          "lib/netcoreapp2.1/MessagePack.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MessagePack.Annotations/2.2.85": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MessagePack.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MessagePack.Annotations.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Connections.Abstractions/6.0.27": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Features": "6.0.27",
+          "System.IO.Pipelines": "6.0.3"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {
             "related": ".xml"
           }
         }
@@ -681,6 +734,50 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Abstractions/2.1.38": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Routing.Abstractions": "2.1.1",
+          "Microsoft.Net.Http.Headers": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Routing.Abstractions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
             "related": ".xml"
           }
         }
@@ -984,76 +1081,23 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Microsoft.Data.SqlClient/2.1.7": {
+      "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Data.SqlClient.SNI.runtime": "2.1.1",
-          "Microsoft.Identity.Client": "4.21.1",
-          "Microsoft.IdentityModel.JsonWebTokens": "6.8.0",
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.8.0",
-          "Microsoft.Win32.Registry": "4.7.0",
-          "System.Configuration.ConfigurationManager": "4.7.0",
-          "System.Diagnostics.DiagnosticSource": "4.7.0",
-          "System.Runtime.Caching": "4.7.0",
-          "System.Security.Principal.Windows": "4.7.0",
-          "System.Text.Encoding.CodePages": "4.7.0"
+          "System.AppContext": "4.1.0",
+          "System.Collections": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.IO.FileSystem": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
         },
         "compile": {
-          "ref/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "Microsoft.Data.SqlClient.SNI.runtime/2.1.1": {
-        "type": "package",
-        "runtimeTargets": {
-          "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
-            "assetType": "native",
-            "rid": "win-arm"
-          },
-          "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
-            "assetType": "native",
-            "rid": "win-arm64"
-          },
-          "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "Microsoft.Data.Sqlite.Core/6.0.32": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.core": "2.1.2"
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.Data.Sqlite.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Data.Sqlite.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore/6.0.32": {
@@ -1136,54 +1180,6 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Sqlite/6.0.32": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Sqlite.Core": "6.0.32",
-          "SQLitePCLRaw.bundle_e_sqlite3": "2.1.2"
-        },
-        "compile": {
-          "lib/net6.0/_._": {}
-        },
-        "runtime": {
-          "lib/net6.0/_._": {}
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Sqlite.Core/6.0.32": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Data.Sqlite.Core": "6.0.32",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.32",
-          "Microsoft.Extensions.DependencyModel": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.SqlServer/6.0.32": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Data.SqlClient": "2.1.7",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.32"
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
             "related": ".xml"
           }
         }
@@ -1359,22 +1355,31 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Extensions.DependencyModel/6.0.0": {
+      "Microsoft.Extensions.DependencyModel/2.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "System.Text.Encodings.Web": "6.0.0",
-          "System.Text.Json": "6.0.0"
+          "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Dynamic.Runtime": "4.0.11",
+          "System.Linq": "4.1.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
+          "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Features/6.0.27": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Features.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
+          "lib/net6.0/Microsoft.Extensions.Features.dll": {
             "related": ".xml"
           }
         }
@@ -1567,101 +1572,24 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Identity.Client/4.21.1": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
+      "Microsoft.Net.Http.Headers/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "6.8.0"
+          "Microsoft.Extensions.Primitives": "2.1.1",
+          "System.Buffers": "4.5.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+          "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+          "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.IdentityModel.Logging/6.8.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Protocols/6.8.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Logging": "6.8.0",
-          "Microsoft.IdentityModel.Tokens": "6.8.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.8.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Protocols": "6.8.0",
-          "System.IdentityModel.Tokens.Jwt": "6.8.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Tokens/6.8.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
-          "Microsoft.IdentityModel.Logging": "6.8.0",
-          "System.Security.Cryptography.Cng": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.NETCore.Platforms/3.1.0": {
+      "Microsoft.NETCore.Platforms/3.1.9": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -1705,11 +1633,11 @@
           }
         }
       },
-      "Microsoft.Win32.Registry/4.7.0": {
+      "Microsoft.Win32.Registry/4.5.0": {
         "type": "package",
         "dependencies": {
-          "System.Security.AccessControl": "4.7.0",
-          "System.Security.Principal.Windows": "4.7.0"
+          "System.Security.AccessControl": "4.5.0",
+          "System.Security.Principal.Windows": "4.5.0"
         },
         "compile": {
           "ref/netstandard2.0/_._": {
@@ -1717,9 +1645,7 @@
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
@@ -2311,11 +2237,16 @@
           }
         }
       },
-      "SoapCore/1.1.0.36": {
+      "SoapCore/1.1.0.49": {
         "type": "package",
         "dependencies": {
+          "Microsoft.AspNetCore.Connections.Abstractions": "6.0.27",
+          "Microsoft.AspNetCore.Mvc.Abstractions": "2.1.38",
           "System.CodeDom": "6.0.0",
-          "System.ServiceModel.Http": "4.8.1"
+          "System.Drawing.Common": "4.7.3",
+          "System.Security.Cryptography.Xml": "4.7.1",
+          "System.ServiceModel.Http": "4.8.1",
+          "System.Text.Encodings.Web": "4.7.2"
         },
         "compile": {
           "lib/net6.0/SoapCore.dll": {
@@ -2330,145 +2261,6 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
-      },
-      "SQLitePCLRaw.bundle_e_sqlite3/2.1.2": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.lib.e_sqlite3": "2.1.2",
-          "SQLitePCLRaw.provider.e_sqlite3": "2.1.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {}
-        }
-      },
-      "SQLitePCLRaw.core/2.1.2": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
-        }
-      },
-      "SQLitePCLRaw.lib.e_sqlite3/2.1.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "build": {
-          "buildTransitive/net6.0/SQLitePCLRaw.lib.e_sqlite3.targets": {}
-        },
-        "runtimeTargets": {
-          "runtimes/alpine-arm/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "alpine-arm"
-          },
-          "runtimes/alpine-arm64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "alpine-arm64"
-          },
-          "runtimes/alpine-x64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "alpine-x64"
-          },
-          "runtimes/browser-wasm/nativeassets/net6.0/e_sqlite3.a": {
-            "assetType": "native",
-            "rid": "browser-wasm"
-          },
-          "runtimes/linux-arm/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-arm"
-          },
-          "runtimes/linux-arm64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-arm64"
-          },
-          "runtimes/linux-armel/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-armel"
-          },
-          "runtimes/linux-mips64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-mips64"
-          },
-          "runtimes/linux-musl-arm/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-musl-arm"
-          },
-          "runtimes/linux-musl-arm64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-musl-arm64"
-          },
-          "runtimes/linux-musl-x64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-musl-x64"
-          },
-          "runtimes/linux-s390x/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-s390x"
-          },
-          "runtimes/linux-x64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-x64"
-          },
-          "runtimes/linux-x86/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-x86"
-          },
-          "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib": {
-            "assetType": "native",
-            "rid": "maccatalyst-arm64"
-          },
-          "runtimes/maccatalyst-x64/native/libe_sqlite3.dylib": {
-            "assetType": "native",
-            "rid": "maccatalyst-x64"
-          },
-          "runtimes/osx-arm64/native/libe_sqlite3.dylib": {
-            "assetType": "native",
-            "rid": "osx-arm64"
-          },
-          "runtimes/osx-x64/native/libe_sqlite3.dylib": {
-            "assetType": "native",
-            "rid": "osx-x64"
-          },
-          "runtimes/win-arm/native/e_sqlite3.dll": {
-            "assetType": "native",
-            "rid": "win-arm"
-          },
-          "runtimes/win-arm64/native/e_sqlite3.dll": {
-            "assetType": "native",
-            "rid": "win-arm64"
-          },
-          "runtimes/win-x64/native/e_sqlite3.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/e_sqlite3.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "SQLitePCLRaw.provider.e_sqlite3/2.1.2": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.core": "2.1.2"
-        },
-        "compile": {
-          "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
-        }
       },
       "StackExchange.Redis/2.0.505": {
         "type": "package",
@@ -2503,7 +2295,7 @@
           "lib/netstandard1.6/System.AppContext.dll": {}
         }
       },
-      "System.Buffers/4.5.1": {
+      "System.Buffers/4.5.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -2680,11 +2472,11 @@
           "lib/netstandard1.5/System.ComponentModel.TypeConverter.dll": {}
         }
       },
-      "System.Configuration.ConfigurationManager/4.7.0": {
+      "System.Configuration.ConfigurationManager/4.5.0": {
         "type": "package",
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "4.7.0",
-          "System.Security.Permissions": "4.7.0"
+          "System.Security.Cryptography.ProtectedData": "4.5.0",
+          "System.Security.Permissions": "4.5.0"
         },
         "compile": {
           "ref/netstandard2.0/_._": {
@@ -2692,9 +2484,7 @@
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Console/4.3.0": {
@@ -2927,14 +2717,14 @@
           }
         }
       },
-      "System.Drawing.Common/4.7.0": {
+      "System.Drawing.Common/4.7.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.NETCore.Platforms": "3.1.9",
           "Microsoft.Win32.SystemEvents": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/_._": {
+          "ref/netcoreapp3.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
         },
@@ -3029,23 +2819,6 @@
           "runtimes/win/lib/netstandard1.3/System.Globalization.Extensions.dll": {
             "assetType": "runtime",
             "rid": "win"
-          }
-        }
-      },
-      "System.IdentityModel.Tokens.Jwt/6.8.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "6.8.0",
-          "Microsoft.IdentityModel.Tokens": "6.8.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -3193,15 +2966,20 @@
           }
         }
       },
-      "System.IO.Pipelines/4.5.0": {
+      "System.IO.Pipelines/6.0.3": {
         "type": "package",
         "compile": {
-          "ref/netstandard1.3/System.IO.Pipelines.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/System.IO.Pipelines.dll": {
+          "lib/net6.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "System.IO.Pipes/4.3.0": {
@@ -3347,7 +3125,7 @@
           "lib/netstandard1.3/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.5.3": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -3712,22 +3490,13 @@
           }
         }
       },
-      "System.Reflection.Emit/4.3.0": {
+      "System.Reflection.Emit/4.6.0": {
         "type": "package",
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.1/System.Reflection.Emit.dll": {
-            "related": ".xml"
-          }
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.3/System.Reflection.Emit.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Reflection.Emit.ILGeneration/4.3.0": {
@@ -3738,7 +3507,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/System.Reflection.Emit.ILGeneration.dll": {
+          "ref/netstandard1.0/_._": {
             "related": ".xml"
           }
         },
@@ -3746,21 +3515,13 @@
           "lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll": {}
         }
       },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
+      "System.Reflection.Emit.Lightweight/4.6.0": {
         "type": "package",
-        "dependencies": {
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.0/System.Reflection.Emit.Lightweight.dll": {
-            "related": ".xml"
-          }
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.3/System.Reflection.Emit.Lightweight.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Reflection.Extensions/4.3.0": {
@@ -3842,28 +3603,6 @@
         "compile": {
           "ref/netstandard1.5/System.Runtime.dll": {
             "related": ".xml"
-          }
-        }
-      },
-      "System.Runtime.Caching/4.7.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Configuration.ConfigurationManager": "4.7.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Runtime.Caching.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll": {
-            "assetType": "runtime",
-            "rid": "win"
           }
         }
       },
@@ -4097,7 +3836,7 @@
       "System.Security.Cryptography.Cng/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp3.0/System.Security.Cryptography.Cng.dll": {
+          "ref/netcoreapp3.0/_._": {
             "related": ".xml"
           }
         },
@@ -4246,7 +3985,7 @@
           "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
         }
       },
-      "System.Security.Cryptography.ProtectedData/4.7.0": {
+      "System.Security.Cryptography.ProtectedData/4.5.0": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/_._": {
@@ -4254,9 +3993,7 @@
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
         },
         "runtimeTargets": {
           "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -4310,7 +4047,7 @@
           }
         }
       },
-      "System.Security.Cryptography.Xml/4.7.0": {
+      "System.Security.Cryptography.Xml/4.7.1": {
         "type": "package",
         "dependencies": {
           "System.Security.Cryptography.Pkcs": "4.7.0",
@@ -4455,23 +4192,33 @@
           }
         }
       },
-      "System.Text.Encoding.CodePages/4.7.0": {
+      "System.Text.Encoding.CodePages/4.3.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0"
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Threading": "4.3.0"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+          "ref/netstandard1.3/_._": {
             "related": ".xml"
           }
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+          "runtimes/unix/lib/netstandard1.3/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -4491,49 +4238,17 @@
           }
         }
       },
-      "System.Text.Encodings.Web/6.0.0": {
+      "System.Text.Encodings.Web/4.7.2": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
         "compile": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll": {
-            "assetType": "runtime",
-            "rid": "browser"
-          }
-        }
-      },
-      "System.Text.Json/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "System.Text.Encodings.Web": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "System.Text.RegularExpressions/4.3.0": {
@@ -4859,6 +4574,33 @@
           }
         }
       },
+      ".Transport.Grpc.Protocol/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Google.Protobuf": "3.10.1",
+          "Grpc": "2.24.0"
+        },
+        "compile": {
+          "bin/placeholder/.Transport.Grpc.Protocol.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/.Transport.Grpc.Protocol.dll": {}
+        }
+      },
+      "CoAP.NET/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "surging": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CoAP.NET.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoAP.NET.dll": {}
+        }
+      },
       "DotNetty.Codecs.DNS/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4870,6 +4612,21 @@
         },
         "runtime": {
           "bin/placeholder/DotNetty.Codecs.DNS.dll": {}
+        }
+      },
+      "Kayak.Core.Codecs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DotNetty.Buffers": "0.6.0",
+          "Surging.Core.DeviceGateway": "1.0.0",
+          "surging": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Kayak.Core.Codecs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kayak.Core.Codecs.dll": {}
         }
       },
       "Kayak.Core.Common/1.0.0": {
@@ -4889,28 +4646,42 @@
           "bin/placeholder/Kayak.Core.Common.dll": {}
         }
       },
-      "Kayak.DataAccess.DeviceData/1.0.0": {
+      "Kayak.Core.Http/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Kayak.Core.Common": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.32",
-          "Microsoft.EntityFrameworkCore.Sqlite": "6.0.32",
-          "surging": "1.0.0"
+          "Surging.Core.DeviceGateway": "1.0.0",
+          "Surging.Core.KestrelHttpServer": "1.1.0"
         },
         "compile": {
-          "bin/placeholder/Kayak.DataAccess.DeviceData.dll": {}
+          "bin/placeholder/Kayak.Core.Http.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Kayak.DataAccess.DeviceData.dll": {}
+          "bin/placeholder/Kayak.Core.Http.dll": {}
+        }
+      },
+      "Kayak.IModuleServices.Aggregation.DeviceAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Kayak.IModuleServices.DeviceAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Kayak.IModuleServices.Aggregation.DeviceAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kayak.IModuleServices.Aggregation.DeviceAccess.dll": {}
         }
       },
       "Kayak.IModuleServices.Aggregation.DeviceManage/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Kayak.IModuleServices.DeviceAccess": "1.0.0",
           "Kayak.IModuleServices.DeviceManage": "1.0.0",
-          "Kayak.IModuleServices.System": "1.0.0"
+          "Kayak.IModuleServices.System": "1.0.0",
+          "Surging.Core.DeviceGateway": "1.0.0",
+          "Surging.Core.KestrelHttpServer": "1.1.0"
         },
         "compile": {
           "bin/placeholder/Kayak.IModuleServices.Aggregation.DeviceManage.dll": {}
@@ -4930,6 +4701,22 @@
         },
         "runtime": {
           "bin/placeholder/Kayak.IModuleServices.Aggregation.ServiceManage.dll": {}
+        }
+      },
+      "Kayak.IModuleServices.Aggregation.System/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Kayak.Core.Common": "1.0.0",
+          "Kayak.IModuleServices.System": "1.0.0",
+          "Surging.Core.KestrelHttpServer": "1.1.0",
+          "surging": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Kayak.IModuleServices.Aggregation.System.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kayak.IModuleServices.Aggregation.System.dll": {}
         }
       },
       "Kayak.IModuleServices.DeviceAccess/1.0.0": {
@@ -4960,6 +4747,24 @@
           "bin/placeholder/Kayak.IModuleServices.DeviceManage.dll": {}
         }
       },
+      "Kayak.IModuleServices.DeviceReport/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Google.Protobuf": "3.15.0",
+          "Grpc.Core": "2.24.0",
+          "Surging.Core.Protocol.WS": "1.1.0",
+          "System.ServiceModel.Primitives": "4.5.3",
+          "protobuf-net": "2.4.0",
+          "surging": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Kayak.IModuleServices.DeviceReport.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kayak.IModuleServices.DeviceReport.dll": {}
+        }
+      },
       "Kayak.IModuleServices.ServiceManage/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -4988,12 +4793,30 @@
           "bin/placeholder/Kayak.IModuleServices.System.dll": {}
         }
       },
+      "Kayak.Modules.Aggregation.DeviceAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Kayak.Core.Http": "1.0.0",
+          "Kayak.IModuleServices.Aggregation.DeviceAccess": "1.0.0",
+          "Kayak.IModuleServices.System": "1.0.0",
+          "Surging.Core.DeviceGateway": "1.0.0",
+          "Surging.Core.ProxyGenerator": "1.1.0"
+        },
+        "compile": {
+          "bin/placeholder/Kayak.Modules.Aggregation.DeviceAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kayak.Modules.Aggregation.DeviceAccess.dll": {}
+        }
+      },
       "Kayak.Modules.Aggregation.DeviceManage/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Kayak.DataAccess.DeviceData": "1.0.0",
           "Kayak.IModuleServices.Aggregation.DeviceManage": "1.0.0",
+          "Kayak.IModuleServices.DeviceAccess": "1.0.0",
+          "Surging.Core.DeviceGateway": "1.0.0",
           "Surging.Core.ProxyGenerator": "1.1.0"
         },
         "compile": {
@@ -5010,7 +4833,8 @@
           "Kayak.IModuleServices.Aggregation.ServiceManage": "1.0.0",
           "Kayak.IModuleServices.System": "1.0.0",
           "Surging.Core.Consul": "1.1.0",
-          "Surging.Core.ProxyGenerator": "1.1.0"
+          "Surging.Core.ProxyGenerator": "1.1.0",
+          "Surging.Core.Stage": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Kayak.Modules.Aggregation.ServiceManage.dll": {}
@@ -5019,11 +4843,48 @@
           "bin/placeholder/Kayak.Modules.Aggregation.ServiceManage.dll": {}
         }
       },
+      "Kayak.Modules.Aggregation.System/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Kayak.IModuleServices.Aggregation.System": "1.0.0",
+          "Kayak.IModuleServices.DeviceManage": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Kayak.Modules.Aggregation.System.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kayak.Modules.Aggregation.System.dll": {}
+        }
+      },
+      "Kayak.Modules.DeviceReport/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Kayak.Core.Http": "1.0.0",
+          "Kayak.IModuleServices.DeviceManage": "1.0.0",
+          "Kayak.IModuleServices.DeviceReport": "1.0.0",
+          "Kayak.IModuleServices.System": "1.0.0",
+          "Surging.Core.DeviceGateway": "1.0.0",
+          "Surging.Core.Protocol.Coap": "1.0.0",
+          "Surging.Core.Protocol.Mqtt": "1.1.0",
+          "Surging.Core.Protocol.Tcp": "1.0.0",
+          "Surging.Core.Protocol.Udp": "1.0.0",
+          "Surging.Core.Protocol.WebService": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Kayak.Modules.DeviceReport.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kayak.Modules.DeviceReport.dll": {}
+        }
+      },
       "surging/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Autofac": "4.9.4",
+          "DotNetty.Buffers": "0.6.0",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "2.9.0",
           "Microsoft.Extensions.Configuration": "2.2.0",
           "Microsoft.Extensions.Configuration.Binder": "2.2.4",
@@ -5034,13 +4895,30 @@
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
           "Newtonsoft.Json": "11.0.2",
-          "Surging.Core.ServiceHosting": "1.1.0"
+          "Surging.Core.ServiceHosting": "1.1.0",
+          "System.Reactive": "5.0.0"
         },
         "compile": {
           "bin/placeholder/surging.dll": {}
         },
         "runtime": {
           "bin/placeholder/surging.dll": {}
+        }
+      },
+      "Surging.Apm.Skywalking/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          ".Transport.Grpc.Protocol": "1.0.0",
+          "AspectCore.Extensions.Reflection": "1.2.0",
+          "Microsoft.Extensions.Configuration.Json": "2.2.0",
+          "surging": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Surging.Apm.Skywalking.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Surging.Apm.Skywalking.dll": {}
         }
       },
       "Surging.Core.ApiGateWay/1.0.0": {
@@ -5083,7 +4961,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "MessagePack": "1.7.3.4",
+          "MessagePack": "2.2.85",
           "surging": "1.0.0"
         },
         "compile": {
@@ -5150,6 +5028,22 @@
         },
         "runtime": {
           "bin/placeholder/Surging.Core.Consul.dll": {}
+        }
+      },
+      "Surging.Core.DeviceGateway/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DotNetty.Buffers": "0.6.0",
+          "Jint": "2.11.58",
+          "RulesEngine": "3.5.0",
+          "surging": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Surging.Core.DeviceGateway.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Surging.Core.DeviceGateway.dll": {}
         }
       },
       "Surging.Core.DNS/1.0.0": {
@@ -5245,6 +5139,7 @@
           "Google.Protobuf": "3.10.1",
           "Grpc.Core": "2.24.0",
           "Grpc.Reflection": "2.24.0",
+          "System.Reactive": "5.0.0",
           "surging": "1.0.0"
         },
         "compile": {
@@ -5286,6 +5181,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Surging.Core.Codec.MessagePack": "1.1.0",
           "Surging.Core.ProxyGenerator": "1.1.0",
           "System.Reactive": "5.0.0",
           "surging": "1.0.0"
@@ -5336,6 +5232,20 @@
           "bin/placeholder/Surging.Core.Nlog.dll": {}
         }
       },
+      "Surging.Core.Protocol.Coap/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CoAP.NET": "1.0.0",
+          "Surging.Core.ProxyGenerator": "1.1.0"
+        },
+        "compile": {
+          "bin/placeholder/Surging.Core.Protocol.Coap.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Surging.Core.Protocol.Coap.dll": {}
+        }
+      },
       "Surging.Core.Protocol.Http/1.1.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -5360,8 +5270,9 @@
         "dependencies": {
           "DotNetty.Codecs": "0.6.0",
           "DotNetty.Codecs.Mqtt": "0.6.0",
-          "DotNetty.Transport.Libuv": "0.4.8",
+          "DotNetty.Transport.Libuv": "0.6.0",
           "Surging.Core.ProxyGenerator": "1.1.0",
+          "System.Reactive": "5.0.0",
           "surging": "1.0.0"
         },
         "compile": {
@@ -5377,6 +5288,7 @@
         "dependencies": {
           "DotNetty.Codecs": "0.6.0",
           "DotNetty.Handlers": "0.6.0",
+          "DotNetty.Transport.Libuv": "0.6.0",
           "Jint": "2.11.58",
           "RulesEngine": "3.5.0",
           "Surging.Core.ProxyGenerator": "1.1.0",
@@ -5395,7 +5307,9 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "DotNetty.Codecs": "0.6.0",
+          "DotNetty.Transport.Libuv": "0.6.0",
           "Surging.Core.ProxyGenerator": "1.1.0",
+          "System.Reactive": "5.0.0",
           "surging": "1.0.0"
         },
         "compile": {
@@ -5409,7 +5323,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "SoapCore": "1.1.0.36",
+          "SoapCore": "1.1.0.49",
           "Surging.Core.ApiGateWay": "1.0.0",
           "Surging.Core.KestrelHttpServer": "1.1.0"
         },
@@ -5426,6 +5340,7 @@
         "dependencies": {
           "Surging.Core.ProxyGenerator": "1.1.0",
           "Surging.WebSocketCore": "1.9.2",
+          "System.Reactive": "5.0.0",
           "surging": "1.0.0"
         },
         "compile": {
@@ -5625,6 +5540,19 @@
         "arsoft.tools.net.core.nuspec",
         "lib/net46/ARSoft.Tools.Net.Core.dll",
         "lib/netstandard2.0/ARSoft.Tools.Net.Core.dll"
+      ]
+    },
+    "AspectCore.Extensions.Reflection/1.2.0": {
+      "sha512": "+9Ebk4YNMIueiJGhFbrfF8Zr9XY462lRaw6IgYgtfxSopoZSMRlksPnCIxWGoXBijuMeUjRbnULWaTwuZXZLgw==",
+      "type": "package",
+      "path": "aspectcore.extensions.reflection/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspectcore.extensions.reflection.1.2.0.nupkg.sha512",
+        "aspectcore.extensions.reflection.nuspec",
+        "lib/net45/AspectCore.Extensions.Reflection.dll",
+        "lib/netstandard2.0/AspectCore.Extensions.Reflection.dll"
       ]
     },
     "Autofac/4.9.4": {
@@ -5901,24 +5829,35 @@
         "lib/netstandard2.1/FluentValidation.xml"
       ]
     },
-    "Google.Protobuf/3.10.1": {
-      "sha512": "SAmoXQYigTD/SY3bItKVCccGiOjMNjn31Hug2R17QMbhQHGy5/9XncEqbEmNYK8MjEMk6RZfuTtL1HyjEAJH4g==",
+    "Google.Protobuf/3.15.0": {
+      "sha512": "2na7LsYrtxkEQaVCNjaafBzVu4IJ4U4+dwwBazK8oUkpDiIFjO0GkyTc+IbStx4xNVAV4EqHl+qp2uegFgFiiA==",
       "type": "package",
-      "path": "google.protobuf/3.10.1",
+      "path": "google.protobuf/3.15.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "google.protobuf.3.10.1.nupkg.sha512",
+        "google.protobuf.3.15.0.nupkg.sha512",
         "google.protobuf.nuspec",
         "lib/net45/Google.Protobuf.dll",
         "lib/net45/Google.Protobuf.pdb",
         "lib/net45/Google.Protobuf.xml",
-        "lib/netstandard1.0/Google.Protobuf.dll",
-        "lib/netstandard1.0/Google.Protobuf.pdb",
-        "lib/netstandard1.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
         "lib/netstandard2.0/Google.Protobuf.dll",
         "lib/netstandard2.0/Google.Protobuf.pdb",
         "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
+    "Grpc/2.24.0": {
+      "sha512": "fNuzL91uTvZgo/9fh+np4A/I3IV2fEbnGOC7kFygQYn5hA5nW9pO0+U/vf/5h+Yo1DxdU7schqgWlsqKbo0IJg==",
+      "type": "package",
+      "path": "grpc/2.24.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.2.24.0.nupkg.sha512",
+        "grpc.nuspec"
       ]
     },
     "Grpc.Core/2.24.0": {
@@ -6122,23 +6061,55 @@
         "log4net.nuspec"
       ]
     },
-    "MessagePack/1.7.3.4": {
-      "sha512": "QSKZVq6BmNaz/B4n0bAM/moQnc4E6XZ7uXRbJcEXxUzZufJiDYDE6awYqDtNz6acupYoPt2QupGV4rpyPCRRtg==",
+    "MessagePack/2.2.85": {
+      "sha512": "3SqAgwNV5LOf+ZapHmjQMUc7WDy/1ur9CfFNjgnfMZKCB5CxkVVbyHa06fObjGTEHZI7mcDathYjkI+ncr92ZQ==",
       "type": "package",
-      "path": "messagepack/1.7.3.4",
+      "path": "messagepack/2.2.85",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net45/MessagePack.dll",
-        "lib/net45/MessagePack.xml",
-        "lib/net47/MessagePack.dll",
-        "lib/net47/MessagePack.xml",
-        "lib/netstandard1.6/MessagePack.dll",
-        "lib/netstandard1.6/MessagePack.xml",
+        "LICENSE",
+        "lib/netcoreapp2.1/MessagePack.dll",
+        "lib/netcoreapp2.1/MessagePack.xml",
         "lib/netstandard2.0/MessagePack.dll",
         "lib/netstandard2.0/MessagePack.xml",
-        "messagepack.1.7.3.4.nupkg.sha512",
+        "messagepack.2.2.85.nupkg.sha512",
         "messagepack.nuspec"
+      ]
+    },
+    "MessagePack.Annotations/2.2.85": {
+      "sha512": "YptRsDCQK35K5FhmZ0LojW4t8I6DpetLfK5KG8PVY2f6h7/gdyr8f4++xdSEK/xS6XX7/GPvEpqszKVPksCsiQ==",
+      "type": "package",
+      "path": "messagepack.annotations/2.2.85",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.0/MessagePack.Annotations.dll",
+        "lib/netstandard2.0/MessagePack.Annotations.xml",
+        "messagepack.annotations.2.2.85.nupkg.sha512",
+        "messagepack.annotations.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Connections.Abstractions/6.0.27": {
+      "sha512": "z6fjlGehsyWUNBIolStPnqsTHoQtuRcjZpzLszC5brWJ6gIeYUJwzDfcmkMgzGe7OrksWiRbL9h+cdTI+sghXg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.connections.abstractions/6.0.27",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "lib/net461/Microsoft.AspNetCore.Connections.Abstractions.xml",
+        "lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.AspNetCore.Connections.Abstractions.xml",
+        "microsoft.aspnetcore.connections.abstractions.6.0.27.nupkg.sha512",
+        "microsoft.aspnetcore.connections.abstractions.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
@@ -6165,6 +6136,56 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
         "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.http.features.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Abstractions/2.1.38": {
+      "sha512": "J+XhGzKPmW4D6c2OvIbz2cC1eWOJZd6/V4/2V5JUkm0uXLjFgbmM3tuYfVvncjB4vzoRAHkSTrjNTXe39eArqQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.abstractions/2.1.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.xml",
+        "microsoft.aspnetcore.mvc.abstractions.2.1.38.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Routing.Abstractions/2.1.1": {
+      "sha512": "Aa88Bi0/HI8dPReC0XqByPiVGYDRfj6Xh2eVsNCisnlgFHonDdW9CQsNPhVSK+uWQl3kDMFxFpeJ1ktz/wUHsQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.routing.abstractions/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.xml",
+        "microsoft.aspnetcore.routing.abstractions.2.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.routing.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+      "sha512": "K63Y4hORbBcKLWH5wnKgzyn7TOfYzevIEwIedQHBIkmkEBA9SCqgvom+XTuE+fAFGvINGkhFItaZ2dvMGdT5iw==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/2.6.1": {
@@ -6363,107 +6384,19 @@
         "version.txt"
       ]
     },
-    "Microsoft.Data.SqlClient/2.1.7": {
-      "sha512": "dSdlcXPszeOjjDX9a0buMFgYqKrI5bTxdSgX3JyCa+OL80NUstJSxOJr0j9oOn8mpP5PgWeRC2bVf/Zf2Cjv+g==",
+    "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
+      "sha512": "9KPDwvb/hLEVXYruVHVZ8BkebC8j17DmPb56LnqRF74HqSPLjCkrlFUjOtFpQPA2DeADBRTI/e69aCfRBfrhxw==",
       "type": "package",
-      "path": "microsoft.data.sqlclient/2.1.7",
+      "path": "microsoft.dotnet.platformabstractions/2.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "dotnet.png",
-        "lib/net46/Microsoft.Data.SqlClient.dll",
-        "lib/net46/Microsoft.Data.SqlClient.pdb",
-        "lib/net46/Microsoft.Data.SqlClient.xml",
-        "lib/net46/de/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/es/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/fr/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/it/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/ja/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/ko/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/pt-BR/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/ru/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
-        "lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll",
-        "lib/netcoreapp2.1/Microsoft.Data.SqlClient.pdb",
-        "lib/netcoreapp2.1/Microsoft.Data.SqlClient.xml",
-        "lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
-        "lib/netcoreapp3.1/Microsoft.Data.SqlClient.pdb",
-        "lib/netcoreapp3.1/Microsoft.Data.SqlClient.xml",
-        "lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
-        "lib/netstandard2.0/Microsoft.Data.SqlClient.pdb",
-        "lib/netstandard2.0/Microsoft.Data.SqlClient.xml",
-        "lib/netstandard2.1/Microsoft.Data.SqlClient.dll",
-        "lib/netstandard2.1/Microsoft.Data.SqlClient.pdb",
-        "lib/netstandard2.1/Microsoft.Data.SqlClient.xml",
-        "microsoft.data.sqlclient.2.1.7.nupkg.sha512",
-        "microsoft.data.sqlclient.nuspec",
-        "ref/net46/Microsoft.Data.SqlClient.dll",
-        "ref/net46/Microsoft.Data.SqlClient.pdb",
-        "ref/net46/Microsoft.Data.SqlClient.xml",
-        "ref/netcoreapp2.1/Microsoft.Data.SqlClient.dll",
-        "ref/netcoreapp2.1/Microsoft.Data.SqlClient.pdb",
-        "ref/netcoreapp2.1/Microsoft.Data.SqlClient.xml",
-        "ref/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
-        "ref/netcoreapp3.1/Microsoft.Data.SqlClient.pdb",
-        "ref/netcoreapp3.1/Microsoft.Data.SqlClient.xml",
-        "ref/netstandard2.0/Microsoft.Data.SqlClient.dll",
-        "ref/netstandard2.0/Microsoft.Data.SqlClient.pdb",
-        "ref/netstandard2.0/Microsoft.Data.SqlClient.xml",
-        "ref/netstandard2.1/Microsoft.Data.SqlClient.dll",
-        "ref/netstandard2.1/Microsoft.Data.SqlClient.pdb",
-        "ref/netstandard2.1/Microsoft.Data.SqlClient.xml",
-        "runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll",
-        "runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.pdb",
-        "runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
-        "runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.pdb",
-        "runtimes/unix/lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
-        "runtimes/unix/lib/netstandard2.0/Microsoft.Data.SqlClient.pdb",
-        "runtimes/unix/lib/netstandard2.1/Microsoft.Data.SqlClient.dll",
-        "runtimes/unix/lib/netstandard2.1/Microsoft.Data.SqlClient.pdb",
-        "runtimes/win/lib/net46/Microsoft.Data.SqlClient.dll",
-        "runtimes/win/lib/net46/Microsoft.Data.SqlClient.pdb",
-        "runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll",
-        "runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.pdb",
-        "runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
-        "runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.pdb",
-        "runtimes/win/lib/netstandard2.0/Microsoft.Data.SqlClient.dll",
-        "runtimes/win/lib/netstandard2.0/Microsoft.Data.SqlClient.pdb",
-        "runtimes/win/lib/netstandard2.1/Microsoft.Data.SqlClient.dll",
-        "runtimes/win/lib/netstandard2.1/Microsoft.Data.SqlClient.pdb"
-      ]
-    },
-    "Microsoft.Data.SqlClient.SNI.runtime/2.1.1": {
-      "sha512": "JwGDWkyZgm7SATJmFLfT2G4teimvNbNtq3lsS9a5DzvhEZnQrZjZhevCU0vdx8MjheLHoG5vocuO03QtioFQxQ==",
-      "type": "package",
-      "path": "microsoft.data.sqlclient.sni.runtime/2.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "dotnet.png",
-        "microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
-        "microsoft.data.sqlclient.sni.runtime.nuspec",
-        "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll",
-        "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll",
-        "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll",
-        "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
-      ]
-    },
-    "Microsoft.Data.Sqlite.Core/6.0.32": {
-      "sha512": "T3Ih31MmqhxTTIPGfTU+SawTdZcZmagO+SBWk3HixFcihIJoKzOsDZeb8VrUi2AEmJRia/Yaw0/2Pgczf5+Ntw==",
-      "type": "package",
-      "path": "microsoft.data.sqlite.core/6.0.32",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/net6.0/Microsoft.Data.Sqlite.dll",
-        "lib/net6.0/Microsoft.Data.Sqlite.xml",
-        "lib/netstandard2.0/Microsoft.Data.Sqlite.dll",
-        "lib/netstandard2.0/Microsoft.Data.Sqlite.xml",
-        "microsoft.data.sqlite.core.6.0.32.nupkg.sha512",
-        "microsoft.data.sqlite.core.nuspec"
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll",
+        "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll",
+        "microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
+        "microsoft.dotnet.platformabstractions.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore/6.0.32": {
@@ -6536,47 +6469,6 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
         "microsoft.entityframeworkcore.relational.6.0.32.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Sqlite/6.0.32": {
-      "sha512": "6AljKLLzpHyz44MiGABqA02sqyTV0ZXPCQjo1WHIKf2hFUsYnL1IyTFHEYj2qdeR0VhB1ikf3nQrqmZrjjz8eg==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlite/6.0.32",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/net6.0/_._",
-        "microsoft.entityframeworkcore.sqlite.6.0.32.nupkg.sha512",
-        "microsoft.entityframeworkcore.sqlite.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Sqlite.Core/6.0.32": {
-      "sha512": "vXl7eR/2jOChh5iNtLLxupf+cc1Y7jUMmP7A3fvCaGB0XIBE8o+SuvHtHvks6NeVuS8tkKlAs3nU2dxw/GaW+w==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlite.core/6.0.32",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.dll",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.xml",
-        "microsoft.entityframeworkcore.sqlite.core.6.0.32.nupkg.sha512",
-        "microsoft.entityframeworkcore.sqlite.core.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.SqlServer/6.0.32": {
-      "sha512": "gahkT7niO7ZBEQ1KE2gpntI44+60v78mk71zULOizmJuozgrvfno6JJSaReqxgWyi+exkuaehF8yGgeGDMh0Pg==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/6.0.32",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.6.0.32.nupkg.sha512",
-        "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
@@ -6751,23 +6643,39 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyModel/6.0.0": {
-      "sha512": "TD5QHg98m3+QhgEV1YVoNMl5KtBw/4rjfxLHO0e/YV9bPUBDKntApP4xdrVtGgCeQZHVfC2EXIGsdpRNrr87Pg==",
+    "Microsoft.Extensions.DependencyModel/2.1.0": {
+      "sha512": "nS2XKqi+1A1umnYNLX2Fbm/XnzCxs5i+zXVJ3VC6r9t2z0NZr9FLnJN4VQpKigdcWH/iFTbMuX6M6WQJcTjVIg==",
       "type": "package",
-      "path": "microsoft.extensions.dependencymodel/6.0.0",
+      "path": "microsoft.extensions.dependencymodel/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net451/Microsoft.Extensions.DependencyModel.dll",
+        "lib/netstandard1.3/Microsoft.Extensions.DependencyModel.dll",
+        "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll",
+        "microsoft.extensions.dependencymodel.2.1.0.nupkg.sha512",
+        "microsoft.extensions.dependencymodel.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Features/6.0.27": {
+      "sha512": "R5x31+JobriOiCeveY2hBTlKLMTGLly4bk06xhT3ngSg8kGfkXwryuIYuyk4aGBcvdOIXDFI9xjHyoJEXIxO8A==",
+      "type": "package",
+      "path": "microsoft.extensions.features/6.0.27",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.Extensions.DependencyModel.dll",
-        "lib/net461/Microsoft.Extensions.DependencyModel.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.xml",
-        "microsoft.extensions.dependencymodel.6.0.0.nupkg.sha512",
-        "microsoft.extensions.dependencymodel.nuspec",
-        "useSharedDesignerContext.txt"
+        "lib/net461/Microsoft.Extensions.Features.dll",
+        "lib/net461/Microsoft.Extensions.Features.xml",
+        "lib/net6.0/Microsoft.Extensions.Features.dll",
+        "lib/net6.0/Microsoft.Extensions.Features.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Features.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Features.xml",
+        "microsoft.extensions.features.6.0.27.nupkg.sha512",
+        "microsoft.extensions.features.nuspec"
       ]
     },
     "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
@@ -6980,150 +6888,31 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Identity.Client/4.21.1": {
-      "sha512": "vycgk7S/HAbHaUaK4Tid1fsWHsXdFRRP2KavAIOHCVV27zvuQfYAjXmMvctuuF4egydSumG58CwPZob3gWeYgQ==",
+    "Microsoft.Net.Http.Headers/2.1.1": {
+      "sha512": "lPNIphl8b2EuhOE9dMH6EZDmu7pS882O+HMi5BJNsigxHaWlBrYxZHFZgE18cyaPp6SSZcTkKkuzfjV/RRQKlA==",
       "type": "package",
-      "path": "microsoft.identity.client/4.21.1",
+      "path": "microsoft.net.http.headers/2.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/monoandroid10.0/Microsoft.Identity.Client.dll",
-        "lib/monoandroid10.0/Microsoft.Identity.Client.xml",
-        "lib/monoandroid90/Microsoft.Identity.Client.dll",
-        "lib/monoandroid90/Microsoft.Identity.Client.xml",
-        "lib/net45/Microsoft.Identity.Client.dll",
-        "lib/net45/Microsoft.Identity.Client.xml",
-        "lib/net461/Microsoft.Identity.Client.dll",
-        "lib/net461/Microsoft.Identity.Client.xml",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.xml",
-        "lib/netstandard1.3/Microsoft.Identity.Client.dll",
-        "lib/netstandard1.3/Microsoft.Identity.Client.xml",
-        "lib/uap10.0/Microsoft.Identity.Client.dll",
-        "lib/uap10.0/Microsoft.Identity.Client.pri",
-        "lib/uap10.0/Microsoft.Identity.Client.xml",
-        "lib/xamarinios10/Microsoft.Identity.Client.dll",
-        "lib/xamarinios10/Microsoft.Identity.Client.xml",
-        "lib/xamarinmac20/Microsoft.Identity.Client.dll",
-        "lib/xamarinmac20/Microsoft.Identity.Client.xml",
-        "microsoft.identity.client.4.21.1.nupkg.sha512",
-        "microsoft.identity.client.nuspec",
-        "ref/MonoAndroid10.0/Microsoft.Identity.Client.dll",
-        "ref/MonoAndroid10.0/Microsoft.Identity.Client.xml",
-        "ref/MonoAndroid9.0/Microsoft.Identity.Client.dll",
-        "ref/MonoAndroid9.0/Microsoft.Identity.Client.xml",
-        "ref/Xamarin.iOS10/Microsoft.Identity.Client.dll",
-        "ref/Xamarin.iOS10/Microsoft.Identity.Client.xml",
-        "ref/net45/Microsoft.Identity.Client.dll",
-        "ref/net45/Microsoft.Identity.Client.xml",
-        "ref/net461/Microsoft.Identity.Client.dll",
-        "ref/net461/Microsoft.Identity.Client.xml",
-        "ref/netcoreapp2.1/Microsoft.Identity.Client.dll",
-        "ref/netcoreapp2.1/Microsoft.Identity.Client.xml",
-        "ref/netstandard1.3/Microsoft.Identity.Client.dll",
-        "ref/netstandard1.3/Microsoft.Identity.Client.xml",
-        "ref/uap10.0/Microsoft.Identity.Client.dll",
-        "ref/uap10.0/Microsoft.Identity.Client.xml",
-        "ref/xamarinmac20/Microsoft.Identity.Client.dll",
-        "ref/xamarinmac20/Microsoft.Identity.Client.xml"
+        "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll",
+        "lib/netstandard2.0/Microsoft.Net.Http.Headers.xml",
+        "microsoft.net.http.headers.2.1.1.nupkg.sha512",
+        "microsoft.net.http.headers.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
-      "sha512": "+7JIww64PkMt7NWFxoe4Y/joeF7TAtA/fQ0b2GFGcagzB59sKkTt/sMZWR6aSZht5YC7SdHi3W6yM1yylRGJCQ==",
+    "Microsoft.NETCore.Platforms/3.1.9": {
+      "sha512": "e+/BrhryHoMojWlbcPJAFcShpk3JYvsMfrmoM26dnvHARWR6vtmGbfHppZcANVqf7DUBDIRxlZXcWg7v/9e1TQ==",
       "type": "package",
-      "path": "microsoft.identitymodel.jsonwebtokens/6.8.0",
+      "path": "microsoft.netcore.platforms/3.1.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.dll",
-        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
-        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
-        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
-        "microsoft.identitymodel.jsonwebtokens.nuspec"
-      ]
-    },
-    "Microsoft.IdentityModel.Logging/6.8.0": {
-      "sha512": "Rfh/p4MaN4gkmhPxwbu8IjrmoDncGfHHPh1sTnc0AcM/Oc39/fzC9doKNWvUAjzFb8LqA6lgZyblTrIsX/wDXg==",
-      "type": "package",
-      "path": "microsoft.identitymodel.logging/6.8.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.IdentityModel.Logging.dll",
-        "lib/net45/Microsoft.IdentityModel.Logging.xml",
-        "lib/net461/Microsoft.IdentityModel.Logging.dll",
-        "lib/net461/Microsoft.IdentityModel.Logging.xml",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
-        "microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
-        "microsoft.identitymodel.logging.nuspec"
-      ]
-    },
-    "Microsoft.IdentityModel.Protocols/6.8.0": {
-      "sha512": "OJZx5nPdiH+MEkwCkbJrTAUiO/YzLe0VSswNlDxJsJD9bhOIdXHufh650pfm59YH1DNevp3/bXzukKrG57gA1w==",
-      "type": "package",
-      "path": "microsoft.identitymodel.protocols/6.8.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.IdentityModel.Protocols.dll",
-        "lib/net45/Microsoft.IdentityModel.Protocols.xml",
-        "lib/net461/Microsoft.IdentityModel.Protocols.dll",
-        "lib/net461/Microsoft.IdentityModel.Protocols.xml",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.xml",
-        "microsoft.identitymodel.protocols.6.8.0.nupkg.sha512",
-        "microsoft.identitymodel.protocols.nuspec"
-      ]
-    },
-    "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.8.0": {
-      "sha512": "X/PiV5l3nYYsodtrNMrNQIVlDmHpjQQ5w48E+o/D5H4es2+4niEyQf3l03chvZGWNzBRhfSstaXr25/Ye4AeYw==",
-      "type": "package",
-      "path": "microsoft.identitymodel.protocols.openidconnect/6.8.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
-        "lib/net45/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
-        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
-        "lib/net461/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.xml",
-        "microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
-        "microsoft.identitymodel.protocols.openidconnect.nuspec"
-      ]
-    },
-    "Microsoft.IdentityModel.Tokens/6.8.0": {
-      "sha512": "gTqzsGcmD13HgtNePPcuVHZ/NXWmyV+InJgalW/FhWpII1D7V1k0obIseGlWMeA4G+tZfeGMfXr0klnWbMR/mQ==",
-      "type": "package",
-      "path": "microsoft.identitymodel.tokens/6.8.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.IdentityModel.Tokens.dll",
-        "lib/net45/Microsoft.IdentityModel.Tokens.xml",
-        "lib/net461/Microsoft.IdentityModel.Tokens.dll",
-        "lib/net461/Microsoft.IdentityModel.Tokens.xml",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
-        "microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
-        "microsoft.identitymodel.tokens.nuspec"
-      ]
-    },
-    "Microsoft.NETCore.Platforms/3.1.0": {
-      "sha512": "z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
-      "type": "package",
-      "path": "microsoft.netcore.platforms/3.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.3.1.9.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
@@ -7200,10 +6989,10 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Microsoft.Win32.Registry/4.7.0": {
-      "sha512": "KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
+    "Microsoft.Win32.Registry/4.5.0": {
+      "sha512": "+FWlwd//+Tt56316p00hVePBCouXyEzT86Jb3+AuRotTND0IYn0OO3obs1gnQEs/txEnt+rF2JBGLItTG+Be6A==",
       "type": "package",
-      "path": "microsoft.win32.registry/4.7.0",
+      "path": "microsoft.win32.registry/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7211,17 +7000,13 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net46/Microsoft.Win32.Registry.dll",
         "lib/net461/Microsoft.Win32.Registry.dll",
-        "lib/net461/Microsoft.Win32.Registry.xml",
         "lib/netstandard1.3/Microsoft.Win32.Registry.dll",
         "lib/netstandard2.0/Microsoft.Win32.Registry.dll",
-        "lib/netstandard2.0/Microsoft.Win32.Registry.xml",
-        "microsoft.win32.registry.4.7.0.nupkg.sha512",
+        "microsoft.win32.registry.4.5.0.nupkg.sha512",
         "microsoft.win32.registry.nuspec",
         "ref/net46/Microsoft.Win32.Registry.dll",
         "ref/net461/Microsoft.Win32.Registry.dll",
         "ref/net461/Microsoft.Win32.Registry.xml",
-        "ref/net472/Microsoft.Win32.Registry.dll",
-        "ref/net472/Microsoft.Win32.Registry.xml",
         "ref/netstandard1.3/Microsoft.Win32.Registry.dll",
         "ref/netstandard1.3/Microsoft.Win32.Registry.xml",
         "ref/netstandard1.3/de/Microsoft.Win32.Registry.xml",
@@ -7236,13 +7021,10 @@
         "ref/netstandard2.0/Microsoft.Win32.Registry.dll",
         "ref/netstandard2.0/Microsoft.Win32.Registry.xml",
         "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
-        "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.xml",
         "runtimes/win/lib/net46/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/net461/Microsoft.Win32.Registry.dll",
-        "runtimes/win/lib/net461/Microsoft.Win32.Registry.xml",
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
-        "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -7863,10 +7645,10 @@
         "serilog.sinks.rollingfile.nuspec"
       ]
     },
-    "SoapCore/1.1.0.36": {
-      "sha512": "J6irwsxNxwJxAPnXuOVD56A5gYX9a20IRcjkBonIupZuoT8PIS9AJ07FQdnnll85z+5tvbr4H2MIpjLWSXkrow==",
+    "SoapCore/1.1.0.49": {
+      "sha512": "szympQY3LtGU+rhz3qDtRzBC2pek7j8EtTKq3NDPQfxHw3oEF74CmIkWv2FTxhFlubnzcSNaKoyPEYDSFzeWJQ==",
       "type": "package",
-      "path": "soapcore/1.1.0.36",
+      "path": "soapcore/1.1.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7881,97 +7663,8 @@
         "lib/netstandard2.1/SoapCore.dll",
         "lib/netstandard2.1/SoapCore.xml",
         "logo.png",
-        "soapcore.1.1.0.36.nupkg.sha512",
+        "soapcore.1.1.0.49.nupkg.sha512",
         "soapcore.nuspec"
-      ]
-    },
-    "SQLitePCLRaw.bundle_e_sqlite3/2.1.2": {
-      "sha512": "ilkvNhrTersLmIVAcDwwPqfhUFCg19Z1GVMvCSi3xk6Akq94f4qadLORQCq/T8+9JgMiPs+F/NECw5uauviaNw==",
-      "type": "package",
-      "path": "sqlitepclraw.bundle_e_sqlite3/2.1.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/monoandroid90/SQLitePCLRaw.batteries_v2.dll",
-        "lib/net461/SQLitePCLRaw.batteries_v2.dll",
-        "lib/net6.0-android31.0/SQLitePCLRaw.batteries_v2.dll",
-        "lib/net6.0-android31.0/SQLitePCLRaw.batteries_v2.xml",
-        "lib/net6.0-ios14.0/SQLitePCLRaw.batteries_v2.dll",
-        "lib/net6.0-ios14.2/SQLitePCLRaw.batteries_v2.dll",
-        "lib/net6.0-tvos10.0/SQLitePCLRaw.batteries_v2.dll",
-        "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll",
-        "lib/xamarinios10/SQLitePCLRaw.batteries_v2.dll",
-        "sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
-        "sqlitepclraw.bundle_e_sqlite3.nuspec"
-      ]
-    },
-    "SQLitePCLRaw.core/2.1.2": {
-      "sha512": "A8EBepVqY2lnAp3a8jnhbgzF2tlj2S3HcJQGANTYg/TbYbKa8Z5cM1h74An/vy0svhfzT7tVY0sFmUglLgv+2g==",
-      "type": "package",
-      "path": "sqlitepclraw.core/2.1.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/SQLitePCLRaw.core.dll",
-        "sqlitepclraw.core.2.1.2.nupkg.sha512",
-        "sqlitepclraw.core.nuspec"
-      ]
-    },
-    "SQLitePCLRaw.lib.e_sqlite3/2.1.2": {
-      "sha512": "zibGtku8M4Eea1R3ZCAxc86QbNvyEN17mAcQkvWKBuHvRpMiK2g5anG4R5Be7cWKSd1i6baYz8y4dMMAKcXKPg==",
-      "type": "package",
-      "path": "sqlitepclraw.lib.e_sqlite3/2.1.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "buildTransitive/net461/SQLitePCLRaw.lib.e_sqlite3.targets",
-        "buildTransitive/net6.0/SQLitePCLRaw.lib.e_sqlite3.targets",
-        "buildTransitive/net7.0/SQLitePCLRaw.lib.e_sqlite3.targets",
-        "lib/net461/_._",
-        "lib/netstandard2.0/_._",
-        "runtimes/alpine-arm/native/libe_sqlite3.so",
-        "runtimes/alpine-arm64/native/libe_sqlite3.so",
-        "runtimes/alpine-x64/native/libe_sqlite3.so",
-        "runtimes/browser-wasm/nativeassets/net6.0/e_sqlite3.a",
-        "runtimes/browser-wasm/nativeassets/net7.0/e_sqlite3.a",
-        "runtimes/linux-arm/native/libe_sqlite3.so",
-        "runtimes/linux-arm64/native/libe_sqlite3.so",
-        "runtimes/linux-armel/native/libe_sqlite3.so",
-        "runtimes/linux-mips64/native/libe_sqlite3.so",
-        "runtimes/linux-musl-arm/native/libe_sqlite3.so",
-        "runtimes/linux-musl-arm64/native/libe_sqlite3.so",
-        "runtimes/linux-musl-x64/native/libe_sqlite3.so",
-        "runtimes/linux-s390x/native/libe_sqlite3.so",
-        "runtimes/linux-x64/native/libe_sqlite3.so",
-        "runtimes/linux-x86/native/libe_sqlite3.so",
-        "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib",
-        "runtimes/maccatalyst-x64/native/libe_sqlite3.dylib",
-        "runtimes/osx-arm64/native/libe_sqlite3.dylib",
-        "runtimes/osx-x64/native/libe_sqlite3.dylib",
-        "runtimes/win-arm/native/e_sqlite3.dll",
-        "runtimes/win-arm64/native/e_sqlite3.dll",
-        "runtimes/win-x64/native/e_sqlite3.dll",
-        "runtimes/win-x86/native/e_sqlite3.dll",
-        "runtimes/win10-arm/nativeassets/uap10.0/e_sqlite3.dll",
-        "runtimes/win10-arm64/nativeassets/uap10.0/e_sqlite3.dll",
-        "runtimes/win10-x64/nativeassets/uap10.0/e_sqlite3.dll",
-        "runtimes/win10-x86/nativeassets/uap10.0/e_sqlite3.dll",
-        "sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
-        "sqlitepclraw.lib.e_sqlite3.nuspec"
-      ]
-    },
-    "SQLitePCLRaw.provider.e_sqlite3/2.1.2": {
-      "sha512": "lxCZarZdvAsMl2zw9bXHrXK6RxVhB4b23iTFhCOdHFhxfbsxLxWf+ocvswJwR/9Wh/E//ddMi+wJGqUKV7VwoA==",
-      "type": "package",
-      "path": "sqlitepclraw.provider.e_sqlite3/2.1.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll",
-        "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll",
-        "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll",
-        "sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
-        "sqlitepclraw.provider.e_sqlite3.nuspec"
       ]
     },
     "StackExchange.Redis/2.0.505": {
@@ -8046,17 +7739,15 @@
         "system.appcontext.nuspec"
       ]
     },
-    "System.Buffers/4.5.1": {
-      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+    "System.Buffers/4.5.0": {
+      "sha512": "pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
       "type": "package",
-      "path": "system.buffers/4.5.1",
+      "path": "system.buffers/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Buffers.dll",
-        "lib/net461/System.Buffers.xml",
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.1/System.Buffers.dll",
         "lib/netstandard1.1/System.Buffers.xml",
@@ -8071,7 +7762,7 @@
         "ref/netstandard2.0/System.Buffers.dll",
         "ref/netstandard2.0/System.Buffers.xml",
         "ref/uap10.0.16299/_._",
-        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.4.5.0.nupkg.sha512",
         "system.buffers.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -8488,24 +8179,22 @@
         "system.componentmodel.typeconverter.nuspec"
       ]
     },
-    "System.Configuration.ConfigurationManager/4.7.0": {
-      "sha512": "/anOTeSZCNNI2zDilogWrZ8pNqCmYbzGNexUnNhjW8k0sHqEZ2nHJBp147jBV3hGYswu5lINpNg1vxR7bnqvVA==",
+    "System.Configuration.ConfigurationManager/4.5.0": {
+      "sha512": "UIFvaFfuKhLr9u5tWMxmVoDPkFeD+Qv8gUuap4aZgVGYSYMdERck4OhLN/2gulAc0nYTEigWXSJNNWshrmxnng==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/4.7.0",
+      "path": "system.configuration.configurationmanager/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/System.Configuration.ConfigurationManager.dll",
-        "lib/net461/System.Configuration.ConfigurationManager.xml",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
-        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
         "ref/net461/System.Configuration.ConfigurationManager.dll",
         "ref/net461/System.Configuration.ConfigurationManager.xml",
         "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+        "system.configuration.configurationmanager.4.5.0.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -9063,13 +8752,14 @@
         "system.diagnostics.tracing.nuspec"
       ]
     },
-    "System.Drawing.Common/4.7.0": {
-      "sha512": "v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+    "System.Drawing.Common/4.7.3": {
+      "sha512": "B3+wwhAeoUQ6KeshWSq3IRLQiMoqPEzSHzyVyxTI/EbYuqIp90lXrRISlip2AF+5tj74ycIVPpnRY4M424HahA==",
       "type": "package",
-      "path": "system.drawing.common/4.7.0",
+      "path": "system.drawing.common/4.7.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -9096,7 +8786,7 @@
         "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
-        "system.drawing.common.4.7.0.nupkg.sha512",
+        "system.drawing.common.4.7.3.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -9318,23 +9008,6 @@
         "runtimes/win/lib/netstandard1.3/System.Globalization.Extensions.dll",
         "system.globalization.extensions.4.3.0.nupkg.sha512",
         "system.globalization.extensions.nuspec"
-      ]
-    },
-    "System.IdentityModel.Tokens.Jwt/6.8.0": {
-      "sha512": "5tBCjAub2Bhd5qmcd0WhR5s354e4oLYa//kOWrkX+6/7ZbDDJjMTfwLSOiZ/MMpWdE4DWPLOfTLOq/juj9CKzA==",
-      "type": "package",
-      "path": "system.identitymodel.tokens.jwt/6.8.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/System.IdentityModel.Tokens.Jwt.dll",
-        "lib/net45/System.IdentityModel.Tokens.Jwt.xml",
-        "lib/net461/System.IdentityModel.Tokens.Jwt.dll",
-        "lib/net461/System.IdentityModel.Tokens.Jwt.xml",
-        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
-        "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
-        "system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
-        "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
     "System.IO/4.3.0": {
@@ -9648,26 +9321,29 @@
         "system.io.filesystem.watcher.nuspec"
       ]
     },
-    "System.IO.Pipelines/4.5.0": {
-      "sha512": "1GB2tHmb/qRzCF6NX7+1LU6/IKPt8QKm6hHt7Vmyt/olg3XJIwwRzNwdfG0gKgPzNTIj0eOFk6UpVHrVMDrY0w==",
+    "System.IO.Pipelines/6.0.3": {
+      "sha512": "ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
       "type": "package",
-      "path": "system.io.pipelines/4.5.0",
+      "path": "system.io.pipelines/6.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.1/System.IO.Pipelines.dll",
-        "lib/netcoreapp2.1/System.IO.Pipelines.xml",
-        "lib/netstandard1.3/System.IO.Pipelines.dll",
-        "lib/netstandard1.3/System.IO.Pipelines.xml",
+        "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.IO.Pipelines.dll",
+        "lib/net461/System.IO.Pipelines.xml",
+        "lib/net6.0/System.IO.Pipelines.dll",
+        "lib/net6.0/System.IO.Pipelines.xml",
+        "lib/netcoreapp3.1/System.IO.Pipelines.dll",
+        "lib/netcoreapp3.1/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "ref/netstandard1.3/System.IO.Pipelines.dll",
-        "system.io.pipelines.4.5.0.nupkg.sha512",
+        "system.io.pipelines.6.0.3.nupkg.sha512",
         "system.io.pipelines.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.IO.Pipes/4.3.0": {
@@ -9990,24 +9666,22 @@
         "system.linq.queryable.nuspec"
       ]
     },
-    "System.Memory/4.5.4": {
-      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+    "System.Memory/4.5.3": {
+      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "type": "package",
-      "path": "system.memory/4.5.4",
+      "path": "system.memory/4.5.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Memory.dll",
-        "lib/net461/System.Memory.xml",
         "lib/netcoreapp2.1/_._",
         "lib/netstandard1.1/System.Memory.dll",
         "lib/netstandard1.1/System.Memory.xml",
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.4.5.3.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -10805,26 +10479,29 @@
         "version.txt"
       ]
     },
-    "System.Reflection.Emit/4.3.0": {
-      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+    "System.Reflection.Emit/4.6.0": {
+      "sha512": "qAo4jyXtC9i71iElngX7P2r+zLaiHzxKwf66sc3X91tL5Ks6fnQ1vxL04o7ZSm3sYfLExySL7GN8aTpNYpU1qw==",
       "type": "package",
-      "path": "system.reflection.emit/4.3.0",
+      "path": "system.reflection.emit/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/monotouch10/_._",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/monoandroid10/_._",
         "lib/net45/_._",
         "lib/netcore50/System.Reflection.Emit.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Reflection.Emit.dll",
+        "lib/netstandard1.1/System.Reflection.Emit.xml",
         "lib/netstandard1.3/System.Reflection.Emit.dll",
-        "lib/xamarinios10/_._",
+        "lib/netstandard2.0/System.Reflection.Emit.dll",
+        "lib/netstandard2.0/System.Reflection.Emit.xml",
+        "lib/netstandard2.1/_._",
         "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
+        "ref/monoandroid10/_._",
         "ref/net45/_._",
+        "ref/netcoreapp2.0/_._",
         "ref/netstandard1.1/System.Reflection.Emit.dll",
         "ref/netstandard1.1/System.Reflection.Emit.xml",
         "ref/netstandard1.1/de/System.Reflection.Emit.xml",
@@ -10836,9 +10513,16 @@
         "ref/netstandard1.1/ru/System.Reflection.Emit.xml",
         "ref/netstandard1.1/zh-hans/System.Reflection.Emit.xml",
         "ref/netstandard1.1/zh-hant/System.Reflection.Emit.xml",
+        "ref/netstandard2.0/System.Reflection.Emit.dll",
+        "ref/netstandard2.0/System.Reflection.Emit.xml",
+        "ref/netstandard2.1/_._",
         "ref/xamarinmac20/_._",
-        "system.reflection.emit.4.3.0.nupkg.sha512",
-        "system.reflection.emit.nuspec"
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.dll",
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.xml",
+        "system.reflection.emit.4.6.0.nupkg.sha512",
+        "system.reflection.emit.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
@@ -10886,20 +10570,26 @@
         "system.reflection.emit.ilgeneration.nuspec"
       ]
     },
-    "System.Reflection.Emit.Lightweight/4.3.0": {
-      "sha512": "oadVHGSMsTmZsAF864QYN1t1QzZjIcuKU3l2S9cZOwDdDueNTrqq1yRj7koFfIGEnKpt6NjpL3rOzRhs4ryOgA==",
+    "System.Reflection.Emit.Lightweight/4.6.0": {
+      "sha512": "j/V5HVvxvBQ7uubYD0PptQW2KGsi1Pc2kZ9yfwLixv3ADdjL/4M78KyC5e+ymW612DY8ZE4PFoZmWpoNmN2mqg==",
       "type": "package",
-      "path": "system.reflection.emit.lightweight/4.3.0",
+      "path": "system.reflection.emit.lightweight/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net45/_._",
         "lib/netcore50/System.Reflection.Emit.Lightweight.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Reflection.Emit.Lightweight.dll",
+        "lib/netstandard1.0/System.Reflection.Emit.Lightweight.xml",
         "lib/netstandard1.3/System.Reflection.Emit.Lightweight.dll",
+        "lib/netstandard2.0/System.Reflection.Emit.Lightweight.dll",
+        "lib/netstandard2.0/System.Reflection.Emit.Lightweight.xml",
+        "lib/netstandard2.1/_._",
         "lib/portable-net45+wp8/_._",
         "lib/wp80/_._",
         "lib/xamarinios10/_._",
@@ -10909,6 +10599,7 @@
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
         "ref/net45/_._",
+        "ref/netcoreapp2.0/_._",
         "ref/netstandard1.0/System.Reflection.Emit.Lightweight.dll",
         "ref/netstandard1.0/System.Reflection.Emit.Lightweight.xml",
         "ref/netstandard1.0/de/System.Reflection.Emit.Lightweight.xml",
@@ -10920,15 +10611,21 @@
         "ref/netstandard1.0/ru/System.Reflection.Emit.Lightweight.xml",
         "ref/netstandard1.0/zh-hans/System.Reflection.Emit.Lightweight.xml",
         "ref/netstandard1.0/zh-hant/System.Reflection.Emit.Lightweight.xml",
+        "ref/netstandard2.0/System.Reflection.Emit.Lightweight.dll",
+        "ref/netstandard2.0/System.Reflection.Emit.Lightweight.xml",
+        "ref/netstandard2.1/_._",
         "ref/portable-net45+wp8/_._",
         "ref/wp80/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/_._",
-        "system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
-        "system.reflection.emit.lightweight.nuspec"
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.Lightweight.dll",
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.Lightweight.xml",
+        "system.reflection.emit.lightweight.4.6.0.nupkg.sha512",
+        "system.reflection.emit.lightweight.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Reflection.Extensions/4.3.0": {
@@ -11267,42 +10964,6 @@
         "ref/xamarinwatchos10/_._",
         "system.runtime.4.3.0.nupkg.sha512",
         "system.runtime.nuspec"
-      ]
-    },
-    "System.Runtime.Caching/4.7.0": {
-      "sha512": "NdvNRjTPxYvIEhXQszT9L9vJhdQoX6AQ0AlhjTU+5NqFQVuacJTfhPVAvtGWNA2OJCqRiR/okBcZgMwI6MqcZg==",
-      "type": "package",
-      "path": "system.runtime.caching/4.7.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netstandard2.0/System.Runtime.Caching.dll",
-        "lib/netstandard2.0/System.Runtime.Caching.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netstandard2.0/System.Runtime.Caching.dll",
-        "ref/netstandard2.0/System.Runtime.Caching.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/win/lib/net45/_._",
-        "runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
-        "runtimes/win/lib/netstandard2.0/System.Runtime.Caching.xml",
-        "system.runtime.caching.4.7.0.nupkg.sha512",
-        "system.runtime.caching.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -12141,10 +11802,10 @@
         "system.security.cryptography.primitives.nuspec"
       ]
     },
-    "System.Security.Cryptography.ProtectedData/4.7.0": {
-      "sha512": "ehYW0m9ptxpGWvE4zgqongBVWpSDU/JCFD4K7krxkQwSz/sFQjEXCUqpvencjy6DYDbn7Ig09R8GFffu8TtneQ==",
+    "System.Security.Cryptography.ProtectedData/4.5.0": {
+      "sha512": "wLBKzFnDCxP12VL9ANydSYhk59fC4cvOr9ypYQLPnAj48NQIhqnjdD2yhP8yEKyBJEjERWS9DisKL7rX5eU25Q==",
       "type": "package",
-      "path": "system.security.cryptography.protecteddata/4.7.0",
+      "path": "system.security.cryptography.protecteddata/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12154,10 +11815,8 @@
         "lib/MonoTouch10/_._",
         "lib/net46/System.Security.Cryptography.ProtectedData.dll",
         "lib/net461/System.Security.Cryptography.ProtectedData.dll",
-        "lib/net461/System.Security.Cryptography.ProtectedData.xml",
         "lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
@@ -12176,11 +11835,9 @@
         "ref/xamarinwatchos10/_._",
         "runtimes/win/lib/net46/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
-        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.xml",
         "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
-        "system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -12242,13 +11899,14 @@
         "system.security.cryptography.x509certificates.nuspec"
       ]
     },
-    "System.Security.Cryptography.Xml/4.7.0": {
-      "sha512": "B6pAyxMvXGbZemb+ER877KSr6OKis+qAdxhhKKK36I6sgj2js8mbcEVviZEHYV8XRTWjbKsAq8Z/zoaegA30dA==",
+    "System.Security.Cryptography.Xml/4.7.1": {
+      "sha512": "ddAre1QiT5cACLNWLLE3Smk61yhHr4IzQbt0FZiHsD63aFse0xSjbQU3+Fycc5elKhqNwgwk7ueOh3x9Rv9uIg==",
       "type": "package",
-      "path": "system.security.cryptography.xml/4.7.0",
+      "path": "system.security.cryptography.xml/4.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/System.Security.Cryptography.Xml.dll",
@@ -12259,7 +11917,7 @@
         "ref/net461/System.Security.Cryptography.Xml.xml",
         "ref/netstandard2.0/System.Security.Cryptography.Xml.dll",
         "ref/netstandard2.0/System.Security.Cryptography.Xml.xml",
-        "system.security.cryptography.xml.4.7.0.nupkg.sha512",
+        "system.security.cryptography.xml.4.7.1.nupkg.sha512",
         "system.security.cryptography.xml.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -12617,44 +12275,43 @@
         "system.text.encoding.nuspec"
       ]
     },
-    "System.Text.Encoding.CodePages/4.7.0": {
-      "sha512": "aeu4FlaUTemuT1qOd1MyU4T516QR4Fy+9yDbwWMPHOHy7U8FD6SgTzdZFO7gHcfAPHtECqInbwklVvUK4RHcNg==",
+    "System.Text.Encoding.CodePages/4.3.0": {
+      "sha512": "IRiEFUa5b/Gs5Egg8oqBVoywhtOeaO2KOx3j0RfcYY/raxqBuEK7NXRDgOwtYM8qbi+7S4RPXUbNt+ZxyY0/NQ==",
       "type": "package",
-      "path": "system.text.encoding.codepages/4.7.0",
+      "path": "system.text.encoding.codepages/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net46/System.Text.Encoding.CodePages.dll",
-        "lib/net461/System.Text.Encoding.CodePages.dll",
-        "lib/net461/System.Text.Encoding.CodePages.xml",
-        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
+        "ref/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "ref/netstandard1.3/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/de/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/es/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/fr/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/it/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ja/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ko/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/ru/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/zh-hans/System.Text.Encoding.CodePages.xml",
+        "ref/netstandard1.3/zh-hant/System.Text.Encoding.CodePages.xml",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/unix/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
-        "system.text.encoding.codepages.4.7.0.nupkg.sha512",
-        "system.text.encoding.codepages.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "system.text.encoding.codepages.4.3.0.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec"
       ]
     },
     "System.Text.Encoding.Extensions/4.3.0": {
@@ -12725,85 +12382,28 @@
         "system.text.encoding.extensions.nuspec"
       ]
     },
-    "System.Text.Encodings.Web/6.0.0": {
-      "sha512": "Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
+    "System.Text.Encodings.Web/4.7.2": {
+      "sha512": "iTUgB/WtrZ1sWZs84F2hwyQhiRH6QNjQv2DkwrH+WP6RoFga2Q1m3f9/Q7FG8cck8AdHitQkmkXSY8qylcDmuA==",
       "type": "package",
-      "path": "system.text.encodings.web/6.0.0",
+      "path": "system.text.encodings.web/4.7.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets",
-        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/System.Text.Encodings.Web.dll",
         "lib/net461/System.Text.Encodings.Web.xml",
-        "lib/net6.0/System.Text.Encodings.Web.dll",
-        "lib/net6.0/System.Text.Encodings.Web.xml",
-        "lib/netcoreapp3.1/System.Text.Encodings.Web.dll",
-        "lib/netcoreapp3.1/System.Text.Encodings.Web.xml",
+        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
         "lib/netstandard2.0/System.Text.Encodings.Web.dll",
         "lib/netstandard2.0/System.Text.Encodings.Web.xml",
-        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll",
-        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.xml",
-        "system.text.encodings.web.6.0.0.nupkg.sha512",
+        "lib/netstandard2.1/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.1/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.4.7.2.nupkg.sha512",
         "system.text.encodings.web.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Text.Json/6.0.0": {
-      "sha512": "zaJsHfESQvJ11vbXnNlkrR46IaMULk/gHxYsJphzSF+07kTjPHv+Oc14w6QEOfo3Q4hqLJgStUaYB9DBl0TmWg==",
-      "type": "package",
-      "path": "system.text.json/6.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "analyzers/dotnet/roslyn3.11/cs/System.Text.Json.SourceGeneration.dll",
-        "analyzers/dotnet/roslyn3.11/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/de/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/es/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/it/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll",
-        "analyzers/dotnet/roslyn4.0/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/de/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/es/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/it/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
-        "build/System.Text.Json.targets",
-        "buildTransitive/netcoreapp2.0/System.Text.Json.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Text.Json.dll",
-        "lib/net461/System.Text.Json.xml",
-        "lib/net6.0/System.Text.Json.dll",
-        "lib/net6.0/System.Text.Json.xml",
-        "lib/netcoreapp3.1/System.Text.Json.dll",
-        "lib/netcoreapp3.1/System.Text.Json.xml",
-        "lib/netstandard2.0/System.Text.Json.dll",
-        "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.6.0.0.nupkg.sha512",
-        "system.text.json.nuspec",
-        "useSharedDesignerContext.txt"
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Text.RegularExpressions/4.3.0": {
@@ -13621,20 +13221,40 @@
         "zookeepernetex.nuspec"
       ]
     },
+    ".Transport.Grpc.Protocol/1.0.0": {
+      "type": "project",
+      "path": "../../surging/Surging.Apm/SkyApm/SkyApm.Transport.Grpc.Protocol/SkyApm.Transport.Grpc.Protocol.csproj",
+      "msbuildProject": "../../surging/Surging.Apm/SkyApm/SkyApm.Transport.Grpc.Protocol/SkyApm.Transport.Grpc.Protocol.csproj"
+    },
+    "CoAP.NET/1.0.0": {
+      "type": "project",
+      "path": "../../surging/Coap/CoAP.NET/CoAP.NET.csproj",
+      "msbuildProject": "../../surging/Coap/CoAP.NET/CoAP.NET.csproj"
+    },
     "DotNetty.Codecs.DNS/1.0.0": {
       "type": "project",
       "path": "../../surging/DotNetty.Codecs/DotNetty.Codecs.DNS/DotNetty.Codecs.DNS.csproj",
       "msbuildProject": "../../surging/DotNetty.Codecs/DotNetty.Codecs.DNS/DotNetty.Codecs.DNS.csproj"
+    },
+    "Kayak.Core.Codecs/1.0.0": {
+      "type": "project",
+      "path": "../../Kayak.Core/Kayak.Core.Codecs/Kayak.Core.Codecs.csproj",
+      "msbuildProject": "../../Kayak.Core/Kayak.Core.Codecs/Kayak.Core.Codecs.csproj"
     },
     "Kayak.Core.Common/1.0.0": {
       "type": "project",
       "path": "../../Kayak.Core/Kayak.Core.Common/Kayak.Core.Common.csproj",
       "msbuildProject": "../../Kayak.Core/Kayak.Core.Common/Kayak.Core.Common.csproj"
     },
-    "Kayak.DataAccess.DeviceData/1.0.0": {
+    "Kayak.Core.Http/1.0.0": {
       "type": "project",
-      "path": "../../Kayak.DataAccess/Kayak.DataAccess.DeviceData/Kayak.DataAccess.DeviceData.csproj",
-      "msbuildProject": "../../Kayak.DataAccess/Kayak.DataAccess.DeviceData/Kayak.DataAccess.DeviceData.csproj"
+      "path": "../../Kayak.Core/Kayak.Core.Http/Kayak.Core.Http.csproj",
+      "msbuildProject": "../../Kayak.Core/Kayak.Core.Http/Kayak.Core.Http.csproj"
+    },
+    "Kayak.IModuleServices.Aggregation.DeviceAccess/1.0.0": {
+      "type": "project",
+      "path": "../../Kayak.IModuleServices/Kayak.IModuleServices.Aggregation/Kayak.IModuleServices.Aggregation.DeviceAccess/Kayak.IModuleServices.Aggregation.DeviceAccess.csproj",
+      "msbuildProject": "../../Kayak.IModuleServices/Kayak.IModuleServices.Aggregation/Kayak.IModuleServices.Aggregation.DeviceAccess/Kayak.IModuleServices.Aggregation.DeviceAccess.csproj"
     },
     "Kayak.IModuleServices.Aggregation.DeviceManage/1.0.0": {
       "type": "project",
@@ -13646,6 +13266,11 @@
       "path": "../../Kayak.IModuleServices/Kayak.IModuleServices.Aggregation/Kayak.IModuleServices.Aggregation.ServiceManage/Kayak.IModuleServices.Aggregation.ServiceManage.csproj",
       "msbuildProject": "../../Kayak.IModuleServices/Kayak.IModuleServices.Aggregation/Kayak.IModuleServices.Aggregation.ServiceManage/Kayak.IModuleServices.Aggregation.ServiceManage.csproj"
     },
+    "Kayak.IModuleServices.Aggregation.System/1.0.0": {
+      "type": "project",
+      "path": "../../Kayak.IModuleServices/Kayak.IModuleServices.Aggregation/Kayak.IModuleServices.Aggregation.System/Kayak.IModuleServices.Aggregation.System.csproj",
+      "msbuildProject": "../../Kayak.IModuleServices/Kayak.IModuleServices.Aggregation/Kayak.IModuleServices.Aggregation.System/Kayak.IModuleServices.Aggregation.System.csproj"
+    },
     "Kayak.IModuleServices.DeviceAccess/1.0.0": {
       "type": "project",
       "path": "../../Kayak.IModuleServices/Kayak.IModuleServices.DeviceAccess/Kayak.IModuleServices.DeviceAccess.csproj",
@@ -13655,6 +13280,11 @@
       "type": "project",
       "path": "../../Kayak.IModuleServices/Kayak.IModuleServices.DeviceManage/Kayak.IModuleServices.DeviceManage.csproj",
       "msbuildProject": "../../Kayak.IModuleServices/Kayak.IModuleServices.DeviceManage/Kayak.IModuleServices.DeviceManage.csproj"
+    },
+    "Kayak.IModuleServices.DeviceReport/1.0.0": {
+      "type": "project",
+      "path": "../../Kayak.IModuleServices/Kayak.IModuleServices.DeviceReport/Kayak.IModuleServices.DeviceReport.csproj",
+      "msbuildProject": "../../Kayak.IModuleServices/Kayak.IModuleServices.DeviceReport/Kayak.IModuleServices.DeviceReport.csproj"
     },
     "Kayak.IModuleServices.ServiceManage/1.0.0": {
       "type": "project",
@@ -13666,6 +13296,11 @@
       "path": "../../Kayak.IModuleServices/Kayak.IModuleServices.System/Kayak.IModuleServices.System.csproj",
       "msbuildProject": "../../Kayak.IModuleServices/Kayak.IModuleServices.System/Kayak.IModuleServices.System.csproj"
     },
+    "Kayak.Modules.Aggregation.DeviceAccess/1.0.0": {
+      "type": "project",
+      "path": "../../Kayak.Modules/Kayak.Modules.Aggregation/Kayak.Modules.Aggregation.DeviceAccess/Kayak.Modules.Aggregation.DeviceAccess.csproj",
+      "msbuildProject": "../../Kayak.Modules/Kayak.Modules.Aggregation/Kayak.Modules.Aggregation.DeviceAccess/Kayak.Modules.Aggregation.DeviceAccess.csproj"
+    },
     "Kayak.Modules.Aggregation.DeviceManage/1.0.0": {
       "type": "project",
       "path": "../../Kayak.Modules/Kayak.Modules.Aggregation/Kayak.Modules.Aggregation.DeviceManage/Kayak.Modules.Aggregation.DeviceManage.csproj",
@@ -13676,10 +13311,25 @@
       "path": "../../Kayak.Modules/Kayak.Modules.Aggregation/Kayak.Modules.Aggregation.ServiceManage/Kayak.Modules.Aggregation.ServiceManage.csproj",
       "msbuildProject": "../../Kayak.Modules/Kayak.Modules.Aggregation/Kayak.Modules.Aggregation.ServiceManage/Kayak.Modules.Aggregation.ServiceManage.csproj"
     },
+    "Kayak.Modules.Aggregation.System/1.0.0": {
+      "type": "project",
+      "path": "../../Kayak.Modules/Kayak.Modules.Aggregation/Kayak.Modules.Aggregation.System/Kayak.Modules.Aggregation.System.csproj",
+      "msbuildProject": "../../Kayak.Modules/Kayak.Modules.Aggregation/Kayak.Modules.Aggregation.System/Kayak.Modules.Aggregation.System.csproj"
+    },
+    "Kayak.Modules.DeviceReport/1.0.0": {
+      "type": "project",
+      "path": "../../Kayak.Modules/Kayak.Modules.DeviceReport/Kayak.Modules.DeviceReport.csproj",
+      "msbuildProject": "../../Kayak.Modules/Kayak.Modules.DeviceReport/Kayak.Modules.DeviceReport.csproj"
+    },
     "surging/1.0.0": {
       "type": "project",
       "path": "../../surging/Surging.Core/Surging.Core.CPlatform/Surging.Core.CPlatform.csproj",
       "msbuildProject": "../../surging/Surging.Core/Surging.Core.CPlatform/Surging.Core.CPlatform.csproj"
+    },
+    "Surging.Apm.Skywalking/1.0.0": {
+      "type": "project",
+      "path": "../../surging/Surging.Apm/SkyApm/Surging.Apm.Skywalking/Surging.Apm.Skywalking.csproj",
+      "msbuildProject": "../../surging/Surging.Apm/SkyApm/Surging.Apm.Skywalking/Surging.Apm.Skywalking.csproj"
     },
     "Surging.Core.ApiGateWay/1.0.0": {
       "type": "project",
@@ -13715,6 +13365,11 @@
       "type": "project",
       "path": "../../surging/Surging.Core/Surging.Core.Consul/Surging.Core.Consul.csproj",
       "msbuildProject": "../../surging/Surging.Core/Surging.Core.Consul/Surging.Core.Consul.csproj"
+    },
+    "Surging.Core.DeviceGateway/1.0.0": {
+      "type": "project",
+      "path": "../../surging/Surging.Core/Surging.Core.DeviceGateway/Surging.Core.DeviceGateway.csproj",
+      "msbuildProject": "../../surging/Surging.Core/Surging.Core.DeviceGateway/Surging.Core.DeviceGateway.csproj"
     },
     "Surging.Core.DNS/1.0.0": {
       "type": "project",
@@ -13770,6 +13425,11 @@
       "type": "project",
       "path": "../../surging/Surging.Core/Surging.Core.NLog/Surging.Core.Nlog.csproj",
       "msbuildProject": "../../surging/Surging.Core/Surging.Core.NLog/Surging.Core.Nlog.csproj"
+    },
+    "Surging.Core.Protocol.Coap/1.0.0": {
+      "type": "project",
+      "path": "../../surging/Surging.Core/Surging.Core.Protocol.Coap/Surging.Core.Protocol.Coap.csproj",
+      "msbuildProject": "../../surging/Surging.Core/Surging.Core.Protocol.Coap/Surging.Core.Protocol.Coap.csproj"
     },
     "Surging.Core.Protocol.Http/1.1.0": {
       "type": "project",
@@ -13854,23 +13514,33 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Kayak.DataAccess.DeviceData >= 1.0.0",
+      ".Transport.Grpc.Protocol >= 1.0.0",
+      "Kayak.Core.Codecs >= 1.0.0",
+      "Kayak.Core.Http >= 1.0.0",
+      "Kayak.IModuleServices.Aggregation.DeviceAccess >= 1.0.0",
       "Kayak.IModuleServices.Aggregation.DeviceManage >= 1.0.0",
       "Kayak.IModuleServices.Aggregation.ServiceManage >= 1.0.0",
+      "Kayak.IModuleServices.Aggregation.System >= 1.0.0",
       "Kayak.IModuleServices.DeviceAccess >= 1.0.0",
       "Kayak.IModuleServices.DeviceManage >= 1.0.0",
+      "Kayak.IModuleServices.DeviceReport >= 1.0.0",
       "Kayak.IModuleServices.ServiceManage >= 1.0.0",
       "Kayak.IModuleServices.System >= 1.0.0",
+      "Kayak.Modules.Aggregation.DeviceAccess >= 1.0.0",
       "Kayak.Modules.Aggregation.DeviceManage >= 1.0.0",
       "Kayak.Modules.Aggregation.ServiceManage >= 1.0.0",
+      "Kayak.Modules.Aggregation.System >= 1.0.0",
+      "Kayak.Modules.DeviceReport >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.32",
       "Microsoft.Extensions.DependencyInjection >= 6.0.1",
+      "Surging.Apm.Skywalking >= 1.0.0",
       "Surging.Core.Caching >= 1.1.0",
       "Surging.Core.Codec.MessagePack >= 1.1.0",
       "Surging.Core.Codec.ProtoBuffer >= 1.1.0",
       "Surging.Core.Configuration.Apollo >= 1.0.0",
       "Surging.Core.Consul >= 1.1.0",
       "Surging.Core.DNS >= 1.0.0",
+      "Surging.Core.DeviceGateway >= 1.0.0",
       "Surging.Core.DotNetty >= 1.1.0",
       "Surging.Core.DotNettyWSServer >= 1.0.0",
       "Surging.Core.EventBusKafka >= 1.1.0",
@@ -13881,6 +13551,7 @@
       "Surging.Core.KestrelHttpServer >= 1.1.0",
       "Surging.Core.Log4net >= 1.1.0",
       "Surging.Core.Nlog >= 1.1.0",
+      "Surging.Core.Protocol.Coap >= 1.0.0",
       "Surging.Core.Protocol.Http >= 1.1.0",
       "Surging.Core.Protocol.Mqtt >= 1.1.0",
       "Surging.Core.Protocol.Tcp >= 1.0.0",
@@ -13907,11 +13578,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj",
+      "projectUniqueName": "E:\\git.kayak\\src\\Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj",
       "projectName": "Kayak.Services.Server",
-      "projectPath": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj",
+      "projectPath": "E:\\git.kayak\\src\\Kayak.Services\\Kayak.Services.Server\\Kayak.Services.Server.csproj",
       "packagesPath": "C:\\Users\\fanli\\.nuget\\packages\\",
-      "outputPath": "E:\\git.kayak\\Kayak.Services\\Kayak.Services.Server\\obj\\",
+      "outputPath": "E:\\git.kayak\\src\\Kayak.Services\\Kayak.Services.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -13933,131 +13604,164 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\git.kayak\\Kayak.DataAccess\\Kayak.DataAccess.DeviceData\\Kayak.DataAccess.DeviceData.csproj": {
-              "projectPath": "E:\\git.kayak\\Kayak.DataAccess\\Kayak.DataAccess.DeviceData\\Kayak.DataAccess.DeviceData.csproj"
+            "E:\\git.kayak\\src\\Kayak.Core\\Kayak.Core.Codecs\\Kayak.Core.Codecs.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.Core\\Kayak.Core.Codecs\\Kayak.Core.Codecs.csproj"
             },
-            "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.DeviceManage\\Kayak.IModuleServices.Aggregation.DeviceManage.csproj": {
-              "projectPath": "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.DeviceManage\\Kayak.IModuleServices.Aggregation.DeviceManage.csproj"
+            "E:\\git.kayak\\src\\Kayak.Core\\Kayak.Core.Http\\Kayak.Core.Http.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.Core\\Kayak.Core.Http\\Kayak.Core.Http.csproj"
             },
-            "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.ServiceManage\\Kayak.IModuleServices.Aggregation.ServiceManage.csproj": {
-              "projectPath": "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.ServiceManage\\Kayak.IModuleServices.Aggregation.ServiceManage.csproj"
+            "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.DeviceAccess\\Kayak.IModuleServices.Aggregation.DeviceAccess.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.DeviceAccess\\Kayak.IModuleServices.Aggregation.DeviceAccess.csproj"
             },
-            "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.DeviceAccess\\Kayak.IModuleServices.DeviceAccess.csproj": {
-              "projectPath": "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.DeviceAccess\\Kayak.IModuleServices.DeviceAccess.csproj"
+            "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.DeviceManage\\Kayak.IModuleServices.Aggregation.DeviceManage.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.DeviceManage\\Kayak.IModuleServices.Aggregation.DeviceManage.csproj"
             },
-            "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.DeviceManage\\Kayak.IModuleServices.DeviceManage.csproj": {
-              "projectPath": "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.DeviceManage\\Kayak.IModuleServices.DeviceManage.csproj"
+            "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.ServiceManage\\Kayak.IModuleServices.Aggregation.ServiceManage.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.ServiceManage\\Kayak.IModuleServices.Aggregation.ServiceManage.csproj"
             },
-            "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.ServiceManage\\Kayak.IModuleServices.ServiceManage.csproj": {
-              "projectPath": "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.ServiceManage\\Kayak.IModuleServices.ServiceManage.csproj"
+            "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.System\\Kayak.IModuleServices.Aggregation.System.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.Aggregation\\Kayak.IModuleServices.Aggregation.System\\Kayak.IModuleServices.Aggregation.System.csproj"
             },
-            "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.System\\Kayak.IModuleServices.System.csproj": {
-              "projectPath": "E:\\git.kayak\\Kayak.IModuleServices\\Kayak.IModuleServices.System\\Kayak.IModuleServices.System.csproj"
+            "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.DeviceAccess\\Kayak.IModuleServices.DeviceAccess.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.DeviceAccess\\Kayak.IModuleServices.DeviceAccess.csproj"
             },
-            "E:\\git.kayak\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.DeviceManage\\Kayak.Modules.Aggregation.DeviceManage.csproj": {
-              "projectPath": "E:\\git.kayak\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.DeviceManage\\Kayak.Modules.Aggregation.DeviceManage.csproj"
+            "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.DeviceManage\\Kayak.IModuleServices.DeviceManage.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.DeviceManage\\Kayak.IModuleServices.DeviceManage.csproj"
             },
-            "E:\\git.kayak\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.ServiceManage\\Kayak.Modules.Aggregation.ServiceManage.csproj": {
-              "projectPath": "E:\\git.kayak\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.ServiceManage\\Kayak.Modules.Aggregation.ServiceManage.csproj"
+            "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.DeviceReport\\Kayak.IModuleServices.DeviceReport.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.DeviceReport\\Kayak.IModuleServices.DeviceReport.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Caching\\Surging.Core.Caching.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Caching\\Surging.Core.Caching.csproj"
+            "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.ServiceManage\\Kayak.IModuleServices.ServiceManage.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.ServiceManage\\Kayak.IModuleServices.ServiceManage.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Codec.MessagePack\\Surging.Core.Codec.MessagePack.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Codec.MessagePack\\Surging.Core.Codec.MessagePack.csproj"
+            "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.System\\Kayak.IModuleServices.System.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.IModuleServices\\Kayak.IModuleServices.System\\Kayak.IModuleServices.System.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Codec.ProtoBuffer\\Surging.Core.Codec.ProtoBuffer.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Codec.ProtoBuffer\\Surging.Core.Codec.ProtoBuffer.csproj"
+            "E:\\git.kayak\\src\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.DeviceAccess\\Kayak.Modules.Aggregation.DeviceAccess.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.DeviceAccess\\Kayak.Modules.Aggregation.DeviceAccess.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Configuration.Apollo\\Surging.Core.Configuration.Apollo.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Configuration.Apollo\\Surging.Core.Configuration.Apollo.csproj"
+            "E:\\git.kayak\\src\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.DeviceManage\\Kayak.Modules.Aggregation.DeviceManage.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.DeviceManage\\Kayak.Modules.Aggregation.DeviceManage.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Consul\\Surging.Core.Consul.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Consul\\Surging.Core.Consul.csproj"
+            "E:\\git.kayak\\src\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.ServiceManage\\Kayak.Modules.Aggregation.ServiceManage.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.ServiceManage\\Kayak.Modules.Aggregation.ServiceManage.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj"
+            "E:\\git.kayak\\src\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.System\\Kayak.Modules.Aggregation.System.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.Modules\\Kayak.Modules.Aggregation\\Kayak.Modules.Aggregation.System\\Kayak.Modules.Aggregation.System.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DNS\\Surging.Core.DNS.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DNS\\Surging.Core.DNS.csproj"
+            "E:\\git.kayak\\src\\Kayak.Modules\\Kayak.Modules.DeviceReport\\Kayak.Modules.DeviceReport.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\Kayak.Modules\\Kayak.Modules.DeviceReport\\Kayak.Modules.DeviceReport.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DotNettyWSServer\\Surging.Core.DotNettyWSServer.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DotNettyWSServer\\Surging.Core.DotNettyWSServer.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Apm\\SkyApm\\SkyApm.Transport.Grpc.Protocol\\SkyApm.Transport.Grpc.Protocol.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Apm\\SkyApm\\SkyApm.Transport.Grpc.Protocol\\SkyApm.Transport.Grpc.Protocol.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Apm\\SkyApm\\Surging.Apm.Skywalking\\Surging.Apm.Skywalking.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Apm\\SkyApm\\Surging.Apm.Skywalking\\Surging.Apm.Skywalking.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.EventBusKafka\\Surging.Core.EventBusKafka.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.EventBusKafka\\Surging.Core.EventBusKafka.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Caching\\Surging.Core.Caching.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Caching\\Surging.Core.Caching.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.EventBusRabbitMQ\\Surging.Core.EventBusRabbitMQ.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.EventBusRabbitMQ\\Surging.Core.EventBusRabbitMQ.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Codec.MessagePack\\Surging.Core.Codec.MessagePack.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Codec.MessagePack\\Surging.Core.Codec.MessagePack.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Grpc\\Surging.Core.Grpc.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Grpc\\Surging.Core.Grpc.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Codec.ProtoBuffer\\Surging.Core.Codec.ProtoBuffer.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Codec.ProtoBuffer\\Surging.Core.Codec.ProtoBuffer.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Kestrel.Log4net\\Surging.Core.Kestrel.Log4net.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Kestrel.Log4net\\Surging.Core.Kestrel.Log4net.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Configuration.Apollo\\Surging.Core.Configuration.Apollo.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Configuration.Apollo\\Surging.Core.Configuration.Apollo.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Kestrel.Nlog\\Surging.Core.Kestrel.Nlog.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Kestrel.Nlog\\Surging.Core.Kestrel.Nlog.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Consul\\Surging.Core.Consul.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Consul\\Surging.Core.Consul.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.KestrelHttpServer\\Surging.Core.KestrelHttpServer.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.KestrelHttpServer\\Surging.Core.KestrelHttpServer.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Log4net\\Surging.Core.Log4net.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Log4net\\Surging.Core.Log4net.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DeviceGateway\\Surging.Core.DeviceGateway.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DeviceGateway\\Surging.Core.DeviceGateway.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.NLog\\Surging.Core.Nlog.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.NLog\\Surging.Core.Nlog.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DNS\\Surging.Core.DNS.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DNS\\Surging.Core.DNS.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Http\\Surging.Core.Protocol.Http.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Http\\Surging.Core.Protocol.Http.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DotNettyWSServer\\Surging.Core.DotNettyWSServer.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DotNettyWSServer\\Surging.Core.DotNettyWSServer.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DotNetty\\Surging.Core.DotNetty.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Tcp\\Surging.Core.Protocol.Tcp.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Tcp\\Surging.Core.Protocol.Tcp.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.EventBusKafka\\Surging.Core.EventBusKafka.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.EventBusKafka\\Surging.Core.EventBusKafka.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Udp\\Surging.Core.Protocol.Udp.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Udp\\Surging.Core.Protocol.Udp.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.EventBusRabbitMQ\\Surging.Core.EventBusRabbitMQ.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.EventBusRabbitMQ\\Surging.Core.EventBusRabbitMQ.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.WebService\\Surging.Core.Protocol.WebService.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.WebService\\Surging.Core.Protocol.WebService.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Grpc\\Surging.Core.Grpc.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Grpc\\Surging.Core.Grpc.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.WS\\Surging.Core.Protocol.WS.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.WS\\Surging.Core.Protocol.WS.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Kestrel.Log4net\\Surging.Core.Kestrel.Log4net.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Kestrel.Log4net\\Surging.Core.Kestrel.Log4net.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Kestrel.Nlog\\Surging.Core.Kestrel.Nlog.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Kestrel.Nlog\\Surging.Core.Kestrel.Nlog.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Serilog\\Surging.Core.Serilog.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Serilog\\Surging.Core.Serilog.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.KestrelHttpServer\\Surging.Core.KestrelHttpServer.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.KestrelHttpServer\\Surging.Core.KestrelHttpServer.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting.Extensions\\Surging.Core.ServiceHosting.Extensions.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting.Extensions\\Surging.Core.ServiceHosting.Extensions.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Log4net\\Surging.Core.Log4net.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Log4net\\Surging.Core.Log4net.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.NLog\\Surging.Core.Nlog.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.NLog\\Surging.Core.Nlog.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Stage\\Surging.Core.Stage.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Stage\\Surging.Core.Stage.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Coap\\Surging.Core.Protocol.Coap.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Coap\\Surging.Core.Protocol.Coap.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Swagger_V5\\Surging.Core.Swagger_V5.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Swagger_V5\\Surging.Core.Swagger_V5.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Http\\Surging.Core.Protocol.Http.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Http\\Surging.Core.Protocol.Http.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.System\\Surging.Core.System.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.System\\Surging.Core.System.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Thrift\\Surging.Core.Thrift.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Thrift\\Surging.Core.Thrift.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Tcp\\Surging.Core.Protocol.Tcp.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Tcp\\Surging.Core.Protocol.Tcp.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Zookeeper\\Surging.Core.Zookeeper.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Zookeeper\\Surging.Core.Zookeeper.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Udp\\Surging.Core.Protocol.Udp.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Udp\\Surging.Core.Protocol.Udp.csproj"
             },
-            "E:\\git.kayak\\surging\\WebSocket\\WebSocketCore\\WebSocketCore.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\WebSocket\\WebSocketCore\\WebSocketCore.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.WebService\\Surging.Core.Protocol.WebService.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.WebService\\Surging.Core.Protocol.WebService.csproj"
+            },
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.WS\\Surging.Core.Protocol.WS.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.WS\\Surging.Core.Protocol.WS.csproj"
+            },
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj"
+            },
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Serilog\\Surging.Core.Serilog.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Serilog\\Surging.Core.Serilog.csproj"
+            },
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting.Extensions\\Surging.Core.ServiceHosting.Extensions.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting.Extensions\\Surging.Core.ServiceHosting.Extensions.csproj"
+            },
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj"
+            },
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Stage\\Surging.Core.Stage.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Stage\\Surging.Core.Stage.csproj"
+            },
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Swagger_V5\\Surging.Core.Swagger_V5.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Swagger_V5\\Surging.Core.Swagger_V5.csproj"
+            },
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.System\\Surging.Core.System.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.System\\Surging.Core.System.csproj"
+            },
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Thrift\\Surging.Core.Thrift.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Thrift\\Surging.Core.Thrift.csproj"
+            },
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Zookeeper\\Surging.Core.Zookeeper.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Zookeeper\\Surging.Core.Zookeeper.csproj"
+            },
+            "E:\\git.kayak\\src\\surging\\WebSocket\\WebSocketCore\\WebSocketCore.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\WebSocket\\WebSocketCore\\WebSocketCore.csproj"
             }
           }
         }

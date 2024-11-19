@@ -10,6 +10,11 @@ namespace Kayak.Core.Common
     {
         public const string PROTOCOL = "protocol";
         public const string DEVICETYPE = "devicetype";
+        public const string COMPONENTTYPE = "componenttype";
+        public const string DATATYPE = "datatype";
+        public const string CLUSTERMODE = "clustermode";
         public const string REGISTRYCENTERTYPE = "RegistryCenterType";
+        public const string DEVICEGATEWAYTYPE = "devicegatewaytype";
+
     }
 }

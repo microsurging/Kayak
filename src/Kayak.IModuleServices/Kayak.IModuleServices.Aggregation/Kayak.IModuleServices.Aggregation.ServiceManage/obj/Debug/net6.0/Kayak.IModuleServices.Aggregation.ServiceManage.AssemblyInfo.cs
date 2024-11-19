@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kayak.IModuleServices.Aggregation.ServiceManage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b36a2a01b12502c11c8f1a51d5a604cf1a0cd317")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kayak.IModuleServices.Aggregation.ServiceManage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kayak.IModuleServices.Aggregation.ServiceManage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

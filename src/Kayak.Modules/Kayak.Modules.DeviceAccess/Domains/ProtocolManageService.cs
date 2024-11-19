@@ -28,6 +28,13 @@ namespace Kayak.Modules.DeviceAccess.Domains
             return  ApiResult<bool>.Succeed(result);
         }
 
+
+        public async Task<ApiResult<bool>> Modify(ProtocolModel model)
+        {
+            var result = await _repository.Modify(model);
+            return ApiResult<bool>.Succeed(result);
+        }
+
         public async  Task<ApiResult<bool>> CancelPublish(List<int> ids)
         {
             var result = await _repository.CancelPublish(ids);
@@ -52,11 +59,22 @@ namespace Kayak.Modules.DeviceAccess.Domains
             return ApiResult<ProtocolModel>.Succeed(result);
         }
 
-        public async Task<ApiResult<bool>> Republish(List<int> ids)
+        public async Task<ApiResult<List<ProtocolModel>>> GetProtocols()
         {
-            var t =new  int[]{ };
+            var result = await _repository.GetProtocols();
+            return ApiResult<List<ProtocolModel>>.Succeed(result);
+        }
+
+        public async Task<ApiResult<bool>> Republish(List<int> ids)
+        { 
             var result = await _repository.Republish(ids);
             return ApiResult<bool>.Succeed(result);
+        }
+
+        public async Task<ApiResult<ProtocolModel>> GetProtocolByCode(string code)
+        {
+            var result = await _repository.GetProtocolByCode(code);
+            return ApiResult<ProtocolModel>.Succeed(result);
         }
     }
 }

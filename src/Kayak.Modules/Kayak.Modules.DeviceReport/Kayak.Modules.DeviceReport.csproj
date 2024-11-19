@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Kayak.Core\Kayak.Core.Http\Kayak.Core.Http.csproj" />
+    <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.DeviceManage\Kayak.IModuleServices.DeviceManage.csproj" />
+    <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.DeviceReport\Kayak.IModuleServices.DeviceReport.csproj" />
+    <ProjectReference Include="..\..\Kayak.IModuleServices\Kayak.IModuleServices.System\Kayak.IModuleServices.System.csproj" />
+    <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.DeviceGateway\Surging.Core.DeviceGateway.csproj" />
+    <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Protocol.Coap\Surging.Core.Protocol.Coap.csproj" />
+    <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Protocol.Mqtt\Surging.Core.Protocol.Mqtt.csproj" />
+    <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Protocol.Tcp\Surging.Core.Protocol.Tcp.csproj" />
+    <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Protocol.Udp\Surging.Core.Protocol.Udp.csproj" />
+    <ProjectReference Include="..\..\surging\Surging.Core\Surging.Core.Protocol.WebService\Surging.Core.Protocol.WebService.csproj" />
+  </ItemGroup>
+
+</Project>

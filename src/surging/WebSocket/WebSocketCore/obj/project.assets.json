@@ -14,11 +14,11 @@
   "project": {
     "version": "1.9.2",
     "restore": {
-      "projectUniqueName": "E:\\git.kayak\\surging\\WebSocket\\WebSocketCore\\WebSocketCore.csproj",
+      "projectUniqueName": "E:\\git.kayak\\src\\surging\\WebSocket\\WebSocketCore\\WebSocketCore.csproj",
       "projectName": "Surging.WebSocketCore",
-      "projectPath": "E:\\git.kayak\\surging\\WebSocket\\WebSocketCore\\WebSocketCore.csproj",
+      "projectPath": "E:\\git.kayak\\src\\surging\\WebSocket\\WebSocketCore\\WebSocketCore.csproj",
       "packagesPath": "C:\\Users\\fanli\\.nuget\\packages\\",
-      "outputPath": "E:\\git.kayak\\surging\\WebSocket\\WebSocketCore\\obj\\",
+      "outputPath": "E:\\git.kayak\\src\\surging\\WebSocket\\WebSocketCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -15,7 +15,7 @@ namespace Kayak.IModuleServices.DeviceManage.Models
 
         public int OrganizationId { get; set; }
 
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; }
 
         public bool IsDeleted { get; set; } = false;
         public int Protocol { get; set; }
@@ -27,8 +27,8 @@ namespace Kayak.IModuleServices.DeviceManage.Models
 
         public string Remark { get; set; }
 
-        public DateTime? UpdateDate { get; set; }
+        public DateTimeOffset? UpdateDate { get; set; }= DateTimeOffset.Now;
 
-        public DateTime? CreateDate { get; set; }
+        public DateTimeOffset? CreateDate { get; set; }=DateTimeOffset.Now;
     }
 }

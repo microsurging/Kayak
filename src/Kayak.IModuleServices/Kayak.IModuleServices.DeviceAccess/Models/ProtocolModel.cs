@@ -13,9 +13,13 @@ namespace Kayak.IModuleServices.DeviceAccess.Models
 
         public string ProtocolName { get; set; }
 
-        public string ComponentType { get; set; }
+        public string ProtocolType { get; set; }
 
         public string ClassName { get; set; }
+
+        public string? Script { get; set; }
+
+        public string ConnProtocol { get; set; }
 
         public int  Status { get; set; }
 
@@ -23,8 +27,8 @@ namespace Kayak.IModuleServices.DeviceAccess.Models
 
         public string FileAddress { get; set; }
 
-        public DateTime? CreateDate { get; set; }=DateTime.Now;
+        public DateTimeOffset? CreateDate { get; set; }= DateTimeOffset.Now;
 
-        public DateTime? UpdateDate { get; set; } = DateTime.Now;
+        public DateTimeOffset? UpdateDate { get; set; } = DateTimeOffset.Now;
     }
 }

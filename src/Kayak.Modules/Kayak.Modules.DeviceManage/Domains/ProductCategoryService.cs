@@ -54,6 +54,12 @@ namespace Kayak.Modules.DeviceManage.Domains
             return ApiResult<ProductCategoryModel>.Succeed(result);
         }
 
+        public async Task<ApiResult<List<ProductCategoryModel>>> GetLastChild()
+        {
+            var result = await _repository.GetLastChild();
+            return ApiResult<List<ProductCategoryModel>>.Succeed(result);
+        }
+
         public async Task<ApiResult<List<ProductCategoryModel>>> GetProductCategoryByCondition(ProductCategoryQuery query)
         {
             var result = await _repository.GetProductCategoryByCondition(query);

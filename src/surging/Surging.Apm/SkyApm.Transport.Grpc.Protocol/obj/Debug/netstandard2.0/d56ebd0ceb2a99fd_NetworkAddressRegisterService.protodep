@@ -1,3 +1,0 @@
-generated/NetworkAddressRegisterService.cs \
-generated/NetworkAddressRegisterServiceGrpc.cs: protocol/language-agent/KeyWithIntegerValue.proto\
- protocol/language-agent/NetworkAddressRegisterService.proto

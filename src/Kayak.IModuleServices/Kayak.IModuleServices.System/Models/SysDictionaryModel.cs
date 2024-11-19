@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Surging.Core.System.Intercept;
 
 namespace Kayak.IModuleServices.System.Models
 {
@@ -16,16 +17,17 @@ namespace Kayak.IModuleServices.System.Models
         public string Code { get; set; }
          
         public int? Value { get; set; }
-         
+
+        [CacheKey(1)]
         public string? ParentCode { get; set; }
 
         public int Status { get; set; } = 1;
 
         public int IsShow { get; set; }
 
-        public DateTime? CreateDate { get; set; }=DateTime.Now;
+        public DateTimeOffset? CreateDate { get; set; }= DateTimeOffset.Now;
 
-        public DateTime? UpdateDate { get; set; } =DateTime.Now;
+        public DateTimeOffset? UpdateDate { get; set; } = DateTimeOffset.Now;
 
         public string? Remark { get; set; }
     }

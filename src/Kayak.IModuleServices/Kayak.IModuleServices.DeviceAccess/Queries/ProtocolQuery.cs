@@ -9,6 +9,7 @@ namespace Kayak.IModuleServices.DeviceAccess.Queries
 {
     public class ProtocolQuery : BaseQuery
     {
+        public int? Status {  get; set; }
         public string ProtocolName { get; set; }
 
     }

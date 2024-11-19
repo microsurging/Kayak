@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
@@ -13,15 +14,33 @@ namespace Kayak.DataAccess.DeviceData.Entities
     {
         public string Name { get; set; }
 
-        public string ComponentType { get; set; }
+        public string ComponentTypeCode { get; set; }
 
-        public string ClusterMode { get; set; }
+        public int ClusterModeId { get; set; }
 
-        public string Status { get; set; }
+        public int Status { get; set; }
 
         public bool EnableSSL {  get; set; }
 
-        public string RuleScript { get; set; }
+        public bool? EnableTLS { get; set; }
+
+       public  bool? EnableSwagger {  get; set; }   
+
+        public bool? IsMulticast { get; set; }
+
+        public bool? EnableWebService { get; set; }
+
+        public int? ResolveMode { get; set; }
+
+        public int? FixedLength { get; set; }
+
+       public string? Delimited { get; set; }
+
+        public int? MaxMessageLength { get; set; }
+
+
+
+        public string? RuleScript { get; set; }
 
         public string Host {  get; set; }
 

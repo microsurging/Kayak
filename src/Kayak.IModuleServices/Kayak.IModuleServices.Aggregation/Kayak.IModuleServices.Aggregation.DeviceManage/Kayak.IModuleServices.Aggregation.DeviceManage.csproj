@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\surging\Surging.Core\Surging.Core.DeviceGateway\Surging.Core.DeviceGateway.csproj" />
+    <ProjectReference Include="..\..\..\surging\Surging.Core\Surging.Core.KestrelHttpServer\Surging.Core.KestrelHttpServer.csproj" />
+    <ProjectReference Include="..\..\Kayak.IModuleServices.DeviceAccess\Kayak.IModuleServices.DeviceAccess.csproj" />
     <ProjectReference Include="..\..\Kayak.IModuleServices.DeviceManage\Kayak.IModuleServices.DeviceManage.csproj" />
     <ProjectReference Include="..\..\Kayak.IModuleServices.System\Kayak.IModuleServices.System.csproj" />
   </ItemGroup>

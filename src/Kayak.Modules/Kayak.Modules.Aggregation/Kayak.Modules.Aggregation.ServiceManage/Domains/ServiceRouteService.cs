@@ -66,15 +66,19 @@ namespace Kayak.Modules.Aggregation.ServiceManage.Domains
             if (routeManage != null)
             {
                 var serviceRoutes = await routeManage.GetRoutesAsync();
+                if (query.Mode == StatisticsMode.Run)
+                    serviceRoutes = serviceRoutes.Where(p => p.Address.Count() >= 1);
+                else if(query.Mode == StatisticsMode.Abnormal)
+                    serviceRoutes = serviceRoutes.Where(p => p.Address.Count() == 0);             
                 var total = serviceRoutes.Count();
-                  result = new Page<ServiceRoute>()
-                {
-                    Items = serviceRoutes.Skip((query.Page - 1) * query.PageSize).Take(query.PageSize).ToList(),
-                    PageCount = total.GetCeiling(query.PageSize),
-                    PageIndex = query.Page,
-                    PageSize = query.PageSize,
-                    Total = total
-                };
+                result = new Page<ServiceRoute>()
+                    {
+                        Items = serviceRoutes.Skip((query.Page - 1) * query.PageSize).Take(query.PageSize).ToList(),
+                        PageCount = total.GetCeiling(query.PageSize),
+                        PageIndex = query.Page,
+                        PageSize = query.PageSize,
+                        Total = total
+                    };
             }
             return ApiResult<Page<ServiceRoute>>.Succeed(result);
         }
@@ -257,8 +261,6 @@ namespace Kayak.Modules.Aggregation.ServiceManage.Domains
                 routeManage.ClearRoute();
             }
             return ApiResult<bool>.Succeed(true);
-        }
-
-       
+        }   
     }
 }

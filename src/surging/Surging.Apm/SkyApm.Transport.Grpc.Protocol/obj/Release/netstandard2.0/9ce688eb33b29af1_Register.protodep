@@ -1,3 +1,0 @@
-generated/Register.cs \
-generated/RegisterGrpc.cs: protocol/common/common.proto\
- protocol/register/Register.proto

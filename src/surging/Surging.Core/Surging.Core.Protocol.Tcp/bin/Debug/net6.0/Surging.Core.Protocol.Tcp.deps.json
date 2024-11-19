@@ -10,6 +10,7 @@
         "dependencies": {
           "DotNetty.Codecs": "0.6.0",
           "DotNetty.Handlers": "0.6.0",
+          "DotNetty.Transport.Libuv": "0.6.0",
           "Jint": "2.11.58",
           "RulesEngine": "3.5.0",
           "Surging.Core.ProxyGenerator": "1.1.0",
@@ -124,6 +125,24 @@
           }
         }
       },
+      "DotNetty.Transport.Libuv/0.6.0": {
+        "dependencies": {
+          "DotNetty.Buffers": "0.6.0",
+          "DotNetty.Common": "0.6.0",
+          "DotNetty.Transport": "0.6.0",
+          "Libuv": "1.10.0",
+          "NETStandard.Library": "1.6.1",
+          "System.Diagnostics.Contracts": "4.3.0",
+          "System.Net.NameResolution": "4.3.0",
+          "System.Net.Primitives": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/DotNetty.Transport.Libuv.dll": {
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.0"
+          }
+        }
+      },
       "FastExpressionCompiler/3.2.1": {
         "runtime": {
           "lib/netstandard2.1/FastExpressionCompiler.dll": {
@@ -145,6 +164,53 @@
           "lib/netstandard2.0/Jint.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "2.11.58.0"
+          }
+        }
+      },
+      "Libuv/1.10.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libuv.so": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm64/native/libuv.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-armel/native/libuv.so": {
+            "rid": "linux-armel",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libuv.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/libuv.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-arm/native/libuv.dll": {
+            "rid": "win-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libuv.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libuv.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1594,6 +1660,7 @@
       "surging/1.0.0": {
         "dependencies": {
           "Autofac": "4.9.4",
+          "DotNetty.Buffers": "0.6.0",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "2.9.0",
           "Microsoft.Extensions.Configuration": "2.2.0",
           "Microsoft.Extensions.Configuration.Binder": "2.2.4",
@@ -1604,7 +1671,8 @@
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
           "Newtonsoft.Json": "13.0.1",
-          "Surging.Core.ServiceHosting": "1.1.0"
+          "Surging.Core.ServiceHosting": "1.1.0",
+          "System.Reactive": "5.0.0"
         },
         "runtime": {
           "Surging.Core.CPlatform.dll": {}
@@ -1700,6 +1768,13 @@
       "path": "dotnetty.transport/0.6.0",
       "hashPath": "dotnetty.transport.0.6.0.nupkg.sha512"
     },
+    "DotNetty.Transport.Libuv/0.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aZa5gnR/Jd2MaKeknCZcVtc6caXdl9I0IL9u01NE3R37jmJ6C+nSE4TTgiNIzHkEULtNv4ohQ6hDgT5zF/1SFA==",
+      "path": "dotnetty.transport.libuv/0.6.0",
+      "hashPath": "dotnetty.transport.libuv.0.6.0.nupkg.sha512"
+    },
     "FastExpressionCompiler/3.2.1": {
       "type": "package",
       "serviceable": true,
@@ -1720,6 +1795,13 @@
       "sha512": "sha512-obRlPnuSmbjO7I2bfuKc1d+K1LB3xyg1Cnm2MT7PGUOHOntcdR96pDhsQnWBI5Dhxqr1Bj5/odpNi/B+AwVlPA==",
       "path": "jint/2.11.58",
       "hashPath": "jint.2.11.58.nupkg.sha512"
+    },
+    "Libuv/1.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
+      "path": "libuv/1.10.0",
+      "hashPath": "libuv.1.10.0.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.Analyzers/2.6.1": {
       "type": "package",

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Kayak.IModuleServices.DeviceAccess
-build_property.ProjectDir = E:\git.kayak\Kayak.IModuleServices\Kayak.IModuleServices.DeviceAccess\
+build_property.ProjectDir = E:\git.kayak\src\Kayak.IModuleServices\Kayak.IModuleServices.DeviceAccess\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

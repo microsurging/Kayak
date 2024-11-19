@@ -10,8 +10,9 @@
         "dependencies": {
           "DotNetty.Codecs": "0.6.0",
           "DotNetty.Codecs.Mqtt": "0.6.0",
-          "DotNetty.Transport.Libuv": "0.4.8",
+          "DotNetty.Transport.Libuv": "0.6.0",
           "Surging.Core.ProxyGenerator": "1.1.0",
+          "System.Reactive": "5.0.0",
           "surging": "1.0.0",
           "Surging.Core.CPlatform": "0.0.0.0"
         },
@@ -120,7 +121,7 @@
           }
         }
       },
-      "DotNetty.Transport.Libuv/0.4.8": {
+      "DotNetty.Transport.Libuv/0.6.0": {
         "dependencies": {
           "DotNetty.Buffers": "0.6.0",
           "DotNetty.Common": "0.6.0",
@@ -133,8 +134,8 @@
         },
         "runtime": {
           "lib/netstandard1.3/DotNetty.Transport.Libuv.dll": {
-            "assemblyVersion": "0.4.8.0",
-            "fileVersion": "0.4.8.0"
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.0"
           }
         }
       },
@@ -1088,6 +1089,14 @@
           "System.Threading": "4.3.0"
         }
       },
+      "System.Reactive/5.0.0": {
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.1"
+          }
+        }
+      },
       "System.Reflection/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1539,6 +1548,7 @@
       "surging/1.0.0": {
         "dependencies": {
           "Autofac": "4.9.4",
+          "DotNetty.Buffers": "0.6.0",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "2.9.0",
           "Microsoft.Extensions.Configuration": "2.2.0",
           "Microsoft.Extensions.Configuration.Binder": "2.2.4",
@@ -1549,7 +1559,8 @@
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
           "Newtonsoft.Json": "11.0.2",
-          "Surging.Core.ServiceHosting": "1.1.0"
+          "Surging.Core.ServiceHosting": "1.1.0",
+          "System.Reactive": "5.0.0"
         },
         "runtime": {
           "Surging.Core.CPlatform.dll": {}
@@ -1645,12 +1656,12 @@
       "path": "dotnetty.transport/0.6.0",
       "hashPath": "dotnetty.transport.0.6.0.nupkg.sha512"
     },
-    "DotNetty.Transport.Libuv/0.4.8": {
+    "DotNetty.Transport.Libuv/0.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-p20Ly4zby4NzcH9rdz7XjtnCYfHQbZjZdTBFikvv+Jz6OpIuqTsKJi2z9ql/F0hEs/u+G0uPqnfsEkGvSEM/Lw==",
-      "path": "dotnetty.transport.libuv/0.4.8",
-      "hashPath": "dotnetty.transport.libuv.0.4.8.nupkg.sha512"
+      "sha512": "sha512-aZa5gnR/Jd2MaKeknCZcVtc6caXdl9I0IL9u01NE3R37jmJ6C+nSE4TTgiNIzHkEULtNv4ohQ6hDgT5zF/1SFA==",
+      "path": "dotnetty.transport.libuv/0.6.0",
+      "hashPath": "dotnetty.transport.libuv.0.6.0.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
@@ -2176,6 +2187,13 @@
       "sha512": "sha512-bdX+80eKv9bN6K4N+d77OankKHGn6CH711a6fcOpMQu2Fckp/Ft4L/kW9WznHpyR0NRAvJutzOMHNNlBGvxQzQ==",
       "path": "system.objectmodel/4.3.0",
       "hashPath": "system.objectmodel.4.3.0.nupkg.sha512"
+    },
+    "System.Reactive/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+      "path": "system.reactive/5.0.0",
+      "hashPath": "system.reactive.5.0.0.nupkg.sha512"
     },
     "System.Reflection/4.3.0": {
       "type": "package",

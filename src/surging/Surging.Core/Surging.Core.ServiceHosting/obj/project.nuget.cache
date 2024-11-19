@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A/DIMVGFjQf1WnSU1v/fgiU/m24Aco1uSy+D9AbNLesPAvnKLlF/NPkjsyr9r69PtLv30nUuebD395RkMsg7DQ==",
+  "dgSpecHash": "gE0jXYri4f3nL5rKF6/7X/j4DQWesaeg7VJuPKvaUKzC6CzfsdgumpA1Xo76hn9lSgRqI8IlnkkV/Ow5Qlw3Iw==",
   "success": true,
-  "projectFilePath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj",
+  "projectFilePath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fanli\\.nuget\\packages\\autofac\\4.9.4\\autofac.4.9.4.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\autofac.extensions.dependencyinjection\\4.3.0\\autofac.extensions.dependencyinjection.4.3.0.nupkg.sha512",

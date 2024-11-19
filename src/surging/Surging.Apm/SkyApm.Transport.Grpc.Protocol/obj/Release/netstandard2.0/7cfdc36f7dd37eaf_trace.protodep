@@ -1,4 +1,0 @@
-generated/Trace.cs \
-generated/TraceGrpc.cs: protocol/common/common.proto\
- protocol/common/trace-common.proto\
- protocol/language-agent-v2/trace.proto

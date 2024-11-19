@@ -1,5 +1,0 @@
-generated/TraceSegmentService.cs \
-generated/TraceSegmentServiceGrpc.cs: protocol/language-agent/Downstream.proto\
- protocol/language-agent/KeyWithStringValue.proto\
- protocol/common/trace-common.proto\
- protocol/language-agent/TraceSegmentService.proto

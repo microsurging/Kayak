@@ -4,6 +4,7 @@ using Surging.Core.Caching;
 using Surging.Core.Caching.Configurations;
 using Surging.Core.Codec.MessagePack;
 using Surging.Core.Configuration.Apollo.Configurations;
+using Surging.Core.Configuration.Apollo.Extensions;
 using Surging.Core.Consul;
 using Surging.Core.Consul.Configurations;
 using Surging.Core.CPlatform;
@@ -56,6 +57,7 @@ namespace Surging.Services.Server
                 build.AddCacheFile("${cachepath}|cacheSettings.json", basePath: AppContext.BaseDirectory, optional: false, reloadOnChange: true))
                   .Configure(build =>
                 build.AddCPlatformFile("${surgingpath}|surgingSettings.json", optional: false, reloadOnChange: true))
+                     .Configure(build => build.UseApollo(apollo => apollo.AddNamespaceSurgingApollo("surgingSettings")))
                            .Configure(build =>
                 build.AddCPlatformFile("${kayakpath}|kayakSetting.json", optional: false, reloadOnChange: true))
                 .UseStartup<Startup>()

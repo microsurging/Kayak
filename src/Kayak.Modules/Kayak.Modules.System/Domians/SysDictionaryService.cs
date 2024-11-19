@@ -50,7 +50,7 @@ namespace Kayak.Modules.System.Domians
             return ApiResult<SysDictionaryModel>.Succeed(result);
         }
 
-        public async  Task<ApiResult<bool>> DeleteById(List<int> ids)
+        public async  Task<ApiResult<bool>> DeleteById(string parentCode, List<int> ids)
         {
             var result = await _sysDictionaryRepository.DeleteById(ids);
             return ApiResult<bool>.Succeed(result);

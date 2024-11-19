@@ -17,6 +17,49 @@ namespace Kayak.DataAccess.DeviceData.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.32");
 
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.BlackWhiteList", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("BlackList")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<string>("RoutePathPattern")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("WhiteList")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Component_BlackWhiteList");
+                });
+
             modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.Device", b =>
                 {
                     b.Property<int>("Id")
@@ -27,7 +70,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("CreateDate")
+                    b.Property<DateTimeOffset?>("CreateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Creater")
@@ -52,7 +95,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .HasColumnType("INTEGER")
                         .HasColumnName("State");
 
-                    b.Property<DateTime?>("UpdateDate")
+                    b.Property<DateTimeOffset?>("UpdateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Updater")
@@ -63,27 +106,608 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                     b.ToTable("Component_Device");
                 });
 
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.DeviceAccess", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("AuthConfig")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ConnProtocol")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("GatewayId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("GatewayName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ProductCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Component_DeviceAccess");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.DeviceConfig", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("AuthConfig")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DeviceCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ProductCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Component_DeviceConfig");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.DeviceEvent", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DeviceId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("EventId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("EventOutParamValues")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("EventOutParams")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Device_Event");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.DeviceGateway", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("GatewayTypeValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("NetWorkId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ProtocolCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Component_DeviceGateway");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.DeviceType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ConnProtocolCode")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DeviceTypeCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DeviceTypeName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("OrganizationId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("ProductCategoryId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ProtocolCode")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Component_DeviceType");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.EventConfigure", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CorrelationFrom")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CorrelationId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DataTypeValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("EventId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("EventName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Eventlevel")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Expands")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Physical_EventConfigure");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.EventParameter", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DataTypeValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DeviceCode")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("EventCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("EventId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ProductCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Physical_EventParameter");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.FunctionConfigure", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CorrelationFrom")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CorrelationId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Expands")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FunctionId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FunctionName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("InputIds")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsAsync")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("OutputIds")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Physical_FunctionConfigure");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.FunctionParameter", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Constraint")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DataTypeValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DeviceCode")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FunctionCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("FunctionId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ParameterType")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ProductCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Physical_FunctionParameter");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.Module", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("FileAddress")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ModuleCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ModuleMode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ModuleName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ModuleType")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Component_Module");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.NetworkLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("EventName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("NetworkId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("NetworkType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("logLevel")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sys_NetworkLog");
+                });
+
             modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.NetworkPart", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("ClusterMode")
+                    b.Property<int>("ClusterModeId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ComponentTypeCode")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ComponentType")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime?>("CreateDate")
+                    b.Property<DateTimeOffset?>("CreateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Creater")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Delimited")
+                        .HasColumnType("TEXT");
+
                     b.Property<bool>("EnableSSL")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool?>("EnableSwagger")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool?>("EnableTLS")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool?>("EnableWebService")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("FixedLength")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Host")
@@ -91,6 +715,12 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool?>("IsMulticast")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("MaxMessageLength")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
@@ -104,15 +734,16 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .HasColumnType("TEXT")
                         .HasColumnName("Remark");
 
+                    b.Property<int?>("ResolveMode")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("RuleScript")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<DateTime?>("UpdateDate")
+                    b.Property<DateTimeOffset?>("UpdateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Updater")
@@ -133,7 +764,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("CreateDate")
+                    b.Property<DateTimeOffset?>("CreateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Creater")
@@ -168,7 +799,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("UpdateDate")
+                    b.Property<DateTimeOffset?>("UpdateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Updater")
@@ -185,10 +816,10 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int?>("CategoryId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime?>("CreateDate")
+                    b.Property<DateTimeOffset?>("CreateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Creater")
@@ -222,7 +853,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .HasColumnType("INTEGER")
                         .HasColumnName("State");
 
-                    b.Property<DateTime?>("UpdateDate")
+                    b.Property<DateTimeOffset?>("UpdateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Updater")
@@ -251,7 +882,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("CreateDate")
+                    b.Property<DateTimeOffset?>("CreateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Creater")
@@ -270,7 +901,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .HasColumnType("TEXT")
                         .HasColumnName("Remark");
 
-                    b.Property<DateTime?>("UpdateDate")
+                    b.Property<DateTimeOffset?>("UpdateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Updater")
@@ -281,6 +912,137 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                     b.ToTable("Component_ProductCategory");
                 });
 
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.PropertyConfigure", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CorrelationFrom")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CorrelationId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DataTypeValue")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DefaultValue")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("MaxLength")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Precision")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PropertyId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PropertyName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ReadWrite")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<string>("SourceValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<float?>("Step")
+                        .HasColumnType("REAL");
+
+                    b.Property<string>("UnitValue")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ValueRange")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Physical_PropertyConfigure");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.PropertyThreshold", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DeviceCode")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ProductCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PropertyCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("PropertyId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<string>("ThresholdLevel")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ThresholdType")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ThresholdValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Physical_PropertyThreshold");
+                });
+
             modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.Protocol", b =>
                 {
                     b.Property<int>("Id")
@@ -288,21 +1050,18 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("ClassName")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ComponentType")
-                        .IsRequired()
+                    b.Property<string>("ConnProtocol")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("CreateDate")
+                    b.Property<DateTimeOffset?>("CreateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Creater")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("FileAddress")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("IsDeleted")
@@ -316,14 +1075,21 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("ProtocolType")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Remark")
                         .HasColumnType("TEXT")
                         .HasColumnName("Remark");
 
+                    b.Property<string>("Script")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("Status")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime?>("UpdateDate")
+                    b.Property<DateTimeOffset?>("UpdateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Updater")
@@ -340,7 +1106,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime?>("CreateDate")
+                    b.Property<DateTimeOffset?>("CreateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Creater")
@@ -371,7 +1137,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .HasColumnType("TEXT")
                         .HasColumnName("Remark");
 
-                    b.Property<DateTime?>("UpdateDate")
+                    b.Property<DateTimeOffset?>("UpdateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Updater")
@@ -380,6 +1146,154 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Component_RegistryCenter");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.ReportProperty", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DeviceId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PropertyId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PropertyValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Device_ReportProperty");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.ReportPropertyLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DeviceCode")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Level")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ProductCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("PropertyId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PropertyValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ThresholdType")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ThresholdValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sys_ReportPropertyLog");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.SysDataType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DefaultValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("DefaultVaule");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("Name");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Value")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("Value");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sys_DataType");
                 });
 
             modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.SysDictionary", b =>
@@ -393,7 +1307,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .HasColumnType("varchar(50)")
                         .HasColumnName("Code");
 
-                    b.Property<DateTime?>("CreateDate")
+                    b.Property<DateTimeOffset?>("CreateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Creater")
@@ -423,7 +1337,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .HasColumnType("INTEGER")
                         .HasColumnName("State");
 
-                    b.Property<DateTime?>("UpdateDate")
+                    b.Property<DateTimeOffset?>("UpdateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Updater")
@@ -456,7 +1370,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("CreateDate")
+                    b.Property<DateTimeOffset?>("CreateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Creater")
@@ -494,7 +1408,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                     b.Property<int>("SysOrgType")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime?>("UpdateDate")
+                    b.Property<DateTimeOffset?>("UpdateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Updater")
@@ -503,6 +1417,45 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Sys_Organization");
+                });
+
+            modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.SysUnit", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("CreateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Creater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("Name");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Remark");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Updater")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("Value")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("Value");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sys_Unit");
                 });
 
             modelBuilder.Entity("Kayak.DataAccess.DeviceData.Entities.SysUser", b =>
@@ -519,7 +1472,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("CreateDate")
+                    b.Property<DateTimeOffset?>("CreateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Creater")
@@ -568,7 +1521,7 @@ namespace Kayak.DataAccess.DeviceData.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime?>("UpdateDate")
+                    b.Property<DateTimeOffset?>("UpdateDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Updater")

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj": {}
+    "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj": {}
   },
   "projects": {
-    "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
+    "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj",
+        "projectUniqueName": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj",
         "projectName": "surging",
-        "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj",
+        "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj",
         "packagesPath": "C:\\Users\\fanli\\.nuget\\packages\\",
-        "outputPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\obj\\",
+        "outputPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj": {
-                "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj"
+              "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj": {
+                "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj"
               }
             }
           }
@@ -57,6 +57,10 @@
             "Autofac": {
               "target": "Package",
               "version": "[4.9.4, )"
+            },
+            "DotNetty.Buffers": {
+              "target": "Package",
+              "version": "[0.6.0, )"
             },
             "Microsoft.CodeAnalysis.CSharp.Scripting": {
               "target": "Package",
@@ -97,6 +101,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[11.0.2, )"
+            },
+            "System.Reactive": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -119,14 +127,14 @@
         }
       }
     },
-    "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj": {
+    "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj",
+        "projectUniqueName": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj",
         "projectName": "Surging.Core.Protocol.Mqtt",
-        "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj",
+        "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\Surging.Core.Protocol.Mqtt.csproj",
         "packagesPath": "C:\\Users\\fanli\\.nuget\\packages\\",
-        "outputPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\obj\\",
+        "outputPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Mqtt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -148,11 +156,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
-                "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj"
+              "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
+                "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj"
               },
-              "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj": {
-                "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj"
+              "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj": {
+                "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj"
               }
             }
           }
@@ -182,7 +190,11 @@
             },
             "DotNetty.Transport.Libuv": {
               "target": "Package",
-              "version": "[0.4.8, )"
+              "version": "[0.6.0, )"
+            },
+            "System.Reactive": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -205,14 +217,14 @@
         }
       }
     },
-    "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj": {
+    "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj",
+        "projectUniqueName": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj",
         "projectName": "Surging.Core.ProxyGenerator",
-        "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj",
+        "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj",
         "packagesPath": "C:\\Users\\fanli\\.nuget\\packages\\",
-        "outputPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\obj\\",
+        "outputPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -234,8 +246,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
-                "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj"
+              "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
+                "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj"
               }
             }
           }
@@ -292,14 +304,14 @@
         }
       }
     },
-    "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj": {
+    "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj",
+        "projectUniqueName": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj",
         "projectName": "Surging.Core.ServiceHosting",
-        "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj",
+        "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj",
         "packagesPath": "C:\\Users\\fanli\\.nuget\\packages\\",
-        "outputPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\obj\\",
+        "outputPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

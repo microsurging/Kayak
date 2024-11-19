@@ -4,6 +4,7 @@ using Kayak.IModuleServices.DeviceManage.Queries;
 using Surging.Core.CPlatform.Filters.Implementation;
 using Surging.Core.CPlatform.Ioc;
 using Surging.Core.CPlatform.Runtime.Server.Implementation.ServiceDiscovery.Attributes;
+using Surging.Core.ProxyGenerator.Interceptors.Implementation.Metadatas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,5 +44,14 @@ namespace Kayak.IModuleServices.DeviceManage
 
         [Authorization(AuthType = AuthorizationType.JWT)]
         Task<ApiResult<bool>> Validate(DeviceModel model);
+
+        [Authorization(AuthType = AuthorizationType.JWT)]
+
+        [ServiceCacheIntercept(CachingMethod.Get, Key = "GetDeviceTotalStatistics", CacheSectionType = "ddlCache", EnableL2Cache = false, Mode = CacheTargetType.MemoryCache, Time = 1, EnableStageCache = true)]
+        Task<ApiResult<DeviceTotalStatisticsModel>> GetDeviceTotalStatistics();
+
+
+        [Authorization(AuthType = AuthorizationType.JWT)]
+        Task<ApiResult<List<DeviceStatistics>>> GetDeviceCountByProductCodes(List<string> productCodes);
     }
 }

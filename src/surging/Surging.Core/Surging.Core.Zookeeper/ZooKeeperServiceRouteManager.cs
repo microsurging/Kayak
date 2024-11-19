@@ -51,10 +51,6 @@ namespace Surging.Core.Zookeeper
             return _routes;
         }
 
-        public override void ClearRoute()
-        {
-            _routes = null;
-        }
         /// <summary>
         /// 清空所有的服务路由。
         /// </summary>
@@ -143,6 +139,11 @@ namespace Surging.Core.Zookeeper
                 if (_logger.IsEnabled(LogLevel.Information))
                     _logger.LogInformation("服务路由添加成功。");
             }
+        }
+
+        public override void ClearRoute()
+        {
+            _routes = null;
         }
 
         public override async Task RemveAddressAsync(IEnumerable<AddressModel> Address)

@@ -36,6 +36,12 @@ namespace Kayak.Modules.System.Domians
             return ApiResult<bool>.Succeed(result);
         }
 
+        public async Task<ApiResult<List<SysOrganizationModel>>> GetOrgCompany()
+        {
+            var result = await _repository.GetOrgCompany();
+            return ApiResult<List<SysOrganizationModel>>.Succeed(result);
+        }
+
         public async Task<ApiResult<Page<SysOrganizationModel>>> GetPageAsync(SysOrganizationQuery query)
         {
             var result = await _repository.GetPageAsync(query);
@@ -66,7 +72,7 @@ namespace Kayak.Modules.System.Domians
             var message = "";
             if (!model.Name.IsNullOrEmpty())
             {
-                var result = await _repository.ExistsModelByName(model.Name);
+                var result = await _repository.ExistsModelByName(model.Id,model.Name);
                 message = result ? "机构名称已存在" : message;
             }
             

@@ -18,6 +18,7 @@ namespace Kayak.IModuleServices.System
     {
         [Authorization(AuthType = AuthorizationType.JWT)]
         [ServiceLogIntercept]
+        [ServiceCacheIntercept(CachingMethod.Remove, "GetSysDictionaryByParentCode_{0}", CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache)]
         Task<ApiResult<bool>>  Add(SysDictionaryModel model);
 
         [Authorization(AuthType = AuthorizationType.JWT)]
@@ -29,7 +30,7 @@ namespace Kayak.IModuleServices.System
         Task<ApiResult<Page<SysDictionaryModel>>> GetPageAsync(SysDictionaryQuery query);
 
         [Authorization(AuthType = AuthorizationType.JWT)]
-        [ServiceCacheIntercept(CachingMethod.Get, Key = "GetSysDictionaryByParentCode_{0}", CacheSectionType = "ddlCache", EnableL2Cache = false, Mode = CacheTargetType.MemoryCache, Time = 480, EnableStageCache = true)]
+        [ServiceCacheIntercept(CachingMethod.Get, Key = "GetSysDictionaryByParentCode_{0}", CacheSectionType = "ddlCache", EnableL2Cache = false, Mode = CacheTargetType.MemoryCache, Time = 10, EnableStageCache = true)]
         [ServiceLogIntercept]
         Task<ApiResult<List<SysDictionaryModel>>> GetSysDictionaryByParentCode(string parentCode);
 
@@ -40,7 +41,8 @@ namespace Kayak.IModuleServices.System
 
         [Authorization(AuthType = AuthorizationType.JWT)]
         [ServiceLogIntercept]
-        Task<ApiResult<bool>> DeleteById(List<int> ids);
+        [ServiceCacheIntercept(CachingMethod.Remove, "GetSysDictionaryByParentCode_{0}", CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache)]
+        Task<ApiResult<bool>> DeleteById(string parentCode,List<int> ids);
 
         [Authorization(AuthType = AuthorizationType.JWT)]
         [ServiceLogIntercept]
@@ -52,6 +54,7 @@ namespace Kayak.IModuleServices.System
 
         [Authorization(AuthType = AuthorizationType.JWT)]
         [ServiceLogIntercept]
+        [ServiceCacheIntercept(CachingMethod.Remove, "GetSysDictionaryByParentCode_{0}", CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache)]
         Task<ApiResult<bool>> Modify(SysDictionaryModel model);
 
 

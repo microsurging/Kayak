@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kayak.Modules.System")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dec1295cb2e7ea5dbb03cf38dbdcf2b15c885344")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kayak.Modules.System")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kayak.Modules.System")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

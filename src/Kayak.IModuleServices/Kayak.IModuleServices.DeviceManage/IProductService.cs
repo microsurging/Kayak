@@ -19,7 +19,7 @@ namespace Kayak.IModuleServices.DeviceManage
     public interface IProductService : IServiceKey
     {
         [Authorization(AuthType = AuthorizationType.JWT)]
-        [ServiceCacheIntercept(CachingMethod.Remove, "GetProducts", CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache)]
+        [ServiceCacheIntercept(CachingMethod.Remove, "GetProducts", CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache, EnableStageCache = true)]
         Task<ApiResult<bool>> Add(ProductModel model);
 
         [Authorization(AuthType = AuthorizationType.JWT)]
@@ -32,12 +32,12 @@ namespace Kayak.IModuleServices.DeviceManage
         Task<ApiResult<List<ProductModel>>> GetProductByCondition(ProductQuery query);
 
         [Authorization(AuthType = AuthorizationType.JWT)]
-        [ServiceCacheIntercept(CachingMethod.Remove, "GetProducts", CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache)]
+        [ServiceCacheIntercept(CachingMethod.Remove, "GetProducts", CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache, EnableStageCache = true)]
         [ServiceLogIntercept]
         Task<ApiResult<bool>> DeleteById(List<int> ids);
 
         [Authorization(AuthType = AuthorizationType.JWT)]
-        [ServiceCacheIntercept(CachingMethod.Remove, "GetProducts", CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache)]
+        [ServiceCacheIntercept(CachingMethod.Remove, "GetProducts", CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache, EnableStageCache = true)]
         Task<ApiResult<bool>> Modify(ProductModel model);
 
 
@@ -45,16 +45,20 @@ namespace Kayak.IModuleServices.DeviceManage
         Task<ApiResult<bool>> Validate(ProductModel model);
 
         [Authorization(AuthType = AuthorizationType.JWT)]
-        [ServiceCacheIntercept(CachingMethod.Remove, "GetProducts",  CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache)]
+        [ServiceCacheIntercept(CachingMethod.Remove, "GetProducts",  CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache, EnableStageCache = true)]
         Task<ApiResult<bool>> Stop(List<int> ids);
 
         [Authorization(AuthType = AuthorizationType.JWT)]
-        [ServiceCacheIntercept(CachingMethod.Remove, "GetProducts", CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache)]
+        [ServiceCacheIntercept(CachingMethod.Remove, "GetProducts", CacheSectionType = "ddlCache", Mode = CacheTargetType.MemoryCache, EnableStageCache = true)]
         Task<ApiResult<bool>> Open(List<int> ids);
 
         [Authorization(AuthType = AuthorizationType.JWT)]
         [ServiceCacheIntercept(CachingMethod.Get, Key = "GetProducts", CacheSectionType = "ddlCache", EnableL2Cache = false, Mode = CacheTargetType.MemoryCache, Time = 480, EnableStageCache = true)]
         Task<ApiResult<List<ProductModel>>> GetProducts();
+
+        [Authorization(AuthType = AuthorizationType.JWT)]
+        [ServiceCacheIntercept(CachingMethod.Get, Key = "GetProductStatistics", CacheSectionType = "ddlCache", EnableL2Cache = false, Mode = CacheTargetType.MemoryCache, Time = 1, EnableStageCache = true)]
+        Task<ApiResult<ProductStatisticsModel>> GetProductStatistics();
 
 
     }

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Kayak.Core\Kayak.Core.Http\Kayak.Core.Http.csproj" />
+    <ProjectReference Include="..\..\..\Kayak.IModuleServices\Kayak.IModuleServices.Aggregation\Kayak.IModuleServices.Aggregation.DeviceAccess\Kayak.IModuleServices.Aggregation.DeviceAccess.csproj" />
+    <ProjectReference Include="..\..\..\Kayak.IModuleServices\Kayak.IModuleServices.System\Kayak.IModuleServices.System.csproj" />
+    <ProjectReference Include="..\..\..\surging\Surging.Core\Surging.Core.DeviceGateway\Surging.Core.DeviceGateway.csproj" />
+    <ProjectReference Include="..\..\..\surging\Surging.Core\Surging.Core.ProxyGenerator\Surging.Core.ProxyGenerator.csproj" />
+  </ItemGroup>
+
+</Project>

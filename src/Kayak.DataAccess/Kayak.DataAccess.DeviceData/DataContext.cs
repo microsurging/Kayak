@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Kayak.DataAccess.DeviceData
 {
-    public class DataContext : DbContext, IDisposable
+    public class DataContext : DbContext
     {
         public DataContext()
         {
@@ -27,10 +27,39 @@ namespace Kayak.DataAccess.DeviceData
             return ServiceLocator.GetService<DataContext>(AppConfig.DeviceDataOptions.DatabaseType.ToString())??new DataContext();
         }
 
-        //实体
+        public DbSet<DeviceEvent> DeviceEvent {  get; set; }
+
+        public DbSet<BlackWhiteList> BlackWhiteList { get; set; }
+
+        public DbSet<Module> Module { get; set; }
+        public DbSet<ReportPropertyLog> ReportPropertyLog { get; set; }
+        public DbSet<PropertyThreshold> PropertyThreshold { get; set; }
+
+        public DbSet<EventParameter> EventParameter { get; set; }
+
+        public  DbSet<FunctionParameter> FunctionParameter { get; set; }
         public DbSet<SysUser> SysUser { get; set; }
 
+        public DbSet<NetworkLog> NetworkLog { get; set; } 
+
+        public DbSet<DeviceGateway> DeviceGateway { get; set; }
+
         public DbSet<Device> Device {  get; set; }
+
+        public DbSet<DeviceAccess> DeviceAccess { get; set; }
+
+        public DbSet<SysDataType> SysDataType { get; set; }
+
+        public DbSet<SysUnit> SysUnit { get; set; }
+
+        public DbSet<DeviceConfig> DeviceConfig { get; set; }
+
+        public DbSet<ReportProperty> ReportProperty { get; set; }
+        public DbSet<FunctionConfigure> FunctionConfigure {  get; set; }    
+
+        public DbSet<DeviceType> DeviceType {  get; set; }
+        public DbSet<EventConfigure> EventConfigure { get; set; }
+        public DbSet<PropertyConfigure> PropertyConfigure { get; set; }
 
         public DbSet<RegistryCenter> RegistryCenter {  get; set; }
 

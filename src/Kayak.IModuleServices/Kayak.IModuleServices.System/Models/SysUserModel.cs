@@ -31,7 +31,7 @@ namespace Kayak.IModuleServices.System.Models
         public string? Remark { get; set; }
         public int Status { get; set; } = 1;
 
-        public DateTime? CreateTime { get; set; }
-        public DateTime? UpdateTime { get; set; }
+        public DateTimeOffset? CreateTime { get; set; }= DateTimeOffset.Now;
+        public DateTimeOffset? UpdateTime { get; set; }=DateTimeOffset.Now;
     }
 }

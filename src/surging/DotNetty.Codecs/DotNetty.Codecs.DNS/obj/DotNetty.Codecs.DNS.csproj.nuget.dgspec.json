@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\git.kayak\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\DotNetty.Codecs.DNS.csproj": {}
+    "E:\\git.kayak\\src\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\DotNetty.Codecs.DNS.csproj": {}
   },
   "projects": {
-    "E:\\git.kayak\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\DotNetty.Codecs.DNS.csproj": {
+    "E:\\git.kayak\\src\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\DotNetty.Codecs.DNS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\git.kayak\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\DotNetty.Codecs.DNS.csproj",
+        "projectUniqueName": "E:\\git.kayak\\src\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\DotNetty.Codecs.DNS.csproj",
         "projectName": "DotNetty.Codecs.DNS",
-        "projectPath": "E:\\git.kayak\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\DotNetty.Codecs.DNS.csproj",
+        "projectPath": "E:\\git.kayak\\src\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\DotNetty.Codecs.DNS.csproj",
         "packagesPath": "C:\\Users\\fanli\\.nuget\\packages\\",
-        "outputPath": "E:\\git.kayak\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\obj\\",
+        "outputPath": "E:\\git.kayak\\src\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

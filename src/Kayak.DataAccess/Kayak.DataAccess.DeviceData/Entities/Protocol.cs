@@ -14,12 +14,16 @@ namespace Kayak.DataAccess.DeviceData.Entities
 
         public string ProtocolName { get; set; }
 
-        public string ComponentType { get; set; }
+        public string ProtocolType { get; set; }
+
+        public string? Script { get; set; }
+
+        public string? ConnProtocol {  get; set; }
 
         public int Status {  get; set; }    
 
-        public string ClassName { get; set; }
+        public string? ClassName { get; set; }
 
-        public string FileAddress { get; set; }
+        public string? FileAddress { get; set; }
     }
 }

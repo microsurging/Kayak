@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GxKqR20+20+ZG9yK6Fzg/5fw5qeP+FD0u89piUw+PdYzwcx6EqrCrBOqXSevLk5x208a/76F4vrIrlrsXVPx+g==",
+  "dgSpecHash": "QjYideRkfA+J2ut8RoRa3xHNhQ0fdckokIzjZBmzZfmGY4NUPShAbfZFooTenW8R9dsO2MAD3wBI9/sEg6taRA==",
   "success": true,
-  "projectFilePath": "E:\\git.kayak\\surging\\WebSocket\\WebSocketCore\\WebSocketCore.csproj",
+  "projectFilePath": "E:\\git.kayak\\src\\surging\\WebSocket\\WebSocketCore\\WebSocketCore.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

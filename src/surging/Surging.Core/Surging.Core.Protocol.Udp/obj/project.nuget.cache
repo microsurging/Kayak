@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D+e6b46N0w/d80uJXlvi6R+5OGV7/BcYwvEfx9Z1oJ3k6YKKxavqDK3TQfpnHjhVTuiGQ40GV96VQ8qxbDHyfw==",
+  "dgSpecHash": "Kfv5y9mBavVyL2WAo5Gpsm84EtYy0kZlqVwy6xxiussju1JNs2JhvxjSK/eTxdjQDj6nRgpFBXlpL7drhyXJ+g==",
   "success": true,
-  "projectFilePath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Udp\\Surging.Core.Protocol.Udp.csproj",
+  "projectFilePath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Udp\\Surging.Core.Protocol.Udp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fanli\\.nuget\\packages\\autofac\\4.9.4\\autofac.4.9.4.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\autofac.extensions.dependencyinjection\\4.3.0\\autofac.extensions.dependencyinjection.4.3.0.nupkg.sha512",
@@ -10,6 +10,8 @@
     "C:\\Users\\fanli\\.nuget\\packages\\dotnetty.codecs\\0.6.0\\dotnetty.codecs.0.6.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\dotnetty.common\\0.6.0\\dotnetty.common.0.6.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\dotnetty.transport\\0.6.0\\dotnetty.transport.0.6.0.nupkg.sha512",
+    "C:\\Users\\fanli\\.nuget\\packages\\dotnetty.transport.libuv\\0.6.0\\dotnetty.transport.libuv.0.6.0.nupkg.sha512",
+    "C:\\Users\\fanli\\.nuget\\packages\\libuv\\1.10.0\\libuv.1.10.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.6.1\\microsoft.codeanalysis.analyzers.2.6.1.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\microsoft.codeanalysis.common\\2.9.0\\microsoft.codeanalysis.common.2.9.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\microsoft.codeanalysis.csharp\\2.9.0\\microsoft.codeanalysis.csharp.2.9.0.nupkg.sha512",
@@ -84,6 +86,7 @@
     "C:\\Users\\fanli\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\fanli\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",

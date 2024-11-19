@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qblpsdI3dXivYvA+wqBjxSNhwTc37KPRm2cfyudX1IFNje5QF63N7cr1XFYW6/P1zjT9hH7uG+iZbMN5cyTRIA==",
+  "dgSpecHash": "q6bjUUe1wWJvRav+/KW8Zb3O2HZchXxmTxlVs53wuc8eN6NL4wp0uxQYDCn1LZ9di7xjK1ek5P9Fbf5JCSZRfQ==",
   "success": true,
-  "projectFilePath": "E:\\git.kayak\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\DotNetty.Codecs.DNS.csproj",
+  "projectFilePath": "E:\\git.kayak\\src\\surging\\DotNetty.Codecs\\DotNetty.Codecs.DNS\\DotNetty.Codecs.DNS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fanli\\.nuget\\packages\\dotnetty.buffers\\0.6.0\\dotnetty.buffers.0.6.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\dotnetty.codecs\\0.6.0\\dotnetty.codecs.0.6.0.nupkg.sha512",

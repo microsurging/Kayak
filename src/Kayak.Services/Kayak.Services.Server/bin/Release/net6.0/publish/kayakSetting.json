@@ -8,6 +8,6 @@
   ],
   "Interceptor": {
     "DisableCache": false,
-    "DisableOperateLog": true
+    "DisableOperateLog": false
   }
 }

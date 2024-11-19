@@ -1,3 +1,0 @@
-generated/ApplicationRegisterService.cs \
-generated/ApplicationRegisterServiceGrpc.cs: protocol/language-agent/KeyWithIntegerValue.proto\
- protocol/language-agent/ApplicationRegisterService.proto

@@ -1,4 +1,6 @@
-﻿using Kayak.Core.Common.Response;
+﻿using Kayak.Core.Common.Enums;
+using Kayak.Core.Common.Extensions;
+using Kayak.Core.Common.Response;
 using Kayak.IModuleServices.DeviceAccess;
 using Kayak.IModuleServices.DeviceAccess.Models;
 using Kayak.IModuleServices.DeviceAccess.Queries;
@@ -33,9 +35,57 @@ namespace Kayak.Modules.DeviceAccess.Domains
             return ApiResult<Page<NetworkPartModel>>.Succeed(result);
         }
 
-        public async  Task<ApiResult<NetworkPartModel>> GetProtocol(int id)
+        public async Task<ApiResult<List<NetworkPartModel>>> GetListByIds(List<int> ids)
         {
-            var result = await _repository.GetProtocol(id);
+            var result = await _repository.GetListByIds(ids);
+            return ApiResult<List<NetworkPartModel>>.Succeed(result);
+        }
+         
+        public async Task<ApiResult<List<NetworkPartModel>>> GetNetworkPartByCondition(NetworkPartQuery query)
+        {
+            var result = await _repository.GetNetworkPartByCondition(query);
+            return ApiResult<List<NetworkPartModel>>.Succeed(result);
+        }
+
+        public async Task<ApiResult<bool>> DeleteById(List<int> ids)
+        {
+            var result = await _repository.DeleteById(ids);
+            return ApiResult<bool>.Succeed(result);
+        }
+
+        public async Task<ApiResult<bool>> Modify(NetworkPartModel model)
+        {
+            var result = await _repository.Modify(model);
+            return ApiResult<bool>.Succeed(result);
+        }
+
+        public async Task<ApiResult<bool>> Validate(NetworkPartModel model)
+        {
+            var message = "";
+            if (!model.Name.IsNullOrEmpty())
+            {
+                var result = await _repository.ExistsModelByName(model.Name);
+                message = result ? "组件名称已存在" : message;
+            }
+
+            return message.IsNullOrEmpty() ? ApiResult<bool>.Succeed(true) : ApiResult<bool>.Failure(EnumReturnCode.CUSTOM_ERROR, message);
+        }
+
+        public async Task<ApiResult<bool>> Stop(List<int> ids)
+        {
+            var result = await _repository.Stop(ids);
+            return ApiResult<bool>.Succeed(result);
+        }
+
+        public async Task<ApiResult<bool>> Open(List<int> ids)
+        {
+            var result = await _repository.Open(ids);
+            return ApiResult<bool>.Succeed(result);
+        }
+
+        public  async Task<ApiResult<NetworkPartModel>> GetNetworkPartById(int id)
+        {
+            var result = await _repository.GetNetworkPartById(id);
             return ApiResult<NetworkPartModel>.Succeed(result);
         }
     }

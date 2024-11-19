@@ -23,6 +23,6 @@ namespace Kayak.Core.Common.Intercepte.Model
 
         public  long? RunTime { get; set; }
 
-        public DateTime? CreateDate { get; set; }
+        public DateTimeOffset? CreateDate { get; set; }
     }
 }

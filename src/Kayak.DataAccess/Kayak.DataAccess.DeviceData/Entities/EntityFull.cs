@@ -20,7 +20,7 @@ namespace Kayak.DataAccess.DeviceData.Entities
         /// <summary>
         /// 创建时间
         /// </summary>
-        public DateTime? CreateDate { get; set; }
+        public DateTimeOffset? CreateDate { get; set; }
 
         /// <summary>
         /// 修改人
@@ -30,7 +30,7 @@ namespace Kayak.DataAccess.DeviceData.Entities
         /// <summary>
         /// 修改时间
         /// </summary>
-        public DateTime? UpdateDate { get; set; }
+        public DateTimeOffset? UpdateDate { get; set; }
 
         /// <summary>
         /// 删除

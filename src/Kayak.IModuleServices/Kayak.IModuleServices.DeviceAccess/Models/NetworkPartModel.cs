@@ -8,15 +8,32 @@ namespace Kayak.IModuleServices.DeviceAccess.Models
 {
     public class NetworkPartModel
     {
+        public int Id { get; set; }
         public string Name { get; set; }
 
-        public string ComponentType { get; set; }
+        public string ComponentTypeCode { get; set; }
 
-        public string ClusterMode { get; set; }
+        public int ClusterModeId { get; set; }
 
-        public string Status { get; set; }
+        public int Status { get; set; }
 
         public bool EnableSSL { get; set; }
+
+        public bool? EnableTLS { get; set; }
+
+        public bool? EnableSwagger { get; set; }
+
+        public bool? EnableWebService { get; set; }
+
+        public bool? IsMulticast { get; set; }
+
+        public int? ResolveMode { get; set; }
+
+        public int? FixedLength { get; set; }
+
+        public string? Delimited { get; set; }
+
+        public int? MaxMessageLength { get; set; }
 
         public string RuleScript { get; set; }
 
@@ -24,9 +41,9 @@ namespace Kayak.IModuleServices.DeviceAccess.Models
 
         public int Port { get; set; }
 
-        public  DateTime? CreateDate { get; set; }
+        public DateTimeOffset? CreateDate { get; set; } = DateTimeOffset.Now;
 
-        public DateTime? UpdateDate { get; set; }   
+        public DateTimeOffset? UpdateDate { get; set; } = DateTimeOffset.Now;
 
         public string Remark { get; set; }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xyx4Myrdf7dDqLkfaYN2UqW4uPRdkFzXFEmE9Gu1bNbafB4lYAQ4WPv7z5T1Q67UL6MdQ3S/mjMh/A3H8MYfOw==",
+  "dgSpecHash": "1/CJYQVfpOgP2OwARJc6m5D9Eu7wfpi3lYsoCUD43c9+VwdF3KSELjfzKTMaG0cTqYrAP8hRMYRZTM3R9DfuJw==",
   "success": true,
-  "projectFilePath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.DotNettyWSServer\\Surging.Core.DotNettyWSServer.csproj",
+  "projectFilePath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.DotNettyWSServer\\Surging.Core.DotNettyWSServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fanli\\.nuget\\packages\\autofac\\4.9.4\\autofac.4.9.4.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\autofac.extensions.dependencyinjection\\4.3.0\\autofac.extensions.dependencyinjection.4.3.0.nupkg.sha512",
@@ -90,6 +90,7 @@
     "C:\\Users\\fanli\\.nuget\\packages\\system.net.security\\4.3.2\\system.net.security.4.3.2.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\fanli\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
     "C:\\Users\\fanli\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",

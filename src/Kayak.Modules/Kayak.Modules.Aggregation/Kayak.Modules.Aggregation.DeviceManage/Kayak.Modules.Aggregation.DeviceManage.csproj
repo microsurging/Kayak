@@ -7,8 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Kayak.DataAccess\Kayak.DataAccess.DeviceData\Kayak.DataAccess.DeviceData.csproj" />
     <ProjectReference Include="..\..\..\Kayak.IModuleServices\Kayak.IModuleServices.Aggregation\Kayak.IModuleServices.Aggregation.DeviceManage\Kayak.IModuleServices.Aggregation.DeviceManage.csproj" />
+    <ProjectReference Include="..\..\..\Kayak.IModuleServices\Kayak.IModuleServices.DeviceAccess\Kayak.IModuleServices.DeviceAccess.csproj" />
+    <ProjectReference Include="..\..\..\surging\Surging.Core\Surging.Core.DeviceGateway\Surging.Core.DeviceGateway.csproj" />
     <ProjectReference Include="..\..\..\surging\Surging.Core\Surging.Core.ProxyGenerator\Surging.Core.ProxyGenerator.csproj" />
   </ItemGroup>
 

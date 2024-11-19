@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj": {}
+    "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj": {}
   },
   "projects": {
-    "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj": {
+    "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj",
+        "projectUniqueName": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj",
         "projectName": "Surging.Core.ServiceHosting",
-        "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj",
+        "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\Surging.Core.ServiceHosting.csproj",
         "packagesPath": "C:\\Users\\fanli\\.nuget\\packages\\",
-        "outputPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\obj\\",
+        "outputPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ServiceHosting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

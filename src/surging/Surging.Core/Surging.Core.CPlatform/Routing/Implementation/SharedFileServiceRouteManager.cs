@@ -75,6 +75,10 @@ namespace Surging.Core.CPlatform.Routing.Implementation
             return _routes;
         }
 
+        public override void ClearRoute()
+        {
+            _routes = null;
+        }
         /// <summary>
         ///     清空所有的服务路由。
         /// </summary>
@@ -166,11 +170,6 @@ namespace Surging.Core.CPlatform.Routing.Implementation
                 routes = new ServiceRoute[0];
             }
             return routes;
-        }
-
-        public override void ClearRoute()
-        {
-            _routes = null;
         }
 
         private async Task EntryRoutes(string file)

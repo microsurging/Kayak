@@ -140,6 +140,29 @@
           }
         }
       },
+      "DotNetty.Transport.Libuv/0.6.0": {
+        "type": "package",
+        "dependencies": {
+          "DotNetty.Buffers": "0.6.0",
+          "DotNetty.Common": "0.6.0",
+          "DotNetty.Transport": "0.6.0",
+          "Libuv": "1.10.0",
+          "NETStandard.Library": "1.6.1",
+          "System.Diagnostics.Contracts": "4.3.0",
+          "System.Net.NameResolution": "4.3.0",
+          "System.Net.Primitives": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/DotNetty.Transport.Libuv.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/DotNetty.Transport.Libuv.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FastExpressionCompiler/3.2.1": {
         "type": "package",
         "compile": {
@@ -173,6 +196,46 @@
         },
         "runtime": {
           "lib/netstandard2.0/Jint.dll": {}
+        }
+      },
+      "Libuv/1.10.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1"
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libuv.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libuv.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-armel/native/libuv.so": {
+            "assetType": "native",
+            "rid": "linux-armel"
+          },
+          "runtimes/linux-x64/native/libuv.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/libuv.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-arm/native/libuv.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-x64/native/libuv.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libuv.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/2.6.1": {
@@ -2639,6 +2702,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Autofac": "4.9.4",
+          "DotNetty.Buffers": "0.6.0",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "2.9.0",
           "Microsoft.Extensions.Configuration": "2.2.0",
           "Microsoft.Extensions.Configuration.Binder": "2.2.4",
@@ -2649,7 +2713,8 @@
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
           "Newtonsoft.Json": "11.0.2",
-          "Surging.Core.ServiceHosting": "1.1.0"
+          "Surging.Core.ServiceHosting": "1.1.0",
+          "System.Reactive": "5.0.0"
         },
         "compile": {
           "bin/placeholder/surging.dll": {}
@@ -2808,6 +2873,21 @@
         "lib/netstandard1.3/DotNetty.Transport.xml"
       ]
     },
+    "DotNetty.Transport.Libuv/0.6.0": {
+      "sha512": "aZa5gnR/Jd2MaKeknCZcVtc6caXdl9I0IL9u01NE3R37jmJ6C+nSE4TTgiNIzHkEULtNv4ohQ6hDgT5zF/1SFA==",
+      "type": "package",
+      "path": "dotnetty.transport.libuv/0.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetty.transport.libuv.0.6.0.nupkg.sha512",
+        "dotnetty.transport.libuv.nuspec",
+        "lib/net45/DotNetty.Transport.Libuv.dll",
+        "lib/net45/DotNetty.Transport.Libuv.xml",
+        "lib/netstandard1.3/DotNetty.Transport.Libuv.dll",
+        "lib/netstandard1.3/DotNetty.Transport.Libuv.xml"
+      ]
+    },
     "FastExpressionCompiler/3.2.1": {
       "sha512": "w61W7bBFxADAhQAqgvEj8hiuRb9XMcAKKbsuBCYuFud+C+mCi9rQ7cZCbPPAeP9IPyGahNZvDQelpgMOLqErig==",
       "type": "package",
@@ -2860,6 +2940,26 @@
         "lib/net451/Jint.dll",
         "lib/netstandard1.3/Jint.dll",
         "lib/netstandard2.0/Jint.dll"
+      ]
+    },
+    "Libuv/1.10.0": {
+      "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
+      "type": "package",
+      "path": "libuv/1.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "libuv.1.10.0.nupkg.sha512",
+        "libuv.nuspec",
+        "runtimes/linux-arm/native/libuv.so",
+        "runtimes/linux-arm64/native/libuv.so",
+        "runtimes/linux-armel/native/libuv.so",
+        "runtimes/linux-x64/native/libuv.so",
+        "runtimes/osx/native/libuv.dylib",
+        "runtimes/win-arm/native/libuv.dll",
+        "runtimes/win-x64/native/libuv.dll",
+        "runtimes/win-x86/native/libuv.dll"
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/2.6.1": {
@@ -7682,6 +7782,7 @@
     "net6.0": [
       "DotNetty.Codecs >= 0.6.0",
       "DotNetty.Handlers >= 0.6.0",
+      "DotNetty.Transport.Libuv >= 0.6.0",
       "Jint >= 2.11.58",
       "RulesEngine >= 3.5.0",
       "Surging.Core.ProxyGenerator >= 1.1.0",
@@ -7696,11 +7797,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Tcp\\Surging.Core.Protocol.Tcp.csproj",
+      "projectUniqueName": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Tcp\\Surging.Core.Protocol.Tcp.csproj",
       "projectName": "Surging.Core.Protocol.Tcp",
-      "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Tcp\\Surging.Core.Protocol.Tcp.csproj",
+      "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Tcp\\Surging.Core.Protocol.Tcp.csproj",
       "packagesPath": "C:\\Users\\fanli\\.nuget\\packages\\",
-      "outputPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.Protocol.Tcp\\obj\\",
+      "outputPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.Protocol.Tcp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7722,11 +7823,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.CPlatform\\Surging.Core.CPlatform.csproj"
             },
-            "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj": {
-              "projectPath": "E:\\git.kayak\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj"
+            "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj": {
+              "projectPath": "E:\\git.kayak\\src\\surging\\Surging.Core\\Surging.Core.ProxyGenerator\\Surging.Core.ProxyGenerator.csproj"
             }
           }
         }
@@ -7751,6 +7852,10 @@
             "version": "[0.6.0, )"
           },
           "DotNetty.Handlers": {
+            "target": "Package",
+            "version": "[0.6.0, )"
+          },
+          "DotNetty.Transport.Libuv": {
             "target": "Package",
             "version": "[0.6.0, )"
           },

@@ -1,4 +1,0 @@
-generated/CLRMetric.cs \
-generated/CLRMetricGrpc.cs: protocol/common/common.proto\
- protocol/common/CLR.proto\
- protocol/language-agent-v2/CLRMetric.proto

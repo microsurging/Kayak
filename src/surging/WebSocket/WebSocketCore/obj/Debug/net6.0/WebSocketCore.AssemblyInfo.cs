@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © fanly All Rights Reserved.")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute(".NET CORE version based on websocket-sharp")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.9.2.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.9.2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.9.2+b36a2a01b12502c11c8f1a51d5a604cf1a0cd317")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebSocketCore Framework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebSocketCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.9.2.0")]

@@ -21,5 +21,8 @@ namespace Kayak.IModuleServices.Aggregation.DeviceManage
 
         [Authorization(AuthType = AuthorizationType.JWT)]
         Task<ApiResult<List<ProductModel>>> GetProducts();
+
+        [Authorization(AuthType = AuthorizationType.JWT)]
+        Task<ApiResult<PrdAggregationModel>> GetProductById(int id);
     }
 }
